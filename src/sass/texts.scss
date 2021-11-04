@@ -1,0 +1,109 @@
+nav {
+  font-family: "Sf Pro Text";
+  font-weight: 400;
+}
+
+.hero {
+  .text-details {
+    font-family: "Sf Pro Text";
+  }
+}
+
+.featured-projects {
+  .p-text {
+    font-size: 130px;
+    // color: rgba(241, 241, 241, 1);
+    padding: 0;
+  }
+
+  .fp-text {
+    font-family: "Sf Pro Text";
+    font-weight: 400;
+  }
+
+  .num {
+    color: rgba(96, 88, 116, 1);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background: rgba(96, 88, 116, 1);
+      transform: translate(25px, 12px);
+      -webkit-transform: translate(25px, 12px);
+      -moz-transform: translate(25px, 12px);
+      -ms-transform: translate(25px, 12px);
+      -o-transform: translate(25px, 12px);
+    }
+  }
+
+  .deats {
+    color: rgba(144, 144, 144, 1);
+    font-family: "Sf Pro Text";
+  }
+
+  .bottom {
+    color: rgba(144, 144, 144, 1);
+    font-family: "Sf Pro Text";
+    font-weight: 400;
+  }
+}
+
+.contributions {
+  .c-text {
+    font-family: "Sf Pro Text";
+  }
+
+  .bigc-text {
+    font-size: 150px;
+    // color: rgba(241, 241, 241, 1);
+    padding: 0;
+  }
+
+  .grid-div {
+    .deats {
+      font-family: "Sf Pro Text";
+      color: rgba(130, 130, 130, 1);
+      font-size: 13px;
+    }
+
+    .open-in-figma {
+      font-family: "Sf Pro Text";
+      color: rgba(130, 130, 130, 1);
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 95px;
+        height: 1px;
+        background: rgba(130, 130, 130, 1);
+        transition: 800ms;
+        -webkit-transition: 800ms;
+        -moz-transition: 800ms;
+        -ms-transition: 800ms;
+        -o-transition: 800ms;
+      }
+    }
+  }
+}
+
+.more-on-youtube {
+  font-family: "Sf Pro Text";
+
+  .details {
+    color: rgba(144, 144, 144, 1);
+  }
+
+  .subscribe {
+    color: rgba(255, 96, 96, 1);
+  }
+}

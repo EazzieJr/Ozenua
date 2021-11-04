@@ -1,0 +1,28 @@
+.cursor {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    contain: layout style size;
+    pointer-events: none;
+    
+
+    &.media-blend {
+        z-index: 100;
+        // mix-blend-mode: exclusion;
+        // filter: invert(1);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -24px;
+      left: -24px;
+      display: block;
+      width: 48px;
+      height: 48px;
+      transform: scale(0.2);
+      background: black;
+      border-radius: 50%;
+    }
+}

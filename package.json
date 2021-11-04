@@ -1,0 +1,25 @@
+{
+  "name": "no",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "prod": "parcel build src/index.html",
+    "build": "postcss src/private/styles/tailwind.css -o src/public/styles/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.0.0",
+    "postcss": "^8.3.9"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0",
+    "autoprefixer": "^9.8.6",
+    "parcel": "^2.0.0",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.38.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.8"
+  }
+}

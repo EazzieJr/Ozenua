@@ -1,0 +1,100 @@
+nav {
+  font-family: "Sf Pro Text";
+  font-weight: 400;
+}
+
+.hero .text-details {
+  font-family: "Sf Pro Text";
+}
+
+.featured-projects .p-text {
+  font-size: 130px;
+  padding: 0;
+}
+
+.featured-projects .fp-text {
+  font-family: "Sf Pro Text";
+  font-weight: 400;
+}
+
+.featured-projects .num {
+  color: #605874;
+}
+
+.featured-projects .num::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #605874;
+  transform: translate(25px, 12px);
+  -webkit-transform: translate(25px, 12px);
+  -moz-transform: translate(25px, 12px);
+  -ms-transform: translate(25px, 12px);
+  -o-transform: translate(25px, 12px);
+}
+
+.featured-projects .deats {
+  color: white;
+  font-family: "Sf Pro Text";
+}
+
+.featured-projects .bottom {
+  color: #909090;
+  font-family: "Sf Pro Text";
+  font-weight: 400;
+}
+
+.contributions .c-text {
+  font-family: "Sf Pro Text";
+}
+
+.contributions .bigc-text {
+  font-size: 150px;
+  padding: 0;
+}
+
+.contributions .grid-div .deats {
+  font-family: "Sf Pro Text";
+  color: #828282;
+  font-size: 13px;
+}
+
+.contributions .grid-div .open-in-figma {
+  font-family: "Sf Pro Text";
+  color: #828282;
+  position: relative;
+}
+
+.contributions .grid-div .open-in-figma::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 95px;
+  height: 1px;
+  background: #828282;
+  transition: 800ms;
+  -webkit-transition: 800ms;
+  -moz-transition: 800ms;
+  -ms-transition: 800ms;
+  -o-transition: 800ms;
+}
+
+.more-on-youtube {
+  font-family: "Sf Pro Text";
+}
+
+.more-on-youtube .details {
+  color: #909090;
+}
+
+.more-on-youtube .subscribe {
+  color: #ff6060;
+}
+/*# sourceMappingURL=texts.css.map */

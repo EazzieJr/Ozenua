@@ -1,0 +1,20 @@
+.block {
+  transform: rotate(31deg);
+  -webkit-transform: rotate(31deg);
+  -moz-transform: rotate(31deg);
+  -ms-transform: rotate(31deg);
+  -o-transform: rotate(31deg);
+}
+
+.contributions .grid-div div {
+  border: 1px solid #333333;
+}
+
+.more-on-youtube .div {
+  border: 1px solid #333333;
+}
+
+.more-on-youtube .block {
+  background-color: #141217;
+}
+/*# sourceMappingURL=style.css.map */
