@@ -9,8 +9,8 @@
 
     &.media-blend {
         z-index: 100;
-        // mix-blend-mode: exclusion;
-        // filter: invert(1);
+        mix-blend-mode: exclusion;
+        filter: invert(1);
     }
 
     &:before {

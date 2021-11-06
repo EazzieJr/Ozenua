@@ -3,30 +3,59 @@
 // }
 
 .block {
-    transform: rotate(31deg);
-    -webkit-transform: rotate(31deg);
-    -moz-transform: rotate(31deg);
-    -ms-transform: rotate(31deg);
-    -o-transform: rotate(31deg);
+  transform: rotate(31deg);
+  -webkit-transform: rotate(31deg);
+  -moz-transform: rotate(31deg);
+  -ms-transform: rotate(31deg);
+  -o-transform: rotate(31deg);
 }
 
 .contributions {
-
-    .grid-div {
-
-        div {
-            border: 1px solid #333333;
-        }
+  .grid-div {
+    div {
+      border: 1px solid #333333;
     }
+  }
 }
 
 .more-on-youtube {
+  .div {
+    border: 1px solid #333333;
+  }
 
-    .div {
-        border: 1px solid #333333;
+  .block {
+    background-color: #141217;
+  }
+}
+
+.header {
+  .case-study {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: #333;
     }
 
-    .block {
-        background-color: #141217;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background-color: #333;
     }
+  }
+
+  .deats {
+    font-family: "Sf Pro Text";
+    color: rgba(130, 130, 130, 1);
+    font-size: 13px;
+  }
 }

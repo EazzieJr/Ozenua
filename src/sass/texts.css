@@ -40,7 +40,7 @@ nav {
 }
 
 .featured-projects .deats {
-  color: white;
+  color: #909090;
   font-family: "Sf Pro Text";
 }
 
@@ -96,5 +96,16 @@ nav {
 
 .more-on-youtube .subscribe {
   color: #ff6060;
+}
+
+.jumiar .jumiar-deats {
+  font-family: "Sf Pro Text";
+  color: #828282;
+  font-size: 15.4px;
+  line-height: 30px;
+}
+
+.contacts {
+  font-family: 'Sf Pro Text';
 }
 /*# sourceMappingURL=texts.css.map */

@@ -3,7 +3,7 @@ module.exports = {
   purge: [
     './src/**/*.html',
     './src/**/*.js',
-    './src/sass/*.css',
+    './src/**/*.css',
     './fonts/euclid/*.css'
   ],
   darkMode: 'media', // or 'media' or 'class'
@@ -57,9 +57,12 @@ module.exports = {
       },
 
       textColor: {
-        // 'primary': '#3490dc',
+        'primary': '#909090',
         'light': '#F1F1F1',
-        'dark': '#18161D',
+        'dark': '#18161D'
+      },
+      colors: {
+        'dark': '#0C0B0E'
       }
     },
   },
