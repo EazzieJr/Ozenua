@@ -2,14 +2,6 @@
 //     background-color: black;
 // }
 
-.block {
-  transform: rotate(31deg);
-  -webkit-transform: rotate(31deg);
-  -moz-transform: rotate(31deg);
-  -ms-transform: rotate(31deg);
-  -o-transform: rotate(31deg);
-}
-
 .contributions {
   .grid-div {
     div {
@@ -21,10 +13,15 @@
 .more-on-youtube {
   .div {
     border: 1px solid #333333;
-  }
 
-  .block {
-    background-color: #141217;
+    .rotated-block {
+      transform: rotate(31deg);
+      -webkit-transform: rotate(31deg);
+      -moz-transform: rotate(31deg);
+      -ms-transform: rotate(31deg);
+      -o-transform: rotate(31deg);
+      background-color: #141217;
+    }
   }
 }
 
@@ -57,5 +54,34 @@
     font-family: "Sf Pro Text";
     color: rgba(130, 130, 130, 1);
     font-size: 13px;
+  }
+}
+
+footer {
+  .container {
+    .first-container {
+      padding: 50px 0px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #f1f1f1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #f1f1f1;
+      }
+    }
   }
 }

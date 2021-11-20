@@ -1,23 +1,13 @@
 module.exports = {
   // mode: 'jit',
   purge: [
-    './src/**/*.html',
-    './src/**/*.js',
-    './src/**/*.css',
-    './fonts/euclid/*.css'
+    // './src/**/*.html',
+    // './src/**/*.js',
+    // './src/**/*.css',
+    // './fonts/euclid/*.css'
   ],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
-    screens: {
-      'xxs': '375px',
-      'xs': '411px',
-      'sm': '540px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1200px',
-      '2xl': '1536px',
-    },
-
     fontSize: {
       'tiny': '.6rem',
       'xs': '.75rem',
