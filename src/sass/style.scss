@@ -26,7 +26,7 @@
 }
 
 .header {
-  .case-study {
+  .case-studies {
     position: relative;
 
     &::before {
@@ -49,18 +49,11 @@
       background-color: #333;
     }
   }
-
-  .deats {
-    font-family: "Sf Pro Text";
-    color: rgba(130, 130, 130, 1);
-    font-size: 13px;
-  }
 }
 
 footer {
   .container {
     .first-container {
-      padding: 50px 0px;
       position: relative;
 
       &::before {
@@ -81,6 +74,22 @@ footer {
         width: 100%;
         height: 1px;
         background-color: #f1f1f1;
+      }
+
+      .texts-container {
+        .lets-talk {
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #f1f1f1;
+          }
+        }
       }
     }
   }

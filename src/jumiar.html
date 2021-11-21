@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="sass/texts.scss">
     <link rel="stylesheet" href="sass/cursor.scss">
     <link rel="stylesheet" href="sass/style.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+        integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap");
         @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -25,287 +28,336 @@
 </head>
 
 <body class="bg-white dark:bg-dark">
-    <nav>
-        <div class="nav-container dark:text-white lg:px-24 lg:py-7 flex justify-between items-center tracking-widest">
-            <div class="logo">
-                <a href="index.html">
-                    <p class="lg:text-tiny">OZENUA OLUWATOBI</p>
-                </a>
-            </div>
+    <div class="container mx-auto px-7 sm:px-14 md:px-16 lg:px-24 xl:px-24 2xl:px-28">
+        <nav>
+            <div
+                class="nav-container font-sf dark:text-white py-4 lg:py-7 flex justify-between items-center tracking-widest">
+                <div class="logo">
+                    <p class="text-tiny lg:text-tiny">OZENUA OLUWATOBI</p>
+                </div>
 
-            <div class="navlist lg:w-60">
-                <ul class="flex justify-between items-center text-center lg:text-tiny">
-                    <li><a href="#">CONTACT ME</a></li>
-                    <li><a href="#">CASES</a></li>
-                    <li><a href="#">RESUME</a></li>
+                <div class="navlist hidden lg:block lg:w-60">
+                    <ul class="flex justify-between border items-center text-center lg:text-tiny">
+                        <li><a href="#">CONTACT ME</a></li>
+                        <li><a href="#">CASES</a></li>
+                        <li><a href="#">RESUME</a></li>
+                    </ul>
+                </div>
+
+                <!-- Hamburger for small screens -->
+                <div class="small-menu-burger flex items-center lg:hidden">
+                    <a href="#">
+                        <div id="menu-btn" class="menu-btn p-1 transform scale-0" onclick="openMenu()">
+                            <div class="menu-btn-burger rounded-sm rounded-l rounded-r">
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="header space-y-7 py-10 lg:py-16">
+            <p class="header-text dark:text-white font-caudex text-xl lg:text-lg4xl">
+                JUMIAR : An AR Experience in Mobile Commerce.
+            </p>
+
+            <div class="case-studies w-full flex items-center py-5">
+                <ul class="case-study-list font-sf w-full text-xs text-primary flex justify-between align-center">
+                    <li>UX Reasearch</li>
+                    <li>UI Design</li>
+                    <li>Visual Design</li>
+                    <li class="lg:mr-44">Prototype</li>
                 </ul>
             </div>
-        </div>
-    </nav>
+        </section>
 
-    <section class="header lg:px-24 lg:py-16">
-        <p class="header-text dark:text-white font-caudex text-lg4xl">JUMIAR : An AR Experience in <br> Mobile Commerce.
-        </p>
+        <section class="jumiar mt-10">
+            <div class="mobile-commerce-study space-y-5">
+                <p class="mobile-commerce-study-text font-sf text-sm lg:pb-10 text-primary">
+                    Mobile commerce will outpace non-mobile commerce in 2021. In 2021, mobile commerce sales will
+                    account for
+                    more than half of total e-commerce sales. Today, one-third of purchasing decisions are influenced by
+                    researching
+                    products on mobile devices. More than half of retailers already have a mobile app. As much as people
+                    have gotten
+                    used to the idea of e-commerce, there are still some purchases for which we need a little bit more
+                    contextual
+                    information. That can be a barrier to selling certain product categories online.
+                </p>
 
-        <div class="case-study w-full lg:h-16 lg:my-14 flex items-center">
-            <ul class="case-study-list deats w-full text-primary flex justify-between align-center">
-                <li>UX Reasearch</li>
-                <li>UI Design</li>
-                <li>Visual Design</li>
-                <li class="lg:mr-44">Prototype</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="jumiar lg:px-24">
-        <p class="first-study jumiar-deats lg:pb-10 text-primary">
-            Mobile commerce will outpace non-mobile commerce in 2021. In 2021, mobile commerce sales will account for
-            more than half
-            of total e-commerce sales. Today, one-third of purchasing decisions are influenced by researching products
-            on mobile
-            devices. More than half of retailers already have a mobile app. As much as people have gotten used to the
-            idea of
-            e-commerce, there are still some purchases for which we need a little bit more contextual information. That
-            can be a
-            barrier to selling certain product categories online.
-        </p>
-
-        <p class="jumiar-deats text-primary lg:mb-24">
-            AR technology could offer immersive solutions to close the online and in-store shopping experience gap. More
-            consumers
-            are already looking to such tools as a key way to boost their product discovery and brand connection
-            process.
-        </p>
-
-        <p class="why-jumia font-caudex text-white text-2xl">
-            Why Jumia
-        </p>
-
-        <p class="why-jumiar-deats jumiar-deats text-primary lg:mt-8">
-            Jumia is the leading pan-African e-commerce platform active across 11 countries on the continent. The
-            platform consists
-            of a marketplace connecting thousands of sellers to millions of consumers, with integrated logistics and
-            digital payment
-            services. Jumia Marketplace offers goods from a large and diverse group of sellers across various
-            categories, including
-            apparel, smartphones, electronics, homeware, and beauty. Jumia also provides consumers with easy access to
-            several
-            services, such as restaurant food delivery and everyday digital services including airtime recharge, utility
-            bills
-            payment, and transport ticketing. These statistics show that Jumia is ready to incorporate futuristic
-            technology into
-            its platform to further increase the user experience.
-        </p>
-
-        <div class="case-study-image w-full lg:mt-10 lg:mb-32">
-            <img src="../assets/images/gt case study.png" alt="">
-        </div>
-
-        <p class="why-jumia font-caudex text-white text-2xl">
-            Why Jumia
-        </p>
-
-        <p class="why-jumiar-deats jumiar-deats lg:mt-8">
-            Imagine the frustration of not knowing the name of that product right there in front of you but you're so
-            much in need
-            of buying one. Not just that, the sad tales of buying a shoe for your next interview just to realize you got
-            a toy.
-        </p>
-
-        <p class="ideation font-caudex text-white text-2xl lg:mt-40">Ideation</p>
-
-        <p class="ideation-deats jumiar-deats lg:mt-8">
-            One of the challenges of online shopping is not being able to test out
-            what you want to purchase, so you have to deal with the disappointment after delivery. But with the
-            integration of AR technology, customers can now practically test out the product from their mobile devices
-            by adding the item into their environment in real-time. Not just that, customers can now scan products
-            anywhere and make purchases directly from their Jumia app.
-        </p>
-
-        <p class="the-solution font-caudex text-white text-2xl lg:mt-40">The Solution</p>
-
-        <p class="the-solution-deats jumiar-deats lg:mt-8">
-            After understanding the demands for this concept, we decided it would be best to make some UI upgrades to
-            the current
-            Jumia app design to suit the experience we wanted to create. Below is a list of what we decided to revamp.
-        </p>
-
-        <ol class="the-solution-deats-list jumiar-deats list-decimal lg:pl-4 lg:pt-8">
-            <li>The home screen experience</li>
-            <li>Create a flow in which the AR feature will be functional</li>
-            <li>Improve the major UI components of the app to suit the futuristic design</li>
-            <li>Create 3D models of the products to be showcased</li>
-        </ol>
-
-        <div class="user-flow lg:mt-40">
-            <p class="user-flow font-caudex text-white text-2xl">User flow</p>
-
-            <p class="user-flow-deats jumiar-deats lg:my-8">
-                We designed a User flow to validate the idea and create a functional design for the AR feature.
-            </p>
-
-            <div class="user-flow-image w-full lg:mt-10 lg:mb-32">
-                <img src="../assets/images/gt user flow.png" alt="">
-            </div>
-        </div>
-
-        <div class="wireframes lg:mt-40">
-            <p class="wireframes font-caudex text-white text-2xl">Wireframes</p>
-
-            <p class="wireframes-deats jumiar-deats lg:my-8">
-                After creating the User flow, I began creating wireframes to validate the flow and test out possible
-                visual
-                elements
-                that will be used in the design.
-            </p>
-
-            <div class="user-flow-image w-full lg:mt-10 lg:mb-32">
-                <img src="../assets/images/gt wireframes.png" alt="">
-            </div>
-        </div>
-
-        <div class="design-style-guide lg:mt-40">
-            <p class="design-style-guide font-caudex text-white text-2xl">Wireframes</p>
-
-            <p class="design-style-guide-deats jumiar-deats lg:my-8">
-                After creating the User flow, I began creating wireframes to validate the flow and test out possible
-                visual
-                elements
-                that will be used in the design.
-            </p>
-
-            <div class="design-style-guide-image w-full lg:mt-10 lg:mb-32">
-                <img src="../assets/images/gt design style.png" alt="">
-            </div>
-        </div>
-
-        <div class="visual-design lg:my-40">
-            <p class="visual-design font-caudex text-white text-2xl">Visual Design</p>
-
-            <p class="visual-design-deats jumiar-deats lg:my-8">
-                In this phase, I jump right into adding colors, and images. During this process, I produce high-quality
-                visual designs
-                as well as guidelines and specifications. While also making emphasis on the AR object so it's clear for
-                the user he will
-                transition into AR mode when tapping on the scanner.
-            </p>
-
-            <div class="visual-design-image w-full lg:mt-10 lg:mb-40">
-                <img src="../assets/images/gt visual design 1.png" alt="">
-                <img class="lg:mt-10" src="../assets/images/gt visual design 2.png" alt="">
+                <p class="further-mobile-commerce-study-text font-sf text-sm text-primary lg:mb-24">
+                    AR technology could offer immersive solutions to close the online and in-store shopping experience
+                    gap. More
+                    consumers
+                    are already looking to such tools as a key way to boost their product discovery and brand connection
+                    process.
+                </p>
             </div>
 
-            <div class="grid grid-cols-2 lg:mb-40">
-                <div class="texts lg:pr-10">
-                    <p class="visual-design font-caudex text-white text-2xl">Visual Design</p>
+            <div class="why-jumia mt-20">
+                <p class="why-jumia-header-text font-caudex text-white text-xl lg:text-2xl">
+                    Why Jumia
+                </p>
 
-                    <p class="visual-design-deats jumiar-deats lg:my-8">
-                        To make the whole mobile experience uniform and the AR feature, we decided that the home screen
-                        would need a bit of a
-                        tweak and we gave a minimalistic design and has the AR feature right there at the users' reach.
-                        Users can easily search
-                        using the object recognition on the search bar that allows them to scan an object. The app shows
-                        a list of results
-                        available on the Jumia inventory or tests a product from their cart using the AR feature at the
-                        center of the app
-                        navigation.
+                <p class="why-jumia-text font-sf text-primary text-sm mt-4 lg:mt-8">
+                    Jumia is the leading pan-African e-commerce platform active across 11 countries on the continent.
+                    The
+                    platform consists
+                    of a marketplace connecting thousands of sellers to millions of consumers, with integrated logistics
+                    and
+                    digital payment
+                    services. Jumia Marketplace offers goods from a large and diverse group of sellers across various
+                    categories, including
+                    apparel, smartphones, electronics, homeware, and beauty. Jumia also provides consumers with easy
+                    access to
+                    several
+                    services, such as restaurant food delivery and everyday digital services including airtime recharge,
+                    utility
+                    bills
+                    payment, and transport ticketing. These statistics show that Jumia is ready to incorporate
+                    futuristic
+                    technology into
+                    its platform to further increase the user experience.
+                </p>
+
+                <div class="why-jumia-image w-full mt-5 lg:mt-10 mb-20 lg:mb-32">
+                    <a data-lightbox="mygallery" href="../assets/images/gt case study.png"><img
+                            src="../assets/images/gt case study.png" alt=""></a>
+                </div>
+
+                <p class="extended-why-jumia-header-text font-caudex text-white text-xl lg:text-2xl">
+                    Why Jumia
+                </p>
+
+                <p class="extended-why-jumia-details-text font-sf text-primary text-sm mt-4 lg:mt-8">
+                    Imagine the frustration of not knowing the name of that product right there in front of you but
+                    you're so
+                    much in need
+                    of buying one. Not just that, the sad tales of buying a shoe for your next interview just to realize
+                    you got
+                    a toy.
+                </p>
+            </div>
+
+            <div class="ideation mt-24">
+                <p class="ideation-header-text font-caudex text-white text-xl lg:text-2xl lg:mt-40">Ideation</p>
+
+                <p class="ideation-details-text font-sf text-primary text-sm mt-4 lg:mt-8">
+                    One of the challenges of online shopping is not being able to test out
+                    what you want to purchase, so you have to deal with the disappointment after delivery. But with the
+                    integration of AR technology, customers can now practically test out the product from their mobile
+                    devices
+                    by adding the item into their environment in real-time. Not just that, customers can now scan
+                    products
+                    anywhere and make purchases directly from their Jumia app.
+                </p>
+            </div>
+
+            <div class="solution mt-24 space-y-4">
+                <p class="solution-header-text font-caudex text-white text-xl lg:text-2xl lg:mt-40">The Solution</p>
+
+                <p class="solution-details-text font-sf text-primary text-sm">
+                    After understanding the demands for this concept, we decided it would be best to make some UI
+                    upgrades
+                    to the current Jumia app design to suit the experience we wanted to create. Below is a list of what
+                    we
+                    decided to revamp.
+                </p>
+
+                <ol class="the-solution-deats-list font-sf text-primary text-sm list-decimal pl-4 lg:pl-4">
+                    <li>The home screen experience</li>
+                    <li>Create a flow in which the AR feature will be functional</li>
+                    <li>Improve the major UI components of the app to suit the futuristic design</li>
+                    <li>Create 3D models of the products to be showcased</li>
+                </ol>
+            </div>
+
+            <div class="userflow mt-24 lg:mt-40 space-y-5">
+                <p class="userflow-header-text font-caudex text-white text-xl lg:text-2xl">User flow</p>
+
+                <p class="userflow-details-text font-sf text-primary text-sm">
+                    We designed a User flow to validate the idea and create a functional design for the AR feature.
+                </p>
+
+                <div class="userflow-image w-full lg:mb-32">
+                    <a href="../assets/images/gt user flow.png"><img src="../assets/images/gt user flow.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="wireframes lg:mt-40">
+                <p class="wireframes font-caudex text-white text-2xl">Wireframes</p>
+
+                <p class="wireframes-deats lg:my-8">
+                    After creating the User flow, I began creating wireframes to validate the flow and test out possible
+                    visual
+                    elements
+                    that will be used in the design.
+                </p>
+
+                <div class="user-flow-image w-full lg:mt-10 lg:mb-32">
+                    <img src="../assets/images/gt wireframes.png" alt="">
+                </div>
+            </div>
+
+            <div class="design-style-guide lg:mt-40">
+                <p class="design-style-guide font-caudex text-white text-2xl">Wireframes</p>
+
+                <p class="design-style-guide-deats lg:my-8">
+                    After creating the User flow, I began creating wireframes to validate the flow and test out possible
+                    visual
+                    elements
+                    that will be used in the design.
+                </p>
+
+                <div class="design-style-guide-image w-full lg:mt-10 lg:mb-32">
+                    <img src="../assets/images/gt design style.png" alt="">
+                </div>
+            </div>
+
+            <div class="visual-design lg:my-40">
+                <p class="visual-design font-caudex text-white text-2xl">Visual Design</p>
+
+                <p class="visual-design-deats lg:my-8">
+                    In this phase, I jump right into adding colors, and images. During this process, I produce
+                    high-quality
+                    visual designs
+                    as well as guidelines and specifications. While also making emphasis on the AR object so it's clear
+                    for
+                    the user he will
+                    transition into AR mode when tapping on the scanner.
+                </p>
+
+                <div class="visual-design-image w-full lg:mt-10 lg:mb-40">
+                    <img src="../assets/images/gt visual design 1.png" alt="">
+                    <img class="lg:mt-10" src="../assets/images/gt visual design 2.png" alt="">
+                </div>
+
+                <div class="grid grid-cols-2 lg:mb-40">
+                    <div class="texts lg:pr-10">
+                        <p class="visual-design font-caudex text-white text-2xl">Visual Design</p>
+
+                        <p class="visual-design-deats lg:my-8">
+                            To make the whole mobile experience uniform and the AR feature, we decided that the home
+                            screen
+                            would need a bit of a
+                            tweak and we gave a minimalistic design and has the AR feature right there at the users'
+                            reach.
+                            Users can easily search
+                            using the object recognition on the search bar that allows them to scan an object. The app
+                            shows
+                            a list of results
+                            available on the Jumia inventory or tests a product from their cart using the AR feature at
+                            the
+                            center of the app
+                            navigation.
+                        </p>
+                    </div>
+
+                    <img src="../assets/images/gt visual design single.png" alt="">
+                </div>
+
+                <div class="the-screen-search">
+                    <p class="visual-design font-caudex text-white text-2xl">The search screen: A new way to search</p>
+
+                    <p class="visual-design-deats lg:my-8">
+                        The search screen: A new way to search
+                        This is one side of the solution, one we believe will make shopping a more exciting one. With
+                        the
+                        scan to search
+                        feature, users can now search for items they don't know the name of and get instant results from
+                        the
+                        Jumia inventory and
+                        make quick purchases.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-x-10 lg:mt-14">
+                        <img src="../assets/images/search screen 1.png" alt="">
+                        <img src="../assets/images/search screen 2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="test-ar lg:my-40">
+                    <p class="test-ar font-caudex text-white text-2xl">Test AR: Real-time Product Testing</p>
+
+                    <p class="test-ar-deats lg:my-8">
+                        The second part of the solutions features a real-time product test feature using Augmented
+                        Reality
+                        right there from your
+                        mobile phone. This technology helps you simulate products on flat surfaces and your face as
+                        well.
+                        The technology is
+                        limitless and a whole lot can be done using this technological innovation.
+                    </p>
+
+                    <p class="lg:mt-8">Click here to <a class="text-blue-900 underline" href="#">test</a> it
+                        out.</p>
+
+                    <div class="grid grid-cols-2 gap-x-10 lg:mt-10">
+                        <div class="info-1">
+                            <img src="../assets/images/test ar 1.png" alt="">
+
+                            <p class="jumiar-deats lg:mt-8">
+                                To use the feature, the user selects the AR button and scans for a flat surface which
+                                may be
+                                the floor or the wall, the
+                                calibration changes based on the product type.
+                            </p>
+                        </div>
+                        <div class="info-2">
+                            <img src="../assets/images/test ar 2.png" alt="">
+
+                            <p class="jumiar-deats lg:mt-8">
+                                The user is prompted to select a product from their cart or search for a new product
+                                using
+                                the regular search or the
+                                scan option.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="jumiar-deats lg:mt-8">
+                        Once the product is selected, it would be placed on the surface, and the user can take a virtual
+                        tour around the chosen
+                        product.
                     </p>
                 </div>
-
-                <img src="../assets/images/gt visual design single.png" alt="">
             </div>
 
-            <div class="the-screen-search">
-                <p class="visual-design font-caudex text-white text-2xl">The search screen: A new way to search</p>
+            <div class="conclusion lg:mb-40">
+                <p class="font-caudex text-white text-2xl">Conclusion</p>
 
-                <p class="visual-design-deats jumiar-deats lg:my-8">
-                    The search screen: A new way to search
-                    This is one side of the solution, one we believe will make shopping a more exciting one. With the
-                    scan to search
-                    feature, users can now search for items they don't know the name of and get instant results from the
-                    Jumia inventory and
-                    make quick purchases.
+                <p class="conclusion-deats lg:my-8">
+                    The entire design process of this concept design was totally a new experience for me as a designer.
+                    I
+                    got the
+                    opportunity to further learn to understand the basic principles of AR technology and how it affects
+                    human life and
+                    experience. Getting resources to help me focus was very tasking as of the time I started the design
+                    process there were
+                    barely any quality materials to help navigate, so I had to improvise in some areas, I also had to
+                    learn
+                    a bit of 3D
+                    modeling and the concept of 3D geometry. Finally, creating realistic 3D-like angles on Figma was a
+                    completely
+                    mind-blowing experience for me as I never actually thought I'd have been able to do so at first.
                 </p>
 
-                <div class="grid grid-cols-2 gap-x-10 lg:mt-14">
-                    <img src="../assets/images/search screen 1.png" alt="">
-                    <img src="../assets/images/search screen 2.png" alt="">
-                </div>
-            </div>
-
-            <div class="test-ar lg:my-40">
-                <p class="test-ar font-caudex text-white text-2xl">Test AR: Real-time Product Testing</p>
-
-                <p class="test-ar-deats jumiar-deats lg:my-8">
-                    The second part of the solutions features a real-time product test feature using Augmented Reality
-                    right there from your
-                    mobile phone. This technology helps you simulate products on flat surfaces and your face as well.
-                    The technology is
-                    limitless and a whole lot can be done using this technological innovation.
-                </p>
-
-                <p class="lg:mt-8 jumiar-deats">Click here to <a class="text-blue-900 underline" href="#">test</a> it
-                    out.</p>
-
-                <div class="grid grid-cols-2 gap-x-10 lg:mt-10">
-                    <div class="info-1">
-                        <img src="../assets/images/test ar 1.png" alt="">
-
-                        <p class="jumiar-deats lg:mt-8">
-                            To use the feature, the user selects the AR button and scans for a flat surface which may be
-                            the floor or the wall, the
-                            calibration changes based on the product type.
-                        </p>
-                    </div>
-                    <div class="info-2">
-                        <img src="../assets/images/test ar 2.png" alt="">
-
-                        <p class="jumiar-deats lg:mt-8">
-                            The user is prompted to select a product from their cart or search for a new product using
-                            the regular search or the
-                            scan option.
-                        </p>
-                    </div>
-                </div>
-
-                <p class="jumiar-deats lg:mt-8">
-                    Once the product is selected, it would be placed on the surface, and the user can take a virtual
-                    tour around the chosen
-                    product.
+                <p class="conclusion-deats lg:mt-8">
+                    Next time, I will like to work on easier flows for this design and incorporate it into the
+                    application's
+                    web
+                    version. I
+                    also intend to learn 3D modeling to create more precise angles for a more realistic and improved
+                    experience. Thank
+                    you
+                    for following, your time spent is appreciated. Feel free to connect with me on LinkedIn, Behance,
+                    Dribbble, and
+                    Twitter.
                 </p>
             </div>
-        </div>
-
-        <div class="conclusion lg:mb-40">
-            <p class="font-caudex text-white text-2xl">Conclusion</p>
-
-            <p class="conclusion-deats jumiar-deats lg:my-8">
-                The entire design process of this concept design was totally a new experience for me as a designer. I
-                got the
-                opportunity to further learn to understand the basic principles of AR technology and how it affects
-                human life and
-                experience. Getting resources to help me focus was very tasking as of the time I started the design
-                process there were
-                barely any quality materials to help navigate, so I had to improvise in some areas, I also had to learn
-                a bit of 3D
-                modeling and the concept of 3D geometry. Finally, creating realistic 3D-like angles on Figma was a
-                completely
-                mind-blowing experience for me as I never actually thought I'd have been able to do so at first.
-            </p>
-
-            <p class="conclusion-deats jumiar-deats lg:mt-8">
-                Next time, I will like to work on easier flows for this design and incorporate it into the application's
-                web
-                version. I
-                also intend to learn 3D modeling to create more precise angles for a more realistic and improved
-                experience. Thank
-                you
-                for following, your time spent is appreciated. Feel free to connect with me on LinkedIn, Behance,
-                Dribbble, and
-                Twitter.
-            </p>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer class="lg:p-20 dark:bg-black">
         <p class="header-text dark:text-white font-caudex text-5xl">Got an idea? <span class="underline">Let’s build
@@ -335,6 +387,9 @@
     <div id="cursor" class="cursor invisible lg:visible bg-black dark:bg-white">
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
+        integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script type="module" src="js/index.js"></script>

@@ -581,10 +581,11 @@
   <section class="contributions overflow-x-hidden py-16 lg:py-20 pl-7" id="contributions">
     <p class="contribution-header-text font-sf text-xs lg:text-sm lg:tracking-widest dark:text-white">CONTRIBUTIONS</p>
 
-    <p class="bigc-text font-caudex text-5xl lg:text-8xl lg:tracking-tighter text-light dark:text-dark">CONTRIBUTIONS
+    <p class="contribution-text font-caudex text-5xl lg:text-8xl lg:tracking-tighter text-light dark:text-dark">
+      CONTRIBUTIONS
     </p>
 
-    <div class="grid-div w-full lg:mt-16 block space-y-10 lg:grid grid-cols-3 lg:gap-x-72 pr-7">
+    <div class="grid-div w-full mt-10 lg:mt-16 block space-y-7 lg:grid grid-cols-3 lg:gap-x-72 pr-7">
       <div class="presently">
         <div class="presently-container lg:w-80 lg:h-72 p-7 lg:p-7">
           <a href="#">
@@ -661,7 +662,8 @@
           </a>
 
 
-          <p class="desktop-mockup-header-text font-caudex font-semibold text-2xl lg:text-4xl mt-5 lg:mt-10 dark:text-white">
+          <p
+            class="desktop-mockup-header-text font-caudex font-semibold text-2xl lg:text-4xl mt-5 lg:mt-10 dark:text-white">
             Desktop Mockup
           </p>
 
@@ -686,60 +688,60 @@
   </section>
 
   <div class="container mx-auto px-7 sm:px-14 md:px-16 lg:px-24 xl:px-24 2xl:px-28">
-    <section class="more-on-youtube lg:w-full lg:py-20" id="more-on-youtube">
-  
-      <p class="uppercase text-xs lg:text-xs lg:tracking-wider lg:mb-7 dark:text-white">more on youtube...</p>
-  
-      <div class="div overflow-hidden lg:h-48 flex justify-between items-center">
+    <section class="more-on-youtube lg:w-full py-10 lg:py-20" id="more-on-youtube">
+
+      <p class="uppercase font-sf text-xs lg:text-xs lg:tracking-wider lg:mb-7 dark:text-white">more on youtube...</p>
+
+      <div class="div overflow-hidden relative lg:h-48 flex justify-between lg:items-center mt-5">
+        <!-- Blocks for big screens -->
         <div class="blocks flex items-center lg:-ml-10">
           <div class="rotated-block lg:w-16 lg:h-32 lg:mt-10"></div>
           <div class="rotated-block lg:w-16 lg:h-80 lg:mt-0 lg:ml-20 lg:mr-6"></div>
           <div class="rotated-block lg:w-16 lg:h-32 lg:mt-32"></div>
         </div>
-  
-        <div class="texts lg:py-3 lg:px-10">
-          <p class="name capitalize font-caudex font-semibold lg:text-3xl dark:text-white">
+
+        <div class="texts py-5 lg:py-3 px-5 lg:px-10 z-50">
+          <p class="name capitalize font-caudex font-semibold text-base lg:text-3xl dark:text-white">
             ozenua oluwatobi john
           </p>
-  
-          <p class="details lg:py-2 text-sm lg:leading-6">
-            Amet minim mollit non deserunt ullamco est sit aliqua <br> dolor sint. Velit officia consequat duis enim
-            velit
-            mollit.
+
+          <p class="details font-sf text-primary py-2 lg:py-2 text-xs lg:text-sm leading-5 lg:leading-6">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor
+            sint. Velit officia consequat duis enimv velit mollit.
           </p>
-  
-          <p class="subscribe"><a href="#">Subscribe</a></p>
+
+          <p class="subscribe text-xs lg:text-sm"><a href="#">Subscribe</a></p>
+        </div>
+
+        <div class="z-10">
+          <div class="rotated-block lg:hidden w-16 h-80 absolute -bottom-20 right-20"></div>
+          <div class="rotated-block lg:hidden w-16 h-80 absolute -bottom-20 -right-10"></div>
         </div>
       </div>
     </section>
   </div>
 
-  <footer class="hidden lg:block bg-black lg:px-16 lg:py-24">
-    <div class="container mx-auto">
-      <div class="first-container lg:flex justify-between items-end">
-        <div class="texts-container space-y-5">
-          <p class="got-an-idea font-caudex text-white text-5xl">
+  <footer class="bg-black lg:px-16 py-14 lg:py-24">
+    <div class="container mx-auto px-4">
+      <div class="first-container lg:flex justify-between items-end space-y-5 lg:space-y-0 py-8">
+        <div class="texts-container flex lg:block items-baseline space-x-2 lg:space-y-5">
+          <p class="got-an-idea font-caudex text-white text-2xl lg:text-5xl">
             Got an idea?
           </p>
 
-          <p class="lets-talk font-sf text-white text-xl">
-            Let's talk about it
+          <p class="lets-talk font-sf text-white text-base lg:text-xl">
+            Let's talk about it.
           </p>
         </div>
 
-        <div class="contacts text-white text-xs lg:w-2/4">
-          <ul class="flex justify-between items-center lg:mt-8">
-            <li>Instagram</li>
-            <li>Youtube</li>
-            <li>Dribble</li>
-            <li>LinkedIn</li>
-          </ul>
-
-          <ul class="flex justify-between items-center lg:mt-5">
-            <li>Medium</li>
-            <li>Behance</li>
-            <li>Twitter</li>
-            <li>Codepen</li>
+        <div class="contacts font-sf lg:w-2/4 text-white text-xs">
+          <div class="grid grid-cols-4 gap-y-3 text-xs lg:text-base items-center">
+            <a class="instagram-footer-link" href="#">Instagram</a>
+            <a class="youtube-footer-link" href="#">Youtube</a>
+            <a class="dribble-footer-link" href="#">Dribble</a>
+            <a class="linkedin-footer-link" href="#">LinkedIn</a>
+            <a class="behance-footer-link" href="#">Behance</a>
+            <a class="twitter-footer-link" href="#">Twitter</a>
           </ul>
         </div>
       </div>
