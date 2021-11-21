@@ -1,25 +1,9 @@
-nav {
-  font-family: "Sf Pro Text";
-  font-weight: 400;
-}
-
-.hero {
-  .text-details {
-    font-family: "Sf Pro Text";
-  }
-}
-
 .featured-projects {
-  .p-text {
-    font-size: 130px;
-    // color: rgba(241, 241, 241, 1);
-    padding: 0;
-  }
-
-  .fp-text {
-    font-family: "Sf Pro Text";
-    font-weight: 400;
-  }
+  // .p-text {
+  //   font-size: 130px;
+  //   // color: rgba(241, 241, 241, 1);
+  //   padding: 0;
+  // }
 
   .num {
     color: rgba(96, 88, 116, 1);
@@ -43,39 +27,21 @@ nav {
     }
   }
 
-  .deats {
-    color: rgba(144, 144, 144, 1);
-    font-family: "Sf Pro Text";
-  }
+  // .deats {
+  //   color: rgba(144, 144, 144, 1);
+  //   font-family: "Sf Pro Text";
+  // }
 
-  .bottom {
-    color: rgba(144, 144, 144, 1);
-    font-family: "Sf Pro Text";
-    font-weight: 400;
-  }
+  // .bottom {
+  //   color: rgba(144, 144, 144, 1);
+  //   font-family: "Sf Pro Text";
+  //   font-weight: 400;
+  // }
 }
 
 .contributions {
-  .c-text {
-    font-family: "Sf Pro Text";
-  }
-
-  .bigc-text {
-    font-size: 150px;
-    // color: rgba(241, 241, 241, 1);
-    padding: 0;
-  }
-
   .grid-div {
-    .deats {
-      font-family: "Sf Pro Text";
-      color: rgba(130, 130, 130, 1);
-      font-size: 13px;
-    }
-
-    .open-in-figma {
-      font-family: "Sf Pro Text";
-      color: rgba(130, 130, 130, 1);
+    .open-in-figma-text {
       position: relative;
 
       &::after {
@@ -83,7 +49,7 @@ nav {
         position: absolute;
         left: 0;
         top: 100%;
-        width: 95px;
+        width: 100%;
         height: 1px;
         background: rgba(130, 130, 130, 1);
         transition: 800ms;
@@ -97,12 +63,6 @@ nav {
 }
 
 .more-on-youtube {
-  font-family: "Sf Pro Text";
-
-  .details {
-    color: rgba(144, 144, 144, 1);
-  }
-
   .subscribe {
     color: rgba(255, 96, 96, 1);
   }

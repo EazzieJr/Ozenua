@@ -1,22 +1,3 @@
-nav {
-  font-family: "Sf Pro Text";
-  font-weight: 400;
-}
-
-.hero .text-details {
-  font-family: "Sf Pro Text";
-}
-
-.featured-projects .p-text {
-  font-size: 130px;
-  padding: 0;
-}
-
-.featured-projects .fp-text {
-  font-family: "Sf Pro Text";
-  font-weight: 400;
-}
-
 .featured-projects .num {
   color: #605874;
 }
@@ -39,44 +20,16 @@ nav {
   -o-transform: translate(25px, 12px);
 }
 
-.featured-projects .deats {
-  color: #909090;
-  font-family: "Sf Pro Text";
-}
-
-.featured-projects .bottom {
-  color: #909090;
-  font-family: "Sf Pro Text";
-  font-weight: 400;
-}
-
-.contributions .c-text {
-  font-family: "Sf Pro Text";
-}
-
-.contributions .bigc-text {
-  font-size: 150px;
-  padding: 0;
-}
-
-.contributions .grid-div .deats {
-  font-family: "Sf Pro Text";
-  color: #828282;
-  font-size: 13px;
-}
-
-.contributions .grid-div .open-in-figma {
-  font-family: "Sf Pro Text";
-  color: #828282;
+.contributions .grid-div .open-in-figma-text {
   position: relative;
 }
 
-.contributions .grid-div .open-in-figma::after {
+.contributions .grid-div .open-in-figma-text::after {
   content: "";
   position: absolute;
   left: 0;
   top: 100%;
-  width: 95px;
+  width: 100%;
   height: 1px;
   background: #828282;
   transition: 800ms;
@@ -84,14 +37,6 @@ nav {
   -moz-transition: 800ms;
   -ms-transition: 800ms;
   -o-transition: 800ms;
-}
-
-.more-on-youtube {
-  font-family: "Sf Pro Text";
-}
-
-.more-on-youtube .details {
-  color: #909090;
 }
 
 .more-on-youtube .subscribe {
@@ -105,7 +50,18 @@ nav {
   line-height: 30px;
 }
 
+.gt .gt-deats {
+  font-family: "Sf Pro Text";
+  color: #828282;
+  font-size: 15.4px;
+  line-height: 30px;
+}
+
 .contacts {
+  font-family: 'Sf Pro Text';
+}
+
+.font-sf {
   font-family: 'Sf Pro Text';
 }
 /*# sourceMappingURL=texts.css.map */

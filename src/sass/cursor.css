@@ -9,6 +9,9 @@
 
 .cursor.media-blend {
   z-index: 100;
+  mix-blend-mode: exclusion;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .cursor:before {

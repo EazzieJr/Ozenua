@@ -1,11 +1,3 @@
-.block {
-  transform: rotate(31deg);
-  -webkit-transform: rotate(31deg);
-  -moz-transform: rotate(31deg);
-  -ms-transform: rotate(31deg);
-  -o-transform: rotate(31deg);
-}
-
 .contributions .grid-div div {
   border: 1px solid #333333;
 }
@@ -14,16 +6,21 @@
   border: 1px solid #333333;
 }
 
-.more-on-youtube .block {
+.more-on-youtube .div .rotated-block {
+  transform: rotate(31deg);
+  -webkit-transform: rotate(31deg);
+  -moz-transform: rotate(31deg);
+  -ms-transform: rotate(31deg);
+  -o-transform: rotate(31deg);
   background-color: #141217;
 }
 
-.jumiar .case-study {
+.header .case-study {
   position: relative;
 }
 
-.jumiar .case-study::before {
-  content: '';
+.header .case-study::before {
+  content: "";
   position: absolute;
   height: 1px;
   width: 100%;
@@ -32,8 +29,8 @@
   background-color: #333;
 }
 
-.jumiar .case-study::after {
-  content: '';
+.header .case-study::after {
+  content: "";
   position: absolute;
   height: 1px;
   width: 100%;
@@ -42,9 +39,34 @@
   background-color: #333;
 }
 
-.jumiar .deats {
+.header .deats {
   font-family: "Sf Pro Text";
   color: #828282;
   font-size: 13px;
+}
+
+footer .container .first-container {
+  padding: 50px 0px;
+  position: relative;
+}
+
+footer .container .first-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #f1f1f1;
+}
+
+footer .container .first-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #f1f1f1;
 }
 /*# sourceMappingURL=style.css.map */
