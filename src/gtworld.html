@@ -27,30 +27,41 @@
 <body class="bg-white dark:bg-dark">
     <div class="container mx-auto px-7 sm:px-14 md:px-16 lg:px-24 xl:px-24 2xl:px-28">
         <nav>
-            <div class="nav-container dark:text-white  lg:py-7 flex justify-between items-center tracking-widest">
+            <div class="nav-container font-sf dark:text-white py-4 lg:py-7 flex justify-between items-center tracking-widest">
                 <div class="logo">
-                    <a href="index.html">
-                        <p class="lg:text-tiny">OZENUA OLUWATOBI</p>
-                    </a>
+                    <p class="text-tiny lg:text-tiny">
+                        <a href="index.html">OZENUA OLUWATOBI</a>
+                    </p>
                 </div>
-
-                <div class="navlist lg:w-60">
-                    <ul class="flex justify-between items-center text-center lg:text-tiny">
+        
+                <div class="navlist hidden lg:block lg:w-60">
+                    <ul class="flex justify-between border items-center text-center lg:text-tiny">
                         <li><a href="#">CONTACT ME</a></li>
                         <li><a href="#">CASES</a></li>
                         <li><a href="#">RESUME</a></li>
                     </ul>
                 </div>
+        
+                <!-- Hamburger for small screens -->
+                <div class="small-menu-burger flex items-center lg:hidden">
+                    <a href="#">
+                        <div id="menu-btn" class="menu-btn p-1 transform scale-0" onclick="openMenu()">
+                            <div class="menu-btn-burger rounded-sm rounded-l rounded-r">
+        
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </nav>
-
-        <section class="header lg:py-16">
-            <p class="header-text dark:text-white font-caudex text-lg4xl">JUMIAR : An AR Experience in <br> Mobile
-                Commerce.
+        
+        <section class="header space-y-7 py-10 lg:py-16">
+            <p class="header-text dark:text-white font-caudex text-xl lg:text-lg4xl">
+                GTBank : A new way to bank.
             </p>
-
-            <div class="case-study w-full lg:h-16 lg:my-14 flex items-center">
-                <ul class="case-study-list deats w-full text-primary flex justify-between align-center">
+        
+            <div class="case-studies w-full flex items-center py-5">
+                <ul class="case-study-list font-sf w-full text-xs text-primary flex justify-between align-center">
                     <li>UX Reasearch</li>
                     <li>UI Design</li>
                     <li>Visual Design</li>
@@ -59,7 +70,7 @@
             </div>
         </section>
 
-        <section class="gt">
+        <section class="gtworld mt-10">
             <img src="../assets/images/welcome image.png" alt="">
 
             <div class="about">
