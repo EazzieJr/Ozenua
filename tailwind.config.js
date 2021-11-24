@@ -52,7 +52,9 @@ module.exports = {
         'dark': '#18161D'
       },
       colors: {
-        'dark': '#0C0B0E'
+        'dark': '#0C0B0E',
+        'darkblock': '#141217',
+        'lightblock ': '#F2F2F2'
       }
     },
   },
