@@ -20,7 +20,8 @@
 <body class="bg-white dark:bg-dark">
   <div class="container mx-auto px-8 sm:px-14 md:px-16 lg:px-24 xl:px-24 2xl:px-28">
     <nav>
-      <div class="nav-container font-sf dark:text-white py-4 lg:py-7 flex justify-between items-center tracking-widest">
+      <div
+        class="nav-container font-sf dark:text-white py-4 sm:py-6 lg:py-7 flex justify-between items-center tracking-widest">
         <div class="logo">
           <p class="text-tiny lg:text-tiny">
             <a href="index.html">OZENUA OLUWATOBI</a>
@@ -48,33 +49,34 @@
       </div>
     </nav>
 
-    <section class="hero py-14 lg:py-16" id="hero">
+    <section class="hero py-14 md:py-16" id="hero">
       <div class="hero-container">
         <!-- Hero header for small screens -->
-        <p class="hero-header-text lg:hidden font-caudex dark:text-white text-5xl sm:text-6xl text-left tracking-tight">
+        <p class="hero-header-text md:hidden font-caudex dark:text-white text-5xl sm:text-6xl text-left tracking-tight">
           Hey, I'm Ozenua.
         </p>
 
         <!-- Hero header for big screens -->
         <p
-          class="hero-header-text hidden lg:block font-caudex dark:text-white lg:font-normal lg:text-7xl text-left tracking-tight">
+          class="hero-header-text hidden md:block font-caudex dark:text-white lg:font-normal md:text-6xl lg:text-7xl text-left tracking-tight">
           Hey, I'm Ozenua.
         </p>
 
         <!-- Scroll, text and floating svg for big screens -->
-        <div class="scroll-and-text lg:w-2/3 mt-5 lg:mt-5 hidden lg:flex justify-between items-center">
-          <div class="vertical-line hidden lg:flex flex-col items-center">
-            <div class="vert relative lg:h-56 lg:w-px bg-gray-300 dark:bg-gray-900 overflow-x-hidden">
-              <div class="inner-vert absolute bottom-0 lg:h-28 lg:w-px bg-black dark:bg-white"></div>
+        <div class="scroll-and-text md:w-4/5 lg:w-2/3 mt-5 hidden md:flex justify-between items-center">
+          <div class="vertical-line hidden md:flex flex-col items-center">
+            <div class="vert relative md:h-56 md:w-px bg-gray-300 dark:bg-gray-900 overflow-x-hidden">
+              <div class="inner-vert absolute bottom-0 md:h-28 md:w-px bg-black dark:bg-white"></div>
             </div>
 
-            <div class="navigate-down lg:mt-10">
+            <div class="navigate-down md:mt-10">
               <svg class="arrow-down w-3" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M0.21967 0.71967C-0.0732233 1.01256 -0.0732233 1.48744 0.21967 1.78033L6.46967 8.03033C6.76256 8.32322 7.23744 8.32322 7.53033 8.03033L13.7803 1.78033C14.0732 1.48744 14.0732 1.01256 13.7803 0.71967C13.4874 0.426777 13.0126 0.426777 12.7197 0.71967L7 6.43934L1.28033 0.71967C0.987437 0.426777 0.512563 0.426777 0.21967 0.71967Z"
                   fill="#24292E" />
               </svg>
-              <svg class="arrow-down w-3 lg:my-1" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="arrow-down w-3 md:my-px lg:my-1" viewBox="0 0 14 9" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M0.21967 0.71967C-0.0732233 1.01256 -0.0732233 1.48744 0.21967 1.78033L6.46967 8.03033C6.76256 8.32322 7.23744 8.32322 7.53033 8.03033L13.7803 1.78033C14.0732 1.48744 14.0732 1.01256 13.7803 0.71967C13.4874 0.426777 13.0126 0.426777 12.7197 0.71967L7 6.43934L1.28033 0.71967C0.987437 0.426777 0.512563 0.426777 0.21967 0.71967Z"
                   fill="#24292E" />
@@ -87,14 +89,15 @@
             </div>
           </div>
 
-          <p class="hero-details-text font-sf text-xs lg:text-sm text-left text-primary lg:mb-10 lg:leading-7 lg:w-3/5">
+          <p
+            class="hero-details-text font-sf text-xs md:text-sm text-left text-primary md:mb-5 lg:mb-10 lg:leading-7 md:w-3/5">
             I am a product designer and a design enthusiast. I love creating seamless userexperiences and digital
             user interfaces. I am passionate about solving complex problems through data-driven processes that
             translate business objectives into solutions, putting empathy for the user as a key ingredient.
           </p>
 
-          <div class="floating-circle flex justify-center items-center lg:mb-20">
-            <svg class="lg:w-32" viewBox="0 0 199 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="floating-circle flex justify-center items-center md:mb-10 lg:mb-20">
+            <svg class="md:w-32" viewBox="0 0 199 177" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M42.8722 169.863L43.4213 170.311L39.8269 174.713L37.1547 172.531L37.5583 172.036L39.6814 173.77L40.9168 172.257L38.9676 170.665L39.3662 170.177L41.3154 171.769L42.8722 169.863Z"
                 fill="#454545" />
@@ -266,8 +269,9 @@
         </div>
 
         <!-- Scroll, text and floating svg for small screens -->
-        <div class="scroll-and-text lg:w-2/3 mt-5 lg:mt-5 lg:hidden justify-between items-center">
-          <p class="hero-details-text font-sf text-xs sm:text-base text-left text-primary lg:mb-10 lg:leading-7 lg:w-3/5">
+        <div class="scroll-and-text lg:w-2/3 mt-5 lg:mt-5 md:hidden justify-between items-center">
+          <p
+            class="hero-details-text font-sf text-xs sm:text-base text-left text-primary lg:mb-10 lg:leading-7 lg:w-3/5">
             I am a product designer and a design enthusiast. I love creating seamless userexperiences and digital
             user interfaces. I am passionate about solving complex problems through data-driven processes that
             translate business objectives into solutions, putting empathy for the user as a key ingredient.
@@ -470,23 +474,25 @@
       </div>
     </section>
 
-    <section class="featured-projects py-16 lg:py-20 font-normal" id="featured-projects"> 
+    <section class="featured-projects py-16 lg:py-20 font-normal" id="featured-projects">
       <p class="font-sf text-xs lg:text-sm lg:tracking-widest dark:text-white">FEATURED PROJECTS</p>
 
-      <p class="pojects-big-text font-caudex text-light text-lg5xl sm:text-lg7xl lg:text-8xl lg:tracking-tighter dark:text-dark">
+      <p
+        class="projects-big-text font-caudex text-light text-lg5xl sm:text-lg7xl md:text-9xl lg:tracking-tighter dark:text-dark">
         PROJECTS
       </p>
 
       <div class="scroll-and-projects flex justify-between mt-16 lg:pt-20 lg:pb-20">
-        <div class="vertical-scroll relative h-40 lg:h-56 w-px lg:w-px bg-gray-300 dark:bg-gray-900 overflow-x-hidden">
-          <div class="inner-vertical-scroll absolute bottom-0 h-20 lg:h-28 w-px lg:w-px bg-black dark:bg-white"></div>
+        <div class="vertical-scroll relative h-40 md:h-56 w-px bg-gray-300 dark:bg-gray-900 overflow-x-hidden">
+          <div class="inner-vertical-scroll absolute bottom-0 h-20 md:h-28 w-px bg-black dark:bg-white"></div>
         </div>
 
         <div class="projects space-y-10 sm:space-y-14 w-3/4 lg:pl-28">
           <div class="jumiar lg:mb-0">
-            <p class="num font-caudex text-sm sm:text-base lg:text-xl">01</p>
+            <p class="num font-caudex text-sm sm:text-base md:text-lg lg:text-xl">01</p>
 
-            <p class="juimar-header-text font-caudex my-2 lg:pb-5 text-xl sm:text-2xl lg:text-5xl tracking-tighter dark:text-white">
+            <p
+              class="juimar-header-text font-caudex my-2 md:pb-3 lg:pb-5 text-xl sm:text-2xl md:text-lg3xl lg:text-5xl tracking-tighter dark:text-white">
               <a href="jumiar.html">
                 JUMIAR
               </a>
@@ -499,10 +505,10 @@
           </div>
 
           <div class="gtworld lg:mb-0">
-            <p class="num font-caudex text-sm sm:text-base lg:text-xl">02</p>
+            <p class="num font-caudex text-sm sm:text-base md:text-lg lg:text-xl">02</p>
 
             <p
-              class="gtworld-header-text font-caudex my-2 lg:pb-5 text-xl sm:text-2xl lg:text-5xl tracking-tighter dark:text-white">
+              class="gtworld-header-text font-caudex my-2 md:pb-3 lg:pb-5 text-xl sm:text-2xl md:text-lg3xl lg:text-5xl tracking-tighter dark:text-white">
               <a href="gtworld.html">
                 GTWorld Banking App
               </a>
@@ -515,9 +521,10 @@
           </div>
 
           <div class="crptly lg:mb-0">
-            <p class="num font-caudex text-sm sm:text-base lg:text-xl">03</p>
+            <p class="num font-caudex text-sm sm:text-base md:text-lg lg:text-xl">03</p>
 
-            <p class="crptly-header-text font-caudex my-2 lg:pb-5 text-xl sm:text-2xl lg:text-5xl tracking-tighter dark:text-white">
+            <p
+              class="crptly-header-text font-caudex my-2 md:pb-3 lg:pb-5 text-xl sm:text-2xl md:text-lg3xl lg:text-5xl tracking-tighter dark:text-white">
               <a href="crptly.html">
                 Crptly
               </a>
@@ -530,9 +537,10 @@
           </div>
 
           <div class="paysure lg:mb-0">
-            <p class="num font-caudex text-sm sm:text-base lg:text-xl">04</p>
+            <p class="num font-caudex text-sm sm:text-base md:text-lg lg:text-xl">04</p>
 
-            <p class="paysure-header-text font-caudex my-2 lg:pb-5 text-xl sm:text-2xl lg:text-5xl tracking-tighter dark:text-white">
+            <p
+              class="paysure-header-text font-caudex my-2 md:pb-3 lg:pb-5 text-xl sm:text-2xl md:text-lg3xl lg:text-5xl tracking-tighter dark:text-white">
               <a href="paysure.html">
                 Paysure
               </a>
@@ -546,24 +554,26 @@
         </div>
       </div>
 
-      <div class="community-quote flex justify-between pt-20 lg:pt-20 lg:px-32">
-        <svg class="w-8 lg:w-10 mb-5 lg:mb-10" viewBox="0 0 69 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="community-quote flex justify-between mt-20 md:mt-24 md:px-20 lg:px-32">
+        <svg class="w-8 md:w-9 lg:w-10 mb-5 md:mb-7 lg:mb-10" viewBox="0 0 69 49" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <path
             d="M0.528643 39.7799V38.8943L1.02064 30.5305C1.08624 29.4153 1.61103 27.5785 2.59501 25.0202C5.80936 15.2459 11.9429 7.76761 20.9955 2.58529C22.8979 1.14211 24.6363 0.420521 26.2107 0.420521C27.457 0.48612 28.605 0.912513 29.6546 1.6997C29.917 2.15889 30.0482 2.61809 30.0482 3.07728C30.0482 3.79887 29.753 4.45486 29.1626 5.04525C28.3098 5.96364 26.8995 6.94762 24.9315 7.99721C18.3716 11.474 14.3044 16.2955 12.7301 22.4618C19.8804 22.921 23.4555 25.8729 23.4555 31.3177V31.9081L22.8651 40.2719C22.4059 45.4543 18.5028 48.1766 11.1557 48.439C4.07099 47.9798 0.528643 45.0935 0.528643 39.7799ZM38.8057 39.7799V38.8943L39.2977 30.5305C39.3633 29.4153 39.7897 27.7753 40.5768 25.6105L42.5448 20.789C45.8248 13.3763 51.4007 7.30842 59.2726 2.58529C61.1749 1.14211 62.9461 0.420521 64.5861 0.420521C65.8325 0.48612 66.9477 0.912513 67.9316 1.6997C68.2596 2.22449 68.4236 2.71649 68.4236 3.17568C68.4236 3.83167 68.1284 4.45486 67.538 5.04525C66.6197 5.96364 65.1765 6.94762 63.2085 7.99721C56.6486 11.474 52.5815 16.2955 51.0071 22.4618C58.1574 22.921 61.7325 25.8401 61.7325 31.2193V31.9081L61.2405 40.2719C60.7813 45.7822 57.3702 48.5374 51.0071 48.5374C50.4167 48.4718 49.8919 48.439 49.4327 48.439C42.348 48.439 38.8057 45.5526 38.8057 39.7799Z"
             fill="#18161D" />
         </svg>
 
         <div class="text-center space-y-2 w-4/5 px-5">
-          <p class="top uppercase text-tiny lg:text-xs tracking-widest dark:text-white">online design community builder
+          <p class="top uppercase text-tiny md:text-xs tracking-widest dark:text-white">online design community builder
           </p>
 
-          <p class="bottom text-sm sm:text-base lg:text-lg text-primary lg:leading-7 lg:pt-3">
+          <p class="bottom text-sm sm:text-base md:text-lg text-primary lg:leading-7 lg:pt-3">
             I have also contributed immensely to the online design
             community with asset files, online videos and articles.
           </p>
         </div>
 
-        <svg class="w-8 lg:w-10 mb-5 lg:mb-10" viewBox="0 0 69 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="w-8 md:w-9 lg:w-10 mb-5 md:mb-7 lg:mb-10" viewBox="0 0 69 49" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <path
             d="M68.4714 39.7799V38.8943L67.9794 30.5305C67.9138 29.4153 67.389 27.5785 66.405 25.0202C63.1906 15.2459 57.0571 7.76761 48.0045 2.58529C46.1021 1.14211 44.3637 0.420521 42.7893 0.420521C41.543 0.48612 40.395 0.912513 39.3454 1.6997C39.083 2.15889 38.9518 2.61809 38.9518 3.07728C38.9518 3.79887 39.247 4.45486 39.8374 5.04525C40.6902 5.96364 42.1005 6.94762 44.0685 7.99721C50.6284 11.474 54.6956 16.2955 56.2699 22.4618C49.1196 22.921 45.5445 25.8729 45.5445 31.3177V31.9081L46.1349 40.2719C46.5941 45.4543 50.4972 48.1766 57.8443 48.439C64.929 47.9798 68.4714 45.0935 68.4714 39.7799ZM30.1943 39.7799V38.8943L29.7023 30.5305C29.6367 29.4153 29.2103 27.7753 28.4232 25.6105L26.4552 20.789C23.1752 13.3763 17.5993 7.30842 9.72743 2.58529C7.82506 1.14211 6.05388 0.420521 4.41391 0.420521C3.16753 0.48612 2.05234 0.912513 1.06836 1.6997C0.740364 2.22449 0.576366 2.71649 0.576366 3.17568C0.576366 3.83167 0.871562 4.45486 1.46195 5.04525C2.38034 5.96364 3.82352 6.94762 5.79149 7.99721C12.3514 11.474 16.4185 16.2955 17.9929 22.4618C10.8426 22.921 7.26747 25.8401 7.26747 31.2193V31.9081L7.75946 40.2719C8.21865 45.7822 11.6298 48.5374 17.9929 48.5374C18.5833 48.4718 19.1081 48.439 19.5673 48.439C26.652 48.439 30.1943 45.5526 30.1943 39.7799Z"
             fill="#18161D" />
@@ -572,112 +582,117 @@
     </section>
   </div>
 
-  <section class="contributions overflow-x-hidden py-16 lg:py-20 pl-7 sm:pl-14" id="contributions">
-    <p class="contribution-header-text font-sf text-xs lg:text-sm lg:tracking-widest dark:text-white">CONTRIBUTIONS</p>
+  <section class="contributions py-16 lg:py-20 pl-7 sm:pl-14" id="contributions">
+    <div class="container mx-auto overflow-x-hidden">
+      <p class="contribution-header-text font-sf text-xs lg:text-sm lg:tracking-widest dark:text-white">CONTRIBUTIONS
+      </p>
 
-    <p class="contribution-text font-caudex text-5xl sm:text-lg7xl lg:text-8xl lg:tracking-tighter text-light dark:text-dark">
-      CONTRIBUTIONS
-    </p>
+      <p
+        class="contribution-text font-caudex text-5xl sm:text-lg7xl md:text-9xl lg:tracking-tighter text-light dark:text-dark">
+        CONTRIBUTIONS
+      </p>
 
-    <div class="grid-div w-full mt-10 lg:mt-16 block space-y-7 lg:grid grid-cols-3 lg:gap-x-72 pr-7 sm:pr-14">
-      <div class="presently">
-        <div class="presently-container lg:w-80 lg:h-72 p-7 lg:p-7">
-          <a href="#">
-            <svg class="w-3 sm:w-4 lg:w-5" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M26.0208 22.2909C26.8837 22.2909 27.5833 21.5914 27.5833 20.7284L27.5832 1.97848C27.5832 1.11553 26.8837 0.415979 26.0207 0.415979L7.27076 0.415977C6.40781 0.415977 5.70825 1.11553 5.70825 1.97848C5.70825 2.84142 6.40781 3.54098 7.27075 3.54098L22.2485 3.54098L0.957567 24.8319C0.347372 25.4421 0.347372 26.4314 0.957567 27.0416C1.56776 27.6518 2.55708 27.6518 3.16728 27.0416L24.4582 5.75068L24.4583 20.7284C24.4583 21.5914 25.1578 22.2909 26.0208 22.2909Z"
-                fill="#2D2D2F" />
-            </svg>
-          </a>
-
-
-          <p class="presently-header-text font-caudex font-semibold text-2xl sm:text-3xl lg:text-4xl mt-5 lg:mt-10 dark:text-white">
-            Presently
-           </p>
-
-          <p class="presently-details-text font-sf text-primary text-xs mt-2 lg:mt-4 sm:pr-16 leading-5">
-            I have also contributed immensely to the online design community with
-            asset files, online videos and articles.
-          </p>
-
-          <p class="open-in-figma-link text-xs lg:text-sm mt-3 lg:mt-5 flex items-center space-x-2">
-            <a href="#" class="open-in-figma-text font-sf text-primary">Open in Figma</a>
-            <a href="#" class="">
-              <svg class="w-2 lg:w-3" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div
+        class="grid-div w-full mt-10 lg:mt-16 block space-y-7 md:space-y-0 md:grid grid-cols-3 md:gap-x-72 lg:gap-x-72 pr-7 sm:pr-14 md:pr-0">
+        <div class="presently">
+          <div class="presently-container md:w-60 lg:w-80 md:h-52 lg:h-72 p-7 lg:p-7">
+            <a href="#">
+              <svg class="w-3 sm:w-4 lg:w-5" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M10.2197 14.0303C10.5126 14.3232 10.9874 14.3232 11.2803 14.0303L17.5303 7.78033C17.8232 7.48744 17.8232 7.01256 17.5303 6.71967L11.2803 0.46967C10.9874 0.176777 10.5126 0.176777 10.2197 0.46967C9.92678 0.762563 9.92678 1.23744 10.2197 1.53033L15.1893 6.5L0.75 6.5C0.335786 6.5 0 6.83579 0 7.25C0 7.66421 0.335786 8 0.75 8L15.1893 8L10.2197 12.9697C9.92678 13.2626 9.92678 13.7374 10.2197 14.0303Z"
-                  fill="#909090" />
+                  d="M26.0208 22.2909C26.8837 22.2909 27.5833 21.5914 27.5833 20.7284L27.5832 1.97848C27.5832 1.11553 26.8837 0.415979 26.0207 0.415979L7.27076 0.415977C6.40781 0.415977 5.70825 1.11553 5.70825 1.97848C5.70825 2.84142 6.40781 3.54098 7.27075 3.54098L22.2485 3.54098L0.957567 24.8319C0.347372 25.4421 0.347372 26.4314 0.957567 27.0416C1.56776 27.6518 2.55708 27.6518 3.16728 27.0416L24.4582 5.75068L24.4583 20.7284C24.4583 21.5914 25.1578 22.2909 26.0208 22.2909Z"
+                  fill="#2D2D2F" />
               </svg>
             </a>
-          </p>
+
+            <p
+              class="presently-header-text font-caudex font-semibold text-2xl sm:text-3xl lg:text-4xl mt-5 lg:mt-10 dark:text-white">
+              Presently
+            </p>
+
+            <p class="presently-details-text font-sf text-primary text-xs mt-2 lg:mt-4 sm:pr-16 leading-5">
+              I have also contributed immensely to the online design community with
+              asset files, online videos and articles.
+            </p>
+
+            <p class="open-in-figma-link text-xs lg:text-sm mt-3 lg:mt-5 flex items-center space-x-2">
+              <a href="#" class="open-in-figma-text font-sf text-primary">Open in Figma</a>
+              <a href="#" class="">
+                <svg class="w-2 lg:w-3" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.2197 14.0303C10.5126 14.3232 10.9874 14.3232 11.2803 14.0303L17.5303 7.78033C17.8232 7.48744 17.8232 7.01256 17.5303 6.71967L11.2803 0.46967C10.9874 0.176777 10.5126 0.176777 10.2197 0.46967C9.92678 0.762563 9.92678 1.23744 10.2197 1.53033L15.1893 6.5L0.75 6.5C0.335786 6.5 0 6.83579 0 7.25C0 7.66421 0.335786 8 0.75 8L15.1893 8L10.2197 12.9697C9.92678 13.2626 9.92678 13.7374 10.2197 14.0303Z"
+                    fill="#909090" />
+                </svg>
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="memoji">
-        <div class="memoji-container lg:w-80 lg:h-72 p-7 lg:p-7">
-          <a href="#">
-            <svg class="w-3 sm:w-4 lg:w-5" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M26.0208 22.2909C26.8837 22.2909 27.5833 21.5914 27.5833 20.7284L27.5832 1.97848C27.5832 1.11553 26.8837 0.415979 26.0207 0.415979L7.27076 0.415977C6.40781 0.415977 5.70825 1.11553 5.70825 1.97848C5.70825 2.84142 6.40781 3.54098 7.27075 3.54098L22.2485 3.54098L0.957567 24.8319C0.347372 25.4421 0.347372 26.4314 0.957567 27.0416C1.56776 27.6518 2.55708 27.6518 3.16728 27.0416L24.4582 5.75068L24.4583 20.7284C24.4583 21.5914 25.1578 22.2909 26.0208 22.2909Z"
-                fill="#2D2D2F" />
-            </svg>
-          </a>
-
-
-          <p class="memoji-header-text font-caudex font-semibold text-2xl sm:text-3xl lg:text-4xl mt-5 lg:mt-10 dark:text-white">
-            Memoji
-          </p>
-
-          <p class="memoji-details-text font-sf text-primary text-xs mt-2 lg:mt-4 sm:pr-16 leading-5">
-            I have also contributed immensely to the online design community with
-            asset files, online videos and articles.
-          </p>
-
-          <p class="open-in-figma-link text-xs lg:text-sm mt-3 lg:mt-5 flex items-center space-x-2">
-            <a href="#" class="open-in-figma-text font-sf text-primary">Open in Figma</a>
-            <a href="#" class="">
-              <svg class="w-2 lg:w-3" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="presently">
+          <div class="presently-container lg:w-80 lg:h-72 p-7 lg:p-7">
+            <a href="#">
+              <svg class="w-3 sm:w-4 lg:w-5" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M10.2197 14.0303C10.5126 14.3232 10.9874 14.3232 11.2803 14.0303L17.5303 7.78033C17.8232 7.48744 17.8232 7.01256 17.5303 6.71967L11.2803 0.46967C10.9874 0.176777 10.5126 0.176777 10.2197 0.46967C9.92678 0.762563 9.92678 1.23744 10.2197 1.53033L15.1893 6.5L0.75 6.5C0.335786 6.5 0 6.83579 0 7.25C0 7.66421 0.335786 8 0.75 8L15.1893 8L10.2197 12.9697C9.92678 13.2626 9.92678 13.7374 10.2197 14.0303Z"
-                  fill="#909090" />
+                  d="M26.0208 22.2909C26.8837 22.2909 27.5833 21.5914 27.5833 20.7284L27.5832 1.97848C27.5832 1.11553 26.8837 0.415979 26.0207 0.415979L7.27076 0.415977C6.40781 0.415977 5.70825 1.11553 5.70825 1.97848C5.70825 2.84142 6.40781 3.54098 7.27075 3.54098L22.2485 3.54098L0.957567 24.8319C0.347372 25.4421 0.347372 26.4314 0.957567 27.0416C1.56776 27.6518 2.55708 27.6518 3.16728 27.0416L24.4582 5.75068L24.4583 20.7284C24.4583 21.5914 25.1578 22.2909 26.0208 22.2909Z"
+                  fill="#2D2D2F" />
               </svg>
             </a>
-          </p>
+
+            <p
+              class="presently-header-text font-caudex font-semibold text-2xl sm:text-3xl lg:text-4xl mt-5 lg:mt-10 dark:text-white">
+              Presently
+            </p>
+
+            <p class="presently-details-text font-sf text-primary text-xs mt-2 lg:mt-4 sm:pr-16 leading-5">
+              I have also contributed immensely to the online design community with
+              asset files, online videos and articles.
+            </p>
+
+            <p class="open-in-figma-link text-xs lg:text-sm mt-3 lg:mt-5 flex items-center space-x-2">
+              <a href="#" class="open-in-figma-text font-sf text-primary">Open in Figma</a>
+              <a href="#" class="">
+                <svg class="w-2 lg:w-3" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.2197 14.0303C10.5126 14.3232 10.9874 14.3232 11.2803 14.0303L17.5303 7.78033C17.8232 7.48744 17.8232 7.01256 17.5303 6.71967L11.2803 0.46967C10.9874 0.176777 10.5126 0.176777 10.2197 0.46967C9.92678 0.762563 9.92678 1.23744 10.2197 1.53033L15.1893 6.5L0.75 6.5C0.335786 6.5 0 6.83579 0 7.25C0 7.66421 0.335786 8 0.75 8L15.1893 8L10.2197 12.9697C9.92678 13.2626 9.92678 13.7374 10.2197 14.0303Z"
+                    fill="#909090" />
+                </svg>
+              </a>
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="desktop-mockup">
-        <div class="desktop-mockup-container lg:w-80 lg:h-72 p-7 lg:p-7">
-          <a href="#">
-            <svg class="w-3 sm:w-4 lg:w-5" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M26.0208 22.2909C26.8837 22.2909 27.5833 21.5914 27.5833 20.7284L27.5832 1.97848C27.5832 1.11553 26.8837 0.415979 26.0207 0.415979L7.27076 0.415977C6.40781 0.415977 5.70825 1.11553 5.70825 1.97848C5.70825 2.84142 6.40781 3.54098 7.27075 3.54098L22.2485 3.54098L0.957567 24.8319C0.347372 25.4421 0.347372 26.4314 0.957567 27.0416C1.56776 27.6518 2.55708 27.6518 3.16728 27.0416L24.4582 5.75068L24.4583 20.7284C24.4583 21.5914 25.1578 22.2909 26.0208 22.2909Z"
-                fill="#2D2D2F" />
-            </svg>
-          </a>
-
-
-          <p
-            class="desktop-mockup-header-text font-caudex font-semibold text-2xl sm:text-3xl lg:text-4xl mt-5 lg:mt-10 dark:text-white">
-            Desktop Mockup
-          </p>
-
-          <p class="desktop-mockup-details-text font-sf text-primary text-xs mt-2 lg:mt-4 sm:pr-16 leading-5">
-            I have also contributed immensely to the online design community with
-            asset files, online videos and articles.
-          </p>
-
-          <p class="open-in-figma-link text-xs lg:text-sm mt-3 lg:mt-5 flex items-center space-x-2">
-            <a href="#" class="open-in-figma-text font-sf text-primary">Open in Figma</a>
-            <a href="#" class="">
-              <svg class="w-2 lg:w-3" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="presently">
+          <div class="presently-container lg:w-80 lg:h-72 p-7 lg:p-7">
+            <a href="#">
+              <svg class="w-3 sm:w-4 lg:w-5" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M10.2197 14.0303C10.5126 14.3232 10.9874 14.3232 11.2803 14.0303L17.5303 7.78033C17.8232 7.48744 17.8232 7.01256 17.5303 6.71967L11.2803 0.46967C10.9874 0.176777 10.5126 0.176777 10.2197 0.46967C9.92678 0.762563 9.92678 1.23744 10.2197 1.53033L15.1893 6.5L0.75 6.5C0.335786 6.5 0 6.83579 0 7.25C0 7.66421 0.335786 8 0.75 8L15.1893 8L10.2197 12.9697C9.92678 13.2626 9.92678 13.7374 10.2197 14.0303Z"
-                  fill="#909090" />
+                  d="M26.0208 22.2909C26.8837 22.2909 27.5833 21.5914 27.5833 20.7284L27.5832 1.97848C27.5832 1.11553 26.8837 0.415979 26.0207 0.415979L7.27076 0.415977C6.40781 0.415977 5.70825 1.11553 5.70825 1.97848C5.70825 2.84142 6.40781 3.54098 7.27075 3.54098L22.2485 3.54098L0.957567 24.8319C0.347372 25.4421 0.347372 26.4314 0.957567 27.0416C1.56776 27.6518 2.55708 27.6518 3.16728 27.0416L24.4582 5.75068L24.4583 20.7284C24.4583 21.5914 25.1578 22.2909 26.0208 22.2909Z"
+                  fill="#2D2D2F" />
               </svg>
             </a>
-          </p>
+
+            <p
+              class="presently-header-text font-caudex font-semibold text-2xl sm:text-3xl lg:text-4xl mt-5 lg:mt-10 dark:text-white">
+              Presently
+            </p>
+
+            <p class="presently-details-text font-sf text-primary text-xs mt-2 lg:mt-4 sm:pr-16 leading-5">
+              I have also contributed immensely to the online design community with
+              asset files, online videos and articles.
+            </p>
+
+            <p class="open-in-figma-link text-xs lg:text-sm mt-3 lg:mt-5 flex items-center space-x-2">
+              <a href="#" class="open-in-figma-text font-sf text-primary">Open in Figma</a>
+              <a href="#" class="">
+                <svg class="w-2 lg:w-3" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.2197 14.0303C10.5126 14.3232 10.9874 14.3232 11.2803 14.0303L17.5303 7.78033C17.8232 7.48744 17.8232 7.01256 17.5303 6.71967L11.2803 0.46967C10.9874 0.176777 10.5126 0.176777 10.2197 0.46967C9.92678 0.762563 9.92678 1.23744 10.2197 1.53033L15.1893 6.5L0.75 6.5C0.335786 6.5 0 6.83579 0 7.25C0 7.66421 0.335786 8 0.75 8L15.1893 8L10.2197 12.9697C9.92678 13.2626 9.92678 13.7374 10.2197 14.0303Z"
+                    fill="#909090" />
+                </svg>
+              </a>
+            </p>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -695,7 +710,7 @@
           <div class="rotated-block bg-gray-200 dark:bg-darkblock lg:w-16 lg:h-32 lg:mt-32"></div>
         </div>
 
-        <div class="texts py-5 lg:py-3 px-5 lg:px-10 z-50">
+        <div class="texts py-5 sm:py-7 lg:py-3 px-5 sm:px-7 lg:px-10 z-50">
           <p class="name capitalize font-caudex font-semibold text-base sm:text-lg lg:text-3xl dark:text-white">
             ozenua oluwatobi john
           </p>
@@ -709,8 +724,12 @@
         </div>
 
         <div class="z-10">
-          <div class="rotated-block animate-pulse bg-gray-200 dark:bg-darkblock lg:hidden w-16 h-80 absolute -bottom-20 right-20"></div>
-          <div class="rotated-block animate-pulse bg-gray-200 dark:bg-darkblock lg:hidden w-16 h-80 absolute -bottom-20 -right-10"></div>
+          <div
+            class="rotated-block animate-pulse bg-gray-200 dark:bg-darkblock lg:hidden w-16 h-80 absolute -bottom-20 right-20">
+          </div>
+          <div
+            class="rotated-block animate-pulse bg-gray-200 dark:bg-darkblock lg:hidden w-16 h-80 absolute -bottom-20 -right-10">
+          </div>
         </div>
       </div>
     </section>
@@ -719,12 +738,12 @@
   <footer class="bg-gray-200 dark:bg-black lg:px-16 py-14 lg:py-24 mt-24">
     <div class="container mx-auto px-4 sm:px-8">
       <div class="first-container lg:flex justify-between items-end space-y-10 lg:space-y-0 py-8">
-        <div class="texts-container flex lg:block items-baseline space-x-2 sm:space-x-4 lg:space-y-5">
-          <p class="got-an-idea font-caudex text-black dark:text-white text-2xl sm:text-3xl lg:text-5xl">
+        <div class="texts-container flex lg:block items-baseline space-x-2 sm:space-x-7 lg:space-y-5">
+          <p class="got-an-idea font-caudex text-black dark:text-white text-2xl sm:text-4xl lg:text-5xl">
             Got an idea?
           </p>
 
-          <p class="lets-talk font-sf text-black dark:text-white text-base sm:text-lg lg:text-xl">
+          <p class="lets-talk font-sf text-black dark:text-white text-base sm:text-xl lg:text-xl">
             Let's talk about it.
           </p>
         </div>
