@@ -19,6 +19,7 @@ module.exports = {
       '3xl': '1.875rem',
       'lg3xl': '2rem',
       '4xl': '2.25rem',
+      'base4xl': '2.4rem',
       'lg4xl': '2.5rem',
       '5xl': '3rem',
       'lg5xl': '3.5rem',
@@ -79,7 +80,9 @@ module.exports = {
       spacing: {
         '84': '21rem',
         '86': '22rem',
-        '92': '23rem'
+        '92': '23rem',
+        '98': '24.5rem',
+        '100': '25rem'
       }
     },
   },
