@@ -54,7 +54,8 @@ module.exports = {
       textColor: {
         'primary': '#909090',
         'light': '#F1F1F1',
-        'dark': '#18161D'
+        'dark': '#18161D',
+        'num': '#605874'
       },
       colors: {
         'dark': '#0C0B0E',
