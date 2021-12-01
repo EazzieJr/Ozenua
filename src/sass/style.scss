@@ -93,3 +93,60 @@ footer {
     }
   }
 }
+
+.spin {
+  animation: spin 6s linear infinite;
+  -webkit-animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.translate-down-one {
+  animation: down-one 0.8s linear infinite;
+  -webkit-animation: down-one 0.8s linear infinite;
+}
+
+@keyframes down-one {
+  from {
+    opacity: 1;
+}
+  to {
+    opacity: 0;
+  }
+}
+
+.translate-down-two {
+  animation: down-two 0.8s linear infinite;
+  -webkit-animation: down-two 1s linear infinite;
+}
+
+@keyframes down-two {
+  from {
+    opacity: 1;
+}
+  to {
+    opacity: 0;
+  }
+}
+
+.translate-down-three {
+  animation: down-three 0.8s 0.2s linear infinite;
+  -webkit-animation: down-three 1s 0.2s linear infinite;
+}
+
+@keyframes down-three {
+  from {
+    opacity: 1;
+}
+  to {
+    opacity: 0;
+  }
+}
