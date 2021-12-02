@@ -1,5 +1,5 @@
 // import { gsap } from "gsap";
-import { lerp, getMousePos } from "./utils.js";
+import { lerp, getMousePos, getSiblings } from "./utils.js";
 
 // Grab the mouse position and set it to mouse state
 let mouse = { x: 0, y: 0 };
@@ -9,8 +9,7 @@ export default class Cursor {
         // Varibles
         this.Cursor = el;
         this.Cursor.style.opacity = 0;
-        this.Item = document.querySelectorAll(".container");
-        // this.Hero = document.querySelector(".hero-inner");
+        this.Item = document.querySelectorAll(".header-text-container");
         this.bounds = this.Cursor.getBoundingClientRect();
         this.cursorConfigs = {
             x: { previous: 0, current: 0, amt: 0.2 },
@@ -27,7 +26,7 @@ export default class Cursor {
                 opacity: 1,
             });
             // Execute scale function
-            // this.onScaleMouse();02
+            this.onScaleMouse();
 
             // The window.requestAnimationFrame() method tells the browser that you wish to perform an animation and requests that the browser calls a specified function to update an animation before the next repaint. The method takes a callback as an argument to be invoked before the repaint.
             requestAnimationFrame(() => this.render());
@@ -38,21 +37,58 @@ export default class Cursor {
         window.addEventListener("mousemove", this.onMouseMoveEv);
     }
 
+    onScaleMouse() {
+        // Loop through all items
+        this.Item.forEach((link) => {
+            console.log(link)
+            // If I am hovering on the item for on page load I want to scale the cursor media
+            if (link.matches(":hover")) {
+                this.setImage(link);
+                this.ScaleCursor(this.Cursor.children[0], 0.4);
+            }
+            //On mouse enter scale the media-cursor to .8
+            link.addEventListener("mouseenter", () => {
+                this.setImage(link);
+                this.ScaleCursor(this.Cursor.children[0], 0.4);
+            });
+            //On mouse enter scale the media-cursor to 0
+            link.addEventListener("mouseleave", () => {
+                this.ScaleCursor(this.Cursor.children[0], 0);
+            });
+            //Hover on a tag to expand to 1.2
+            link.children[0].addEventListener("mouseenter", () => {
+                this.Cursor.classList.add("media-blend");
+                this.ScaleCursor(this.Cursor.children[0], 0.75);
+            });
+            // Bring scale back down .8
+            link.children[0].addEventListener("mouseleave", () => {
+                this.Cursor.classList.remove("media-blend");
+                this.ScaleCursor(this.Cursor.children[0], 0.4);
+            });
+        });
+    }
 
+    setImage(el) {
+        // Grab the data-image-src and make sure it matches the image that should be displayed
+        let src = el.getAttribute("data-image-src");
+        let image = document.querySelector(`#${src}`);
+        let siblings = getSiblings(image);
 
-    // onScaleMouse() {
-    //     const textHeader = document.querySelector('.top-intro')
-    //     const textDetails = document.querySelector('.bottom-intro')
+        if (image.id == src) {
+            gsap.set(image, { zIndex: 4, opacity: 1 });
+            siblings.forEach((i) => {
+                gsap.set(i, { zIndex: 1, opacity: 0 });
+            });
+        }
+    }
 
-    //     textHeader.addEventListener("mouseenter", () => {
-    //         this.Cursor.classList.add("media-blend");
-    //     });
-
-    //     textDetails.addEventListener("mouseenter", () => {
-    //         this.Cursor.classList.add("media-blend");
-    //     });
-    // }
-
+    ScaleCursor(el, amount) {
+        gsap.to(el, {
+            duration: 0.6,
+            scale: amount,
+            ease: "Power3.easeOut",
+        });
+    }
     render() {
         this.cursorConfigs.x.current = mouse.x;
         this.cursorConfigs.y.current = mouse.y;
