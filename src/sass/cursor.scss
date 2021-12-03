@@ -12,7 +12,8 @@
 
     .cursor-media {
       filter: invert(1);
-    }
+      -webkit-filter: invert(1);
+}
   }
 
 
@@ -47,13 +48,13 @@
         width: 100%;
         top: 50%;
         left: 50%;
-        transform: translateX(-50%) scale(1.8); 
+        transform: translateX(-50%) translateY(-50%) scale(1.8);
         position: absolute;
         background: transparent;
         -webkit-transform: translateX(-50%) translateY(-50%) scale(1.8);
-        -moz-transform: translateX(-50%) scale(1.8);
-        -ms-transform: translateX(-50%) scale(1.8);
-        -o-transform: translateX(-50%) scale(1.8);
-      }
+        -moz-transform: translateX(-50%) translateY(-50%) scale(1.8);
+        -ms-transform: translateX(-50%) translateY(-50%) scale(1.8);
+        -o-transform: translateX(-50%) translateY(-50%) scale(1.8);
+}
     }
 }

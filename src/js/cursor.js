@@ -40,7 +40,6 @@ export default class Cursor {
     onScaleMouse() {
         // Loop through all items
         this.Item.forEach((link) => {
-            console.log(link)
             // If I am hovering on the item for on page load I want to scale the cursor media
             if (link.matches(":hover")) {
                 this.setImage(link);
@@ -65,6 +64,19 @@ export default class Cursor {
                 this.Cursor.classList.remove("media-blend");
                 this.ScaleCursor(this.Cursor.children[0], 0.4);
             });
+
+            // Blending
+            const inv = document.querySelector('.inv')
+    
+            inv.addEventListener('mouseenter', () => {
+                console.log('worked')
+                this.Cursor.classList.add("media-blend")
+            });
+    
+            inv.addEventListener('mouseleave', () => {
+                console.log('stopped')
+                inv.classList.remove("media-blend")
+            })
         });
     }
 
