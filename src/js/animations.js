@@ -3,17 +3,20 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+// To pin then vert
 gsap.to('.featured-projects .scroll-and-projects .vert', {
     scrollTrigger: {
         trigger: '.featured-projects .scroll-and-projects .vert',
+        endTrigger: '.paysure',
         start: 'center center',
-        end: '275% top',
+        end: 'center center',
         pin: true,
         // markers: true,
         scrub: 1,
     },
 });
 
+// To make the scroll line in the vert translate
 gsap.to('.featured-projects .scroll-and-projects .vert .inner-vert', {
     scrollTrigger: {
         trigger: '.featured-projects .scroll-and-projects .vert',
@@ -26,6 +29,7 @@ gsap.to('.featured-projects .scroll-and-projects .vert .inner-vert', {
     top: 110
 });
 
+// To make the contributions container translate left
 gsap.to('.grid-div-container', {
     scrollTrigger: {
         trigger: '.grid-div-container',

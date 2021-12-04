@@ -6,7 +6,7 @@ module.exports = {
     // './src/**/*.css',
     // './fonts/euclid/*.css'
   ],
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     fontSize: {
       'tiny': '.6rem',

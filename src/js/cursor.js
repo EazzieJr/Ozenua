@@ -56,12 +56,17 @@ export default class Cursor {
             });
             //Hover on a tag to expand to 1.2
             link.children[0].addEventListener("mouseenter", () => {
-                this.Cursor.classList.add("media-blend");
+                if(localStorage.theme == 'light'){
+                    this.Cursor.classList.add("media-blend");
+                } else {
+                    this.Cursor.classList.add("media-blend-dark");
+                }
                 this.ScaleCursor(this.Cursor.children[0], 0.75);
             });
             // Bring scale back down .8
             link.children[0].addEventListener("mouseleave", () => {
                 this.Cursor.classList.remove("media-blend");
+                this.Cursor.classList.remove("media-blend-dark");
                 this.ScaleCursor(this.Cursor.children[0], 0.4);
             });
 
