@@ -14,6 +14,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
+    <script type="module">
+        import $ from "jquery";
+        window.addEventListener('load', () => {
+            $('html, body').animate({ scrollTop: 0 }, 'fast')
+        });
+    </script>
 </head>
 
 <body class="bg-white dark:bg-dark">
@@ -74,9 +80,9 @@
 
                 <div class="navlist py-1 overflow-y-hidden hidden lg:block lg:w-60 xl:w-72 2xl:w-84">
                     <ul class="flex justify-between items-center text-center lg:text-tiny xl:text-xs 2xl:text-sm">
-                        <li><a href="#">CONTACT ME</a></li>
-                        <li><a href="#">CASES</a></li>
-                        <li><a href="#">RESUME</a></li>
+                        <li><a class="before:black dark:before:bg-white" href="#">CONTACT ME</a></li>
+                        <li><a class="before:black dark:before:bg-white" href="#">CASES</a></li>
+                        <li><a class="before:black dark:before:bg-white" href="#">RESUME</a></li>
                     </ul>
                 </div>
 
@@ -96,10 +102,11 @@
         <section class="header space-y-7 py-10 lg:py-16 xl:py-10">
             <h1
                 class="header-text text-black dark:text-white inv font-caudex text-xl sm:text-2xl md:text-3xl lg:text-lg4xl xl:text-lg5xl 2xl:text-6xl">
-                JUMIAR : An AR Experience in Mobile Commerce.
+
             </h1>
 
-            <div class="case-studies w-full flex items-center py-5 sm:py-6 lg:py-7">
+            <div data-aos="zoom-in" data-aos-duration="1000"
+                class="case-studies w-full flex items-center py-5 sm:py-6 lg:py-7">
                 <ul
                     class="case-study-list font-sf w-full text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl text-primary flex justify-between align-center">
                     <li>UX Reasearch</li>
@@ -110,11 +117,12 @@
             </div>
         </section>
 
-        <div class="theme-toggle-container absolute right-8 sm:right-14 md:right-16 lg:right-24 xl:right-28 2xl:right-32 flex justify-end">
+        <div
+            class="theme-toggle-container absolute right-8 sm:right-14 md:right-16 lg:right-24 xl:right-28 2xl:right-32 flex justify-end">
             <button
-                class="toggle-btn relative rounded-full flex justify-center items-center w-10 h-10 z-50 bg-dark dark:bg-white">
+                class="toggle-btn relative rounded-full flex justify-center items-center w-10 lg:w-14 xl:w-16 h-10 lg:h-14 xl:h-16 z-50 bg-dark dark:bg-white">
                 <div class="cont absolute sun invisible">
-                    <svg class="w-5" viewBox="0 0 256 256" xml:space="preserve">
+                    <svg class="w-5 lg:w-7 xl:w-8" viewBox="0 0 256 256" xml:space="preserve">
                         <desc>Created with Fabric.js 1.7.22</desc>
                         <defs>
                         </defs>
@@ -195,7 +203,7 @@
                 </div>
 
                 <div class="cont absolute moon invisible">
-                    <svg class="w-5" viewBox="0 0 256 256" xml:space="preserve">
+                    <svg class="w-5 lg:w-7 xl:w-8" viewBox="0 0 256 256" xml:space="preserve">
                         <desc>Created with Fabric.js 1.7.22</desc>
                         <defs>
                         </defs>
@@ -213,9 +221,9 @@
             </button>
         </div>
 
-        <section class="jumiar mt-10">
+        <section class="jumiar mt-10 overflow-hidden">
             <div class="mobile-commerce-study space-y-5 sm:space-y-6 2xl:space-y-7">
-                <p
+                <p data-aos="fade-up" data-aos-duration="800"
                     class="mobile-commerce-study-text font-sf text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9 lg:pb-10 text-primary">
                     Mobile commerce will outpace non-mobile commerce in 2021. In 2021, mobile commerce sales will
                     account for
@@ -228,7 +236,7 @@
                     information. That can be a barrier to selling certain product categories online.
                 </p>
 
-                <p
+                <p data-aos="fade-up" data-aos-duration="800"
                     class="further-mobile-commerce-study-text font-sf text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9 text-primary lg:mb-24">
                     AR technology could offer immersive solutions to close the online and in-store shopping experience
                     gap. More
@@ -239,12 +247,12 @@
             </div>
 
             <div class="why-jumia mt-24 md:mt-32 xl:mt-40 space-y-5 sm:space-y-6 2xl:space-y-7">
-                <h3
+                <h3 data-aos="fade-right" data-aos-duration="800"
                     class="why-jumia-header-text inv font-caudex text-black dark:text-white text-xl lg:text-2xl xl:text-3xl">
                     Why Jumia
                 </h3>
 
-                <p
+                <p data-aos="fade-up" data-aos-duration="800"
                     class="why-jumia-text font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9">
                     Jumia is the leading pan-African e-commerce platform active across 11 countries on the continent.
                     The
@@ -266,18 +274,18 @@
                     its platform to further increase the user experience.
                 </p>
 
-                <div class="why-jumia-image pt-5 lg:mt-10 lg:mb-32">
+                <div data-aos="zoom-in" data-aos-duration="1000" class="why-jumia-image pt-5 lg:mt-10 lg:mb-32">
                     <a href="../assets/images/Jumiar Analytics.png">
                         <img src="../assets/images/Jumiar Analytics.png" alt="">
                     </a>
                 </div>
 
-                <h3
+                <h3 data-aos="fade-right" data-aos-duration="800"
                     class="extended-why-jumia-header-text inv font-caudex text-black dark:text-white text-xl lg:text-2xl xl:text-3xl pt-10 sm:pt-16">
                     Why Jumia
                 </h3>
 
-                <p
+                <p data-aos="fade-up" data-aos-duration="800"
                     class="extended-why-jumia-details-text font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9 mt-4 lg:mt-8">
                     Imagine the frustration of not knowing the name of that product right there in front of you but
                     you're so
@@ -289,11 +297,12 @@
             </div>
 
             <div class="ideation mt-24 md:mt-32 xl:mt-40 space-y-5 sm:space-y-6 2xl:space-y-7">
-                <h3
+                <h3 data-aos="fade-right" data-aos-duration="800"
                     class="ideation-header-text inv font-caudex text-black dark:text-white text-xl lg:text-2xl xl:text-3xl ">
-                    Ideation</h3>
+                    Ideation
+                </h3>
 
-                <p
+                <p data-aos="fade-up" data-aos-duration="800"
                     class="ideation-details-text font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9">
                     One of the challenges of online shopping is not being able to test out
                     what you want to purchase, so you have to deal with the disappointment after delivery. But with the
@@ -306,12 +315,12 @@
             </div>
 
             <div class="solution mt-24 md:mt-32 xl:mt-40 space-y-5 sm:space-y-6 2xl:space-y-7">
-                <h3
+                <h3 data-aos="fade-right" data-aos-duration="800"
                     class="solution-header-text inv font-caudex text-black dark:text-white text-xl lg:text-2xl xl:text-3xl ">
                     The Solution
                 </h3>
 
-                <p
+                <p data-aos="fade-left" data-aos-duration="800"
                     class="solution-details-text font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9">
                     After understanding the demands for this concept, we decided it would be best to make some UI
                     upgrades
@@ -321,37 +330,40 @@
                 </p>
 
                 <ol
-                    class="the-solution-deats-list font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9 list-decimal pl-4 lg:pl-4">
-                    <li>The home screen experience</li>
-                    <li>Create a flow in which the AR feature will be functional</li>
-                    <li>Improve the major UI components of the app to suit the futuristic design</li>
-                    <li>Create 3D models of the products to be showcased</li>
+                    class="the-solution-deats-list font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9 list-decimal pl-5">
+                    <li data-aos="fade-right" data-aos-duration="800">The home screen experience</li>
+                    <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">Create a flow in which the AR
+                        feature will be functional</li>
+                    <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">Improve the major UI
+                        components of the app to suit the futuristic design</li>
+                    <li data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">Create 3D models of the
+                        products to be showcased</li>
                 </ol>
             </div>
 
             <div class="userflow mt-24 md:mt-32 xl:mt-40 space-y-5 sm:space-y-6 2xl:space-y-7">
-                <h3
+                <h3 data-aos="fade-right" data-aos-duration="800"
                     class="userflow-header-text inv font-caudex text-black dark:text-white text-xl lg:text-2xl xl:text-3xl">
                     User flow</h3>
 
-                <p
+                <p data-aos="fade-up" data-aos-duration="800"
                     class="userflow-details-text font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9">
                     We designed a User flow to validate the idea and create a functional design for the AR feature.
                 </p>
 
-                <div class="userflow-image w-full lg:mb-32">
+                <div data-aos="zoom-in" data-aos-duration="1000" class="userflow-image w-full lg:mb-32">
                     <a href="../assets/images/Jumiar Userflow.png"><img class="rounded-2xl lg:rounded-3xl w-full"
                             class="rounded-2xl lg:rounded-3xl" src="../assets/images/Jumiar Userflow.png" alt=""></a>
                 </div>
             </div>
 
             <div class="wireframes mt-24 md:mt-32 xl:mt-40  space-y-5 sm:space-y-6 2xl:space-y-7">
-                <p
+                <p data-aos="fade-right" data-aos-duration="800"
                     class="wireframes-header-text inv font-caudex text-black dark:text-white text-xl lg:text-2xl xl:text-3xl">
                     Wireframes
                 </p>
 
-                <p
+                <p data-aos="fade-up" data-aos-duration="800"
                     class="wireframes-details-text font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9">
                     After creating the User flow, I began creating wireframes to validate the flow and test out possible
                     visual
@@ -359,37 +371,38 @@
                     that will be used in the design.
                 </p>
 
-                <div class="wireframes-image w-full lg:mb-32">
+                <div data-aos="zoom-in-up" data-aos-duration="1000" class="wireframes-image w-full lg:mb-32">
                     <a href="../assets/images/Juimar Wireframes.png"><img class="rounded-2xl lg:rounded-3xl w-full"
                             class="rounded-2xl lg:rounded-3xl" src="../assets/images/Juimar Wireframes.png" alt=""></a>
                 </div>
             </div>
 
             <div class="design-style-guide mt-24 md:mt-32 xl:mt-40  space-y-5 sm:space-y-6 2xl:space-y-7">
-                <h3
+                <h3 data-aos="fade-right" data-aos-duration="8000"
                     class="design-style-guide-header-text inv font-caudex text-black dark:text-white text-xl lg:text-2xl xl:text-3xl">
                     Design style guide
                 </h3>
 
-                <p
+                <p data-aos="fade-up" data-aos-duration="800"
                     class="design-style-guide-details-text font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9">
                     After creating the User flow, I began creating wireframes to validate the flow and test out
                     possible visual elements that will be used in the design.
                 </p>
 
-                <div class="design-style-guide-image w-full lg:mt-10 lg:mb-32">
+                <div data-aos="zoom-in" data-aos-duration="1000"
+                    class="design-style-guide-image w-full lg:mt-10 lg:mb-32">
                     <a href="../assets/images/Jumiar Style Guide.png"><img class="rounded-2xl lg:rounded-3xl w-full"
                             class="rounded-2xl lg:rounded-3xl" src="../assets/images/Jumiar Style Guide.png" alt=""></a>
                 </div>
             </div>
 
             <div class="visual-design mt-24 md:mt-32 xl:mt-40 lg:my-40 space-y-5 sm:space-y-6 2xl:space-y-7">
-                <h3
+                <h3 data-aos="fade-right" data-aos-duration="800"
                     class="visual-design-header-text inv font-caudex text-black dark:text-white text-xl lg:text-2xl xl:text-3xl">
                     Visual Design
                 </h3>
 
-                <p
+                <p data-aos="fade-up" data-aos-duration="800"
                     class="visual-design-details-text font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9">
                     In this phase, I jump right into adding colors, and images. During this process, I produce
                     high-quality visual designs as well as guidelines and specifications. While also making emphasis
@@ -398,13 +411,14 @@
                 </p>
 
                 <div class="visual-design-images w-full space-y-3 lg:space-y-3">
-                    <div class="visual-design-image">
+                    <div data-aos="zoom-in-up" data-aos-duration="1000" class="visual-design-image">
                         <a href="../assets/images/Jumiar Visual Design 1.png">
                             <img src="../assets/images/Jumiar Visual Design 1.png" alt="">
                         </a>
                     </div>
 
-                    <div class="visual-design-image">
+                    <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="300"
+                        class="visual-design-image">
                         <a href="../assets/images/Jumiar Visual Design 2.png">
                             <img src="../assets/images/Jumiar Visual Design 2.png" alt="">
                         </a>
@@ -415,12 +429,12 @@
             <div
                 class="further-visual-design space-y-5 sm:space-y-6 2xl:space-y-7 md:grid grid-cols-2 md:gap-x-10 place-items-center lg:gap-x-0 mt-24 md:mt-32 xl:mt-40">
                 <div class="texts lg:pr-10 space-y-5 sm:space-y-6 2xl:space-y-7 lg:space-y-5">
-                    <h3
+                    <h3 data-aos="fade-right" data-aos-duration="800"
                         class="visual-design-header-text inv font-caudex text-black dark:text-white text-xl lg:text-2xl xl:text-3xl">
                         Visual Design
                     </h3>
 
-                    <p
+                    <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="400"
                         class="visual-design-details-text font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9 md:leading-5">
                         To make the whole mobile experience uniform and the AR feature, we decided that the home
                         screen
@@ -438,19 +452,19 @@
                     </p>
                 </div>
 
-                <div class="further-visual-design-image">
+                <div data-aos="zoom-in-right" class="further-visual-design-image">
                     <a href="../assets/images/Jumiar Visual Design 3.png"><img class="rounded-2xl lg:rounded-3xl w-full"
                             src="../assets/images/Jumiar Visual Design 3.png" alt=""></a>
                 </div>
             </div>
 
             <div class="the-screen-search mt-24 md:mt-32 xl:mt-40 space-y-5 sm:space-y-6 2xl:space-y-7">
-                <h3
+                <h3 data-aos="fade-right" data-aos-duration="800"
                     class="the-screen-search-header-text inv font-caudex text-black dark:text-white text-xl lg:text-2xl xl:text-3xl">
                     The search screen: A new way to search
                 </h3>
 
-                <p
+                <p data-aos="fade-up" data-aos-duration="800"
                     class="the-screen-search-details-text font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9">
                     The search screen: A new way to search
                     This is one side of the solution, one we believe will make shopping a more exciting one. With
@@ -463,19 +477,22 @@
                 </p>
 
                 <div class="grid grid-cols-2 gap-x-2 md:gap-x-5 lg:gap-x-5 lg:mt-14">
-                    <a href="../assets/images/Jumiar Search 1.png"><img class="rounded-2xl lg:rounded-3xl w-full"
+                    <a data-aos="zoom-in-right" data-aos-duration="1000"
+                        href="../assets/images/Jumiar Search 1.png"><img class="rounded-2xl lg:rounded-3xl w-full"
                             class="rounded-2xl lg:rounded-3xl" src="../assets/images/Jumiar Search 1.png" alt=""></a>
-                    <a href="../assets/images/Jumiar Search 2.png"><img class="rounded-2xl lg:rounded-3xl w-full"
-                            class="rounded-2xl lg:rounded-3xl" src="../assets/images/Jumiar Search 2.png" alt=""></a>
+                    <a data-aos="zoom-in-left" data-aos-duration="1000" href="../assets/images/Jumiar Search 2.png"><img
+                            class="rounded-2xl lg:rounded-3xl w-full" class="rounded-2xl lg:rounded-3xl"
+                            src="../assets/images/Jumiar Search 2.png" alt=""></a>
                 </div>
             </div>
 
             <div class="test-ar mt-24 md:mt-32 xl:mt-40 space-y-5 sm:space-y-6 2xl:space-y-7">
-                <p class="test-ar inv font-caudex text-black dark:text-white text-xl lg:text-2xl xl:text-3xl">Test AR:
+                <p data-aos="fade-right" data-aos-duration="800"
+                    class="test-ar inv font-caudex text-black dark:text-white text-xl lg:text-2xl xl:text-3xl">Test AR:
                     Real-time Product
                     Testing</p>
 
-                <p
+                <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="300"
                     class="test-ar-deats font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9">
                     The second part of the solutions features a real-time product test feature using Augmented
                     Reality
@@ -486,18 +503,19 @@
                     limitless and a whole lot can be done using this technological innovation.
                 </p>
 
-                <p
+                <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="600"
                     class="font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9 lg:mt-8">
                     Click here to <a class="text-blue-900 underline" href="#">test</a> it out.
                 </p>
 
                 <div class="space-y-10 md:space-y-0 md:grid grid-cols-2 place-items-start md:gap-x-5 lg:mt-10">
                     <div class="info-1 space-y-5 sm:space-y-6 2xl:space-y-7">
-                        <a href="../assets/images/Jumiar Test AR 1.png"><img class="rounded-2xl lg:rounded-3xl w-full"
+                        <a data-aos="zoom-in-right" data-aos-duration="1000"
+                            href="../assets/images/Jumiar Test AR 1.png"><img class="rounded-2xl lg:rounded-3xl w-full"
                                 class="rounded-2xl lg:rounded-3xl" src="../assets/images/Jumiar Test AR 1.png"
                                 alt=""></a>
 
-                        <p
+                        <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="1000"
                             class="info-text font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9 lg:mt-8">
                             To use the feature, the user selects the AR button and scans for a flat surface which
                             may be
@@ -507,11 +525,12 @@
                     </div>
 
                     <div class="info-2 space-y-5 sm:space-y-6 2xl:space-y-7">
-                        <a href="../assets/images/Jumiar Test AR 2.png"><img class="rounded-2xl lg:rounded-3xl w-full"
+                        <a data-aos="zoom-in-right" data-aos-duration="1000"
+                            href="../assets/images/Jumiar Test AR 2.png"><img class="rounded-2xl lg:rounded-3xl w-full"
                                 class="rounded-2xl lg:rounded-3xl" src="../assets/images/Jumiar Test AR 2.png"
                                 alt=""></a>
 
-                        <p
+                        <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="1000"
                             class="info-text font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9 lg:mt-8">
                             The user is prompted to select a product from their cart or search for a new product
                             using
@@ -521,7 +540,7 @@
                     </div>
                 </div>
 
-                <p
+                <p data-aos="fade-up" data-aos-duration="800"
                     class="how-test-ar-woks-text font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9 md:pt-8">
                     Once the product is selected, it would be placed on the surface, and the user can take a virtual
                     tour around the chosen
@@ -530,12 +549,12 @@
             </div>
 
             <div class="conclusion mt-24 md:mt-32 xl:mt-40 space-y-5 sm:space-y-6 2xl:space-y-7">
-                <h3
+                <h3 data-aos="fade-right" data-aos-duration="800"
                     class="conclusion-header-text inv font-caudex text-black dark:text-white text-xl lg:text-2xl xl:text-3xl">
                     Conclusion
                 </h3>
 
-                <p
+                <p data-aos="fade-up" data-aos-duration="800"
                     class="conclusion-details-text font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9">
                     The entire design process of this concept design was totally a new experience for me as a designer.
                     I
@@ -552,7 +571,7 @@
                     mind-blowing experience for me as I never actually thought I'd have been able to do so at first.
                 </p>
 
-                <p
+                <p data-aos="fade-up" data-aos-duration="800"
                     class="conclusion-details-text font-sf text-primary text-sm lg:text-base xl:text-lg 2xl:text-xl sm:leading-6 lg:leading-7 xl:leading-8 2xl:leading-9 lg:mt-8">
                     Next time, I will like to work on easier flows for this design and incorporate it into the
                     application's
@@ -586,16 +605,16 @@
     <footer class="bg-gray-200 dark:bg-black lg:px-16 xl:px-24 py-14 lg:py-24 2xl:py-28 mt-24">
         <div class="container mx-auto px-4 sm:px-8">
             <div
-                class="first-container md:flex justify-between items-end space-y-10 lg:space-y-0 xl:space-x-10 py-8 xl:py-14">
+                class="first-container before:bg-primary dark:before:bg-white md:flex justify-between items-end space-y-10 lg:space-y-0 xl:space-x-10 py-8 xl:py-14">
                 <div
                     class="texts-container flex md:block items-baseline space-x-2 sm:space-x-7 md:space-x-0 md:space-y-5 xl:space-y-10">
-                    <p
+                    <h1
                         class="got-an-idea inv font-caudex text-black dark:text-white text-2xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
                         Got an idea?
-                    </p>
+                    </h1>
 
                     <p>
-                        <a class="lets-talk font-sf text-black dark:text-white text-base sm:text-xl lg:text-xl xl:text-3xl 2xl:text-4xl"
+                        <a class="lets-talk font-sf text-black before:border-t before:border-b before:border dark:text-white text-base sm:text-xl lg:text-xl xl:text-3xl 2xl:text-4xl"
                             href="#">
                             Let's talk about it.
                         </a>
@@ -604,13 +623,19 @@
 
                 <div
                     class="contacts font-sf md:w-2/4 text-black dark:text-white text-xs lg:text-sm xl:text-base 2xl:text-lg">
-                    <div class="grid grid-cols-4 gap-y-3 xl:gap-y-7 text-xs lg:text-base items-center">
-                        <a class="instagram-footer-link" href="#">Instagram</a>
-                        <a class="youtube-footer-link" href="#">Youtube</a>
-                        <a class="dribble-footer-link" href="#">Dribble</a>
-                        <a class="linkedin-footer-link" href="#">LinkedIn</a>
-                        <a class="behance-footer-link" href="#">Behance</a>
-                        <a class="twitter-footer-link" href="#">Twitter</a>
+                    <div
+                        class="grid grid-cols-4 gap-y-3 xl:gap-y-7 text-xs lg:text-base items-center overflow-y-hidden">
+                        <a data-aos="fade-up" class="instagram-footer-link" href="https://instagram.com/ozenua_uiux"
+                            target="blank">Instagram</a>
+                        <a data-aos="fade-up" data-aos-delay="100" class="youtube-footer-link" href="#">Youtube</a>
+                        <a data-aos="fade-up" data-aos-delay="200" class="dribble-footer-link"
+                            href="https://dribbble.com/ozenua_uiux" target="blank">Dribble</a>
+                        <a data-aos="fade-up" data-aos-delay="300" class="linkedin-footer-link"
+                            href="https://www.linkedin.com/in/ozenua-oluwatobi/" target="blank">LinkedIn</a>
+                        <a data-aos="fade-up" data-aos-delay="400" data-aos-offset="100" class="behance-footer-link"
+                            href="https://behance.net/ozenua_uiux" target="blank">Behance</a>
+                        <a data-aos="fade-up" data-aos-delay="500" data-aos-offset="100" class="twitter-footer-link"
+                            href="https://twitter.com/ @ozenua_uiux">Twitter</a>
                         </ul>
                     </div>
                 </div>
@@ -622,11 +647,18 @@
     <div id="cursor" class="cursor invisible lg:visible before:bg-black dark:before:bg-white"></div>
 
     <script type="module" src="js/theme.js"></script>
+    <script src="https://kit.fontawesome.com/049b369bde.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="js/index.js"></script>
     <script type="module">
         import { gsap } from "gsap/dist/gsap";
         import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+        import { TextPlugin } from "gsap/TextPlugin";
 
-        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.registerPlugin(ScrollTrigger, TextPlugin);
         // Pin button
         gsap.to('.toggle-btn', {
             scrollTrigger: {
@@ -638,9 +670,14 @@
             }
         })
 
+        gsap.to('.header-text', {
+            text: 'JUMIAR : An AR Experience in Mobile Commerce.',
+            duration: 2
+        })
+
         gsap.to('.logo', {
             opacity: 1,
-            delay: 1,
+            delay: 2,
         })
 
         gsap.to('nav .nav-container .navlist ul li', {
@@ -648,13 +685,14 @@
             y: 0,
             stagger: 0.3,
             ease: 'back',
-            delay: 1,
+            delay: 2
         })
     </script>
-    <script src="https://kit.fontawesome.com/049b369bde.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <script type="module" src="js/index.js"></script>
+    <script>
+        window.addEventListener('load', setTimeout(() => {
+            AOS.init();
+        }, 2000));
+    </script>
 
 </body>
 

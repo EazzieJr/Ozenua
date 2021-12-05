@@ -11,7 +11,7 @@ gsap.to('.featured-projects .scroll-and-projects .vert', {
         start: 'center center',
         end: 'center center',
         pin: true,
-        markers: true,
+        // markers: true,x
         scrub: 1,
         // id: 'pin-vert-big'
     },
@@ -25,7 +25,7 @@ gsap.to('.featured-projects .scroll-and-projects .small-vert', {
         start: 'center center',
         end: 'center center',
         pin: true,
-        markers: true,
+        // markers: true,
         scrub: 1,
         id: 'pin-vert-small'
     },
@@ -37,7 +37,7 @@ gsap.to('.featured-projects .scroll-and-projects .vert .inner-vert, .featured-pr
         trigger: '.featured-projects .scroll-and-projects .vert',
         start: 'center center',
         end: '250% top',
-        markers: true,
+        // markers: true,
         scrub: 1,
     },
 
