@@ -4,7 +4,9 @@
 
 .contributions {
   .grid-div {
-    .presently, .memoji, .desktop-mockup {
+    .presently,
+    .memoji,
+    .desktop-mockup {
       border: 1px solid #333333;
     }
   }
@@ -74,22 +76,6 @@ footer {
         height: 1px;
         background-color: #f1f1f1;
       }
-
-      .texts-container {
-        .lets-talk {
-          position: relative;
-
-          &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background-color: #f1f1f1;
-          }
-        }
-      }
     }
   }
 }
@@ -108,7 +94,6 @@ footer {
   }
 }
 
-
 .translate-down-one {
   animation: down-one 0.8s linear infinite;
   -webkit-animation: down-one 0.8s linear infinite;
@@ -117,7 +102,7 @@ footer {
 @keyframes down-one {
   from {
     opacity: 1;
-}
+  }
   to {
     opacity: 0;
   }
@@ -131,7 +116,7 @@ footer {
 @keyframes down-two {
   from {
     opacity: 1;
-}
+  }
   to {
     opacity: 0;
   }
@@ -145,16 +130,16 @@ footer {
 @keyframes down-three {
   from {
     opacity: 1;
-}
+  }
   to {
     opacity: 0;
   }
 }
 
 .dark-svg {
-  display: block;
+  visibility: visible;
 }
 
 .light-svg {
-  display: block;
+  visibility: visible;
 }

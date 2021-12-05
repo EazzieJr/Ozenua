@@ -134,6 +134,11 @@ nav {
     .navlist {
       ul {
         li:nth-child(1) {
+          transform: translateY(20px);
+          -webkit-transform: translateY(20px);
+          -moz-transform: translateY(20px);
+          -ms-transform: translateY(20px);
+          -o-transform: translateY(20px);
           a {
             position: relative;
 
@@ -170,6 +175,11 @@ nav {
         }
 
         li:nth-child(2) {
+          transform: translateY(20px);
+          -webkit-transform: translateY(20px);
+          -moz-transform: translateY(20px);
+          -ms-transform: translateY(20px);
+          -o-transform: translateY(20px);
           a {
             position: relative;
 
@@ -206,6 +216,11 @@ nav {
         }
 
         li:nth-child(3) {
+          transform: translateY(20px);
+          -webkit-transform: translateY(20px);
+          -moz-transform: translateY(20px);
+          -ms-transform: translateY(20px);
+          -o-transform: translateY(20px);
           a {
             position: relative;
 
@@ -303,6 +318,21 @@ nav {
         -ms-transition: 800ms;
         -o-transition: 800ms;
       }
+
+      &:hover::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        height: 100px;
+        background: rgba(130, 130, 130, 1);
+        transition: 800ms;
+        -webkit-transition: 800ms;
+        -moz-transition: 800ms;
+        -ms-transition: 800ms;
+        -o-transition: 800ms;
+      }
     }
   }
 }
@@ -315,4 +345,30 @@ nav {
 
 .font-sf {
   font-family: "Sf Pro Text";
+}
+
+.texts-container {
+  .lets-talk {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #f1f1f1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #f1f1f1;
+    }
+  }
 }
