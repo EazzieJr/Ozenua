@@ -45,7 +45,7 @@ gsap.to('.featured-projects .scroll-and-projects .vert .inner-vert, .featured-pr
 });
 
 // To make the contributions container translate left
-gsap.to('.grid-div-container', {
+gsap.to('.large .grid-div-container', {
     scrollTrigger: {
         trigger: '.grid-div-container',
         start: 'center 60%',
