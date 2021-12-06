@@ -1,9 +1,9 @@
 module.exports = {
-  mode: 'jit',
+  // mode: 'jit',
   purge: [
-    './src/**/*.html',
-    './src/**/*.js',
-    './src/**/*.css',
+    // './src/**/*.html',
+    // './src/**/*.js',
+    // './src/**/*.css',
     // './fonts/euclid/*.css'
   ],
   darkMode: 'class', // or 'media' or 'class'
@@ -60,7 +60,8 @@ module.exports = {
       colors: {
         'dark': '#0C0B0E',
         'darkblock': '#141217',
-        'lightblock ': '#F2F2F2'
+        'lightblock ': '#F2F2F2',
+        'footerlight': '#f1f1f1'
       },
       minWidth: {
         '0': '0',

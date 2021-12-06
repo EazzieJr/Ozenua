@@ -4,32 +4,33 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline()
 // To pin then vert for big screens
-gsap.to('.featured-projects .scroll-and-projects .vert', {
+gsap.to('.featured-projects-big .scroll-and-projects .big-vert', {
     scrollTrigger: {
-        trigger: '.featured-projects .scroll-and-projects .vert',
-        endTrigger: '.paysure',
+        trigger: '.featured-projects-big .scroll-and-projects .big-vert',
+        endTrigger: '.stop',
         start: 'center center',
         end: 'center center',
         pin: true,
-        // markers: true,x
+        markers: true,
         scrub: 1,
         // id: 'pin-vert-big'
     },
 });
 
+
 // To pin vert for small screens
-gsap.to('.featured-projects .scroll-and-projects .small-vert', {
-    scrollTrigger: {
-        trigger: '.featured-projects .scroll-and-projects .small-vert',
-        endTrigger: '.paysure',
-        start: 'center center',
-        end: 'center center',
-        pin: true,
-        // markers: true,
-        scrub: 1,
-        id: 'pin-vert-small'
-    },
-});
+// gsap.to('.featured-projects .scroll-and-projects .small-vert', {
+//     scrollTrigger: {
+//         trigger: '.featured-projects .scroll-and-projects .small-vert',
+//         endTrigger: '.paysure',
+//         start: 'center center',
+//         end: 'center center',
+//         pin: true,
+//         // markers: true
+//         scrub: 1,
+//         id: 'pin-vert-small'
+//     },
+// });
 
 // To make the scroll line in the vert translate
 gsap.to('.featured-projects .scroll-and-projects .vert .inner-vert, .featured-projects .scroll-and-projects .vert .inner-vert', {

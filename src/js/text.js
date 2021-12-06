@@ -37,9 +37,9 @@ tl.to('.hero-details-text', {
 })
 
 
-gsap.to('nav .nav-container .navlist ul li', {
-    duration: 1,
-    y: 0,
-    stagger: 0.3,
-    ease: 'back'
-})
+// gsap.to('nav .nav-container .navlist ul li', {
+//     duration: 1,
+//     y: 0,
+//     stagger: 0.3,
+//     ease: 'back'
+// })

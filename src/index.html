@@ -16,11 +16,16 @@
     @import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
   </style>
 
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js"></script> -->
   <script type="module">
     import $ from "jquery";
-    window.addEventListener('load', () => {
-      $('html, body').animate({ scrollTop: 0 }, 'fast')
-    });
+    window.addEventListener('load', scrollToTop());
+
+    function scrollToTop() {
+        $('html, body').animate({ scrollTop: 0 }, 'fast')
+    }
   </script>
 </head>
 
@@ -656,7 +661,7 @@
     </section>
 
     <!-- featured-projects for small screens -->
-    <section class="featured-projects md:hidden py-16 lg:py-20 xl:py-24 font-normal overflow-hidden"
+    <section class="featured-projects lg:hidden py-16 lg:py-20 xl:py-24 font-normal overflow-hidden"
       id="featured-projects">
       <p data-aos="fade-right"
         class="font-sf text-xs lg:text-sm xl:text-base 2xl:text-lg lg:tracking-widest dark:text-white">FEATURED
@@ -839,7 +844,7 @@
     </section>
 
     <!-- featured-projects for big screens -->
-    <section class="featured-projects hidden md:block py-16 lg:py-20 xl:py-24 font-normal overflow-hidden"
+    <section class="featured-projects-big hidden lg:block py-16 lg:py-20 xl:py-24 font-normal overflow-hidden"
       id="featured-projects">
       <p data-aos="fade-right"
         class="font-sf text-xs lg:text-sm xl:text-base 2xl:text-lg lg:tracking-widest dark:text-white">FEATURED
@@ -853,12 +858,7 @@
 
       <div class="scroll-and-projects flex justify-between mt-16 lg:pt-20 lg:pb-20">
         <div
-          class="small-vert relative md:hidden h-40 md:h-56 2xl:h-86 w-px bg-gray-300 dark:bg-gray-900 overflow-x-hidden">
-          <div class="inner-vert absolute top-0 h-20 md:h-28 2xl:h-40 w-px 2xl:w-1 bg-black dark:bg-white"></div>
-        </div>
-
-        <div
-          class="vert hidden md:block relative h-40 md:h-56 2xl:h-86 w-px bg-gray-300 dark:bg-gray-900 overflow-x-hidden">
+          class="big-vert relative h-40 md:h-56 2xl:h-86 w-px bg-gray-300 dark:bg-gray-900 overflow-x-hidden">
           <div class="inner-vert absolute top-0 h-20 md:h-28 2xl:h-40 w-px 2xl:w-1 bg-black dark:bg-white"></div>
         </div>
 
@@ -869,7 +869,7 @@
             </p>
 
             <div
-              class="header-text-container h-9 md:h-12 lg:h-20 xl:h-24 2xl:h-28 mt-2 md:mb-3 lg:pb-5 overflow-hidden inline-block"
+              class="header-text-container h-9 md:h-12 lg:h-20 xl:h-24 2xl:h-28 mt-2 md:mb-3 lg:pb-5 overflow-hidden inline-block lg:px-5 2xl:px-7 lg:-ml-5 2xl:-ml-7"
               data-image-src="jumiar-image">
               <div
                 class="div space-y-1 md:space-y-2 xl:space-y-3 2xl:space-y-2 transform transition duration-500 hover:-translate-y-9 sm:hover:-translate-y-14 md:hover:-translate-y-14 lg:hover:-translate-y-20 xl:hover:-translate-y-28">
@@ -899,7 +899,7 @@
             </p>
 
             <div
-              class="header-text-container h-9 md:h-12 lg:h-20 xl:h-24 2xl:h-28 mt-2 md:mb-3 lg:pb-5 overflow-hidden inline-block"
+              class="header-text-container h-9 md:h-12 lg:h-20 xl:h-24 2xl:h-28 mt-2 md:mb-3 lg:pb-5 overflow-hidden inline-block lg:px-5 2xl:px-7 lg:-ml-5 2xl:-ml-7"
               data-image-src="gt-image">
               <div
                 class="div space-y-1 md:space-y-2 xl:space-y-3 2xl:space-y-2 transform transition duration-500 hover:-translate-y-9 sm:hover:-translate-y-14 md:hover:-translate-y-14 lg:hover:-translate-y-20 xl:hover:-translate-y-28">
@@ -929,7 +929,7 @@
             </p>
 
             <div
-              class="header-text-container h-9 md:h-12 lg:h-20 xl:h-24 2xl:h-28 mt-2 md:mb-3 lg:pb-5 overflow-hidden inline-block"
+              class="header-text-container h-9 md:h-12 lg:h-20 xl:h-24 2xl:h-28 mt-2 md:mb-3 lg:pb-5 overflow-hidden inline-block lg:px-5 2xl:px-7 lg:-ml-5 2xl:-ml-7"
               data-image-src="cryptly-image">
               <div
                 class="div space-y-1 md:space-y-2 xl:space-y-3 2xl:space-y-2 transform transition duration-500 hover:-translate-y-9 sm:hover:-translate-y-14 md:hover:-translate-y-14 lg:hover:-translate-y-20 xl:hover:-translate-y-28">
@@ -953,13 +953,13 @@
 
           </div>
 
-          <div class="paysure lg:mb-0">
+          <div class="paysure stop lg:mb-0">
             <p class="num inv font-caudex text-num text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
               04
             </p>
 
             <div
-              class="header-text-container h-9 md:h-12 lg:h-20 xl:h-24 2xl:h-28 mt-2 md:mb-3 lg:pb-5 overflow-hidden inline-block"
+              class="header-text-container h-9 md:h-12 lg:h-20 xl:h-24 2xl:h-28 mt-2 md:mb-3 lg:pb-5 overflow-hidden inline-block lg:px-5 2xl:px-7 lg:-ml-5 2xl:-ml-7"
               data-image-src="paysure-image">
               <div
                 class="div space-y-1 md:space-y-2 xl:space-y-3 2xl:space-y-2 transform transition duration-500 hover:-translate-y-9 sm:hover:-translate-y-14 md:hover:-translate-y-14 lg:hover:-translate-y-20 xl:hover:-translate-y-28">
@@ -1339,7 +1339,7 @@
     </section>
   </div>
 
-  <footer class="bg-gray-200 dark:bg-black lg:px-16 xl:px-24 py-14 lg:py-24 2xl:py-28 mt-24">
+  <footer class="bg-footerlight dark:bg-black lg:px-16 xl:px-24 py-14 lg:py-24 2xl:py-28 mt-24">
     <div class="container mx-auto px-4 sm:px-8">
       <div
         class="first-container before:bg-primary dark:before:bg-white md:flex justify-between items-end space-y-10 lg:space-y-0 xl:space-x-10 py-8 xl:py-14">
@@ -1386,6 +1386,13 @@
       <img class="bg-dark dark:bg-white" src="../assets/images/Cryptly.png" alt="" id="cryptly-image">
       <img class="bg-dark dark:bg-white" src="../assets/images/Paysure Visual Design 4.png" alt="" id="paysure-image">
     </div>
+
+        <div class="view-case">
+          <img class="bg-dark dark:bg-white" src="../assets/images/Jumiar Test AR 1.png" alt="" id="jumiar-image">
+          <img class="bg-dark dark:bg-white" src="../assets/images/Gt Welcome.png" alt="" id="gt-image">
+          <img class="bg-dark dark:bg-white" src="../assets/images/Cryptly.png" alt="" id="cryptly-image">
+          <img class="bg-dark dark:bg-white" src="../assets/images/Paysure Visual Design 4.png" alt="" id="paysure-image">
+        </div>
   </div>
 
   <!-- <script type="module" src="js/script.js"></script> -->

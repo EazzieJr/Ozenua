@@ -43,41 +43,53 @@ export default class Cursor {
             // If I am hovering on the item for on page load I want to scale the cursor media
             if (link.matches(":hover")) {
                 this.setImage(link);
-                this.ScaleCursor(this.Cursor.children[0], 0.4);
-            }
-            //On mouse enter scale the media-cursor to .8
-            link.addEventListener("mouseenter", () => {
-                this.setImage(link);
-                this.ScaleCursor(this.Cursor.children[0], 0.4);
-            });
-            //On mouse enter scale the media-cursor to 0
-            link.addEventListener("mouseleave", () => {
-                this.ScaleCursor(this.Cursor.children[0], 0);
-            });
-            //Hover on a tag to expand to 1.2
-            link.children[0].addEventListener("mouseenter", () => {
-                if(localStorage.theme == 'light'){
+                if (localStorage.theme == 'light') {
                     this.Cursor.classList.add("media-blend");
                 } else {
                     this.Cursor.classList.add("media-blend-dark");
                 }
-                this.ScaleCursor(this.Cursor.children[0], 0.75);
+                this.ScaleCursor(this.Cursor.children[0], 1);
+            }
+            //On mouse enter scale the media-cursor to .8
+            link.addEventListener("mouseenter", () => {
+                this.setImage(link);
+                if (localStorage.theme == 'light') {
+                    this.Cursor.classList.add("media-blend");
+                } else {
+                    this.Cursor.classList.add("media-blend-dark");
+                }
+                this.ScaleCursor(this.Cursor.children[1], 1);
+            });
+            //On mouse enter scale the media-cursor to 0
+            link.addEventListener("mouseleave", () => {
+                this.Cursor.classList.remove("media-blend");
+                this.Cursor.classList.remove("media-blend-dark");
+                this.ScaleCursor(this.Cursor.children[1], 0);
+            });
+            //Hover on a tag to expand to 1.2
+            link.children[0].addEventListener("mouseenter", () => {
+                if (localStorage.theme == 'light') {
+                    this.Cursor.classList.add("media-blend");
+                } else {
+                    this.Cursor.classList.add("media-blend-dark");
+                }
+                this.ScaleCursor(this.Cursor.children[1], 1);
             });
             // Bring scale back down .8
             link.children[0].addEventListener("mouseleave", () => {
-                this.Cursor.classList.remove("media-blend");
-                this.Cursor.classList.remove("media-blend-dark");
-                this.ScaleCursor(this.Cursor.children[0], 0.4);
+                // this.Cursor.classList.remove("media-blend");
+                // this.Cursor.classList.remove("media-blend-dark");
+                this.ScaleCursor(this.Cursor.children[1], 1);
             });
 
             // Blending
             const inv = document.querySelector('.inv')
-    
+
             inv.addEventListener('mouseenter', () => {
                 console.log('worked')
                 this.Cursor.classList.add("media-blend")
             });
-    
+
             inv.addEventListener('mouseleave', () => {
                 console.log('stopped')
                 inv.classList.remove("media-blend")
