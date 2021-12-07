@@ -12,15 +12,8 @@ gsap.to('.hero-header-text', {
     // onComplete: 
 })
 
-gsap.to('.logo', {
+gsap.to('.logo, .navlist', {
     opacity: 1,
-    delay: 5,
-})
-
-gsap.to('.home-navlist ul li', {
-    y: 0,
-    stagger: 0.3,
-    ease: 'back',
     delay: 5,
 })
 

@@ -1,12 +1,12 @@
-import { gsap } from "gsap/dist/gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+// import { gsap } from "gsap/dist/gsap";
+// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline()
 // To pin then vert for big screens
-gsap.to('.featured-projects-big .scroll-and-projects .big-vert', {
+gsap.to('.featured-projects .scroll-and-projects .vert', {
     scrollTrigger: {
-        trigger: '.featured-projects-big .scroll-and-projects .big-vert',
+        trigger: '.featured-projects .scroll-and-projects .vert',
         endTrigger: '.stop',
         start: 'center center',
         end: 'center center',
@@ -17,28 +17,13 @@ gsap.to('.featured-projects-big .scroll-and-projects .big-vert', {
     },
 });
 
-
-// To pin vert for small screens
-// gsap.to('.featured-projects .scroll-and-projects .small-vert', {
-//     scrollTrigger: {
-//         trigger: '.featured-projects .scroll-and-projects .small-vert',
-//         endTrigger: '.paysure',
-//         start: 'center center',
-//         end: 'center center',
-//         pin: true,
-//         // markers: true
-//         scrub: 1,
-//         id: 'pin-vert-small'
-//     },
-// });
-
 // To make the scroll line in the vert translate
-gsap.to('.featured-projects .scroll-and-projects .vert .inner-vert, .featured-projects .scroll-and-projects .vert .inner-vert', {
+gsap.to('.featured-projects .scroll-and-projects .vert .inner-vert', {
     scrollTrigger: {
         trigger: '.featured-projects .scroll-and-projects .vert',
+        endTrigger: '.stop',
         start: 'center center',
-        end: '250% top',
-        // markers: true,
+        end: 'center center',
         scrub: 1,
     },
 
@@ -78,7 +63,7 @@ tl.to('.vertical-line .vert, .navigate-down', {
 })
 
 tl.to('.floating-circle', {
-    duration: 1, 
+    duration: 1,
     scale: 1,
     ease: 'back'
 })

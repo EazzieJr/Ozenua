@@ -15,16 +15,16 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
   </style>
-
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" async></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
   <script type="module">
     import $ from "jquery";
     window.addEventListener('load', scrollToTop());
 
     function scrollToTop() {
-        $('html, body').animate({ scrollTop: 0 }, 'fast')
+      $('html, body').animate({ scrollTop: 0 }, 'fast')
     }
   </script>
 </head>
@@ -85,7 +85,7 @@
           </a>
         </div>
 
-        <div class="home-navlist py-1 overflow-y-hidden hidden lg:block lg:w-60 xl:w-72 2xl:w-84">
+        <div class="navlist py-1 overflow-y-hidden hidden lg:block opacity-0 lg:w-60 xl:w-72 2xl:w-84">
           <ul class="flex justify-between items-center text-center lg:text-tiny xl:text-xs 2xl:text-sm">
             <li><a class="before:black dark:before:bg-white" href="#footer">CONTACT ME</a></li>
             <li><a class="before:black dark:before:bg-white" href="#featured-projects">CASES</a></li>
@@ -556,9 +556,9 @@
         <div
           class="theme-toggle-container absolute right-8 sm:right-14 md:right-16 lg:right-24 xl:right-28 2xl:right-32 flex justify-end">
           <button
-            class="toggle-btn relative rounded-full flex justify-center items-center w-10 lg:w-14 xl:w-16 h-10 lg:h-14 xl:h-16 z-50 bg-dark dark:bg-white">
+            class="toggle-btn relative rounded-full flex justify-center items-center w-10 lg:w-12 xl:w-14 2xl:w-16 h-10 lg:h-12 xl:h-14 2xl:h-16 z-50 bg-dark dark:bg-white">
             <div class="cont absolute sun invisible">
-              <svg class="w-5 lg:w-7 xl:w-8" viewBox="0 0 256 256" xml:space="preserve">
+              <svg class="w-5 lg:w-6 xl:w-7 2xl:w-8" viewBox="0 0 256 256" xml:space="preserve">
                 <desc>Created with Fabric.js 1.7.22</desc>
                 <defs>
                 </defs>
@@ -639,7 +639,7 @@
             </div>
 
             <div class="cont absolute moon invisible">
-              <svg class="w-5 lg:w-7 xl:w-8" viewBox="0 0 256 256" xml:space="preserve">
+              <svg class="w-5 lg:w-6 xl:w-7 2xl:w-8" viewBox="0 0 256 256" xml:space="preserve">
                 <desc>Created with Fabric.js 1.7.22</desc>
                 <defs>
                 </defs>
@@ -660,192 +660,8 @@
       <!-- <canvas class="webgl w-full m-0 p-0 absolute top-0 left-0"></canvas> -->
     </section>
 
-    <!-- featured-projects for small screens -->
-    <section class="featured-projects lg:hidden py-16 lg:py-20 xl:py-24 font-normal overflow-hidden"
-      id="featured-projects">
-      <p data-aos="fade-right"
-        class="font-sf text-xs lg:text-sm xl:text-base 2xl:text-lg lg:tracking-widest dark:text-white">FEATURED
-        PROJECTS
-      </p>
-
-      <p data-aos="fade-right" data-aos-delay="300"
-        class="projects-big-text inv font-caudex text-light text-lg5xl sm:text-lg7xl md:text-9xl lg:text-11xl xl:text-12xl 2xl:text-13xl sm:-mt-3 md:-mt-5 lg:-mt-7 xl:-mt-10 md:tracking-tighter dark:text-dark">
-        PROJECTS
-      </p>
-
-      <div class="scroll-and-projects flex justify-between mt-16 lg:pt-20 lg:pb-20">
-        <div
-          class="small-vert relative md:hidden h-40 md:h-56 2xl:h-86 w-px bg-gray-300 dark:bg-gray-900 overflow-x-hidden">
-          <div class="inner-vert absolute top-0 h-20 md:h-28 2xl:h-40 w-px 2xl:w-1 bg-black dark:bg-white"></div>
-        </div>
-
-        <div
-          class="vert hidden md:block relative h-40 md:h-56 2xl:h-86 w-px bg-gray-300 dark:bg-gray-900 overflow-x-hidden">
-          <div class="inner-vert absolute top-0 h-20 md:h-28 2xl:h-40 w-px 2xl:w-1 bg-black dark:bg-white"></div>
-        </div>
-
-        <div class="projects space-y-10 xl:space-y-28 2xl:space-y-36 sm:space-y-14 w-3/4">
-          <div class="jumiar lg:mb-0">
-            <p class="num inv font-caudex text-num text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-              01
-            </p>
-
-            <div
-              class="header-text-container h-9 md:h-12 lg:h-20 xl:h-24 2xl:h-28 mt-2 md:mb-3 lg:pb-5 overflow-hidden inline-block"
-              data-image-src="jumiar-image">
-              <div
-                class="div space-y-1 md:space-y-2 xl:space-y-3 2xl:space-y-2 transform transition duration-500 hover:-translate-y-9 sm:hover:-translate-y-14 md:hover:-translate-y-14 lg:hover:-translate-y-20 xl:hover:-translate-y-28">
-                <h1
-                  class="juimar-header-dummy inv font-caudex text-xl sm:text-2xl md:text-lg3xl lg:text-5xl xl:text-6xl 2xl:text-lg6xl tracking-tighter dark:text-white overflow-x-hidden">
-                  JUMIAR
-                </h1>
-
-                <h1
-                  class="juimar-header-text inv font-caudex text-xl sm:text-2xl md:text-lg3xl lg:text-5xl xl:text-6xl 2xl:text-lg6xl tracking-tighter dark:text-white overflow-x-hidden">
-                  <a href="jumiar.html">
-                    JUMIAR
-                  </a>
-                </h1>
-              </div>
-            </div>
-
-            <p class="juimar-subtext font-sf text-primary text-xs lg:text-xs xl:text-base 2xl:text-lg">
-              A new experience to online shopping.
-            </p>
-
-          </div>
-
-          <div class="gtworld lg:mb-0">
-            <p class="num inv font-caudex text-num text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-              02
-            </p>
-
-            <div
-              class="header-text-container h-9 md:h-12 lg:h-20 xl:h-24 2xl:h-28 mt-2 md:mb-3 lg:pb-5 overflow-hidden inline-block"
-              data-image-src="gt-image">
-              <div
-                class="div space-y-1 md:space-y-2 xl:space-y-3 2xl:space-y-2 transform transition duration-500 hover:-translate-y-9 sm:hover:-translate-y-14 md:hover:-translate-y-14 lg:hover:-translate-y-20 xl:hover:-translate-y-28">
-                <h1
-                  class="gtworld-header-dummy inv font-caudex text-xl sm:text-2xl md:text-lg3xl lg:text-5xl xl:text-6xl 2xl:text-lg6xl tracking-tighter dark:text-white overflow-x-hidden">
-                  GTWorld Banking App
-                </h1>
-
-                <h1
-                  class="gtworld-header-text inv font-caudex text-xl sm:text-2xl md:text-lg3xl lg:text-5xl xl:text-6xl 2xl:text-lg6xl tracking-tighter dark:text-white overflow-x-hidden">
-                  <a href="gtworld.html">
-                    GTWorld Banking App
-                  </a>
-                </h1>
-              </div>
-            </div>
-
-            <p class="gtworld-subtext font-sf text-primary text-xs lg:text-xs xl:text-base 2xl:text-lg">
-              A new experience to online banking.
-            </p>
-
-          </div>
-
-          <div class="cryptly lg:mb-0">
-            <p class="num inv font-caudex text-num text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-              03
-            </p>
-
-            <div
-              class="header-text-container h-9 md:h-12 lg:h-20 xl:h-24 2xl:h-28 mt-2 md:mb-3 lg:pb-5 overflow-hidden inline-block"
-              data-image-src="cryptly-image">
-              <div
-                class="div space-y-1 md:space-y-2 xl:space-y-3 2xl:space-y-2 transform transition duration-500 hover:-translate-y-9 sm:hover:-translate-y-14 md:hover:-translate-y-14 lg:hover:-translate-y-20 xl:hover:-translate-y-28">
-                <h1
-                  class="cryptly-header-dummy inv font-caudex text-xl sm:text-2xl md:text-lg3xl lg:text-5xl xl:text-6xl 2xl:text-lg6xl tracking-tighter dark:text-white overflow-x-hidden">
-                  Cryptly
-                </h1>
-
-                <h1
-                  class="cryptly-header-text inv font-caudex text-xl sm:text-2xl md:text-lg3xl lg:text-5xl xl:text-6xl 2xl:text-lg6xl tracking-tighter dark:text-white overflow-x-hidden">
-                  <a href="cryptly.html">
-                    Cryptly
-                  </a>
-                </h1>
-              </div>
-            </div>
-
-            <p class="cryptly-subtext font-sf text-primary text-xs lg:text-xs xl:text-base 2xl:text-lg">
-              Crypto application for the new.
-            </p>
-
-          </div>
-
-          <div class="paysure lg:mb-0">
-            <p class="num inv font-caudex text-num text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-              04
-            </p>
-
-            <div
-              class="header-text-container h-9 md:h-12 lg:h-20 xl:h-24 2xl:h-28 mt-2 md:mb-3 lg:pb-5 overflow-hidden inline-block"
-              data-image-src="paysure-image">
-              <div
-                class="div space-y-1 md:space-y-2 xl:space-y-3 2xl:space-y-2 transform transition duration-500 hover:-translate-y-9 sm:hover:-translate-y-14 md:hover:-translate-y-14 lg:hover:-translate-y-20 xl:hover:-translate-y-28">
-                <h1
-                  class="paysure-header-dummy inv font-caudex text-xl sm:text-2xl md:text-lg3xl lg:text-5xl xl:text-6xl 2xl:text-lg6xl tracking-tighter dark:text-white overflow-x-hidden">
-                  Paysure
-                </h1>
-
-                <h1
-                  class="paysure-header-text inv font-caudex text-xl sm:text-2xl md:text-lg3xl lg:text-5xl xl:text-6xl 2xl:text-lg6xl tracking-tighter dark:text-white overflow-x-hidden">
-                  <a href="paysure.html">
-                    Paysure
-                  </a>
-                </h1>
-              </div>
-            </div>
-
-            <p class="paysure-subtext font-sf text-primary text-xs lg:text-xs xl:text-base 2xl:text-lg">
-              A new experience to online banking.
-            </p>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="community-quote flex justify-between mt-20 md:mt-24 xl:mt-32 2xl:mt-40 md:px-20 lg:px-32 xl:px-20">
-        <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="800"
-          class="flex justify-center items-center mb-5 md:mb-7 lg:mb-10">
-          <svg class="w-8 md:w-9 lg:w-10 xl:w-16 2xl:w-20" viewBox="0 0 69 49" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0.528643 39.7799V38.8943L1.02064 30.5305C1.08624 29.4153 1.61103 27.5785 2.59501 25.0202C5.80936 15.2459 11.9429 7.76761 20.9955 2.58529C22.8979 1.14211 24.6363 0.420521 26.2107 0.420521C27.457 0.48612 28.605 0.912513 29.6546 1.6997C29.917 2.15889 30.0482 2.61809 30.0482 3.07728C30.0482 3.79887 29.753 4.45486 29.1626 5.04525C28.3098 5.96364 26.8995 6.94762 24.9315 7.99721C18.3716 11.474 14.3044 16.2955 12.7301 22.4618C19.8804 22.921 23.4555 25.8729 23.4555 31.3177V31.9081L22.8651 40.2719C22.4059 45.4543 18.5028 48.1766 11.1557 48.439C4.07099 47.9798 0.528643 45.0935 0.528643 39.7799ZM38.8057 39.7799V38.8943L39.2977 30.5305C39.3633 29.4153 39.7897 27.7753 40.5768 25.6105L42.5448 20.789C45.8248 13.3763 51.4007 7.30842 59.2726 2.58529C61.1749 1.14211 62.9461 0.420521 64.5861 0.420521C65.8325 0.48612 66.9477 0.912513 67.9316 1.6997C68.2596 2.22449 68.4236 2.71649 68.4236 3.17568C68.4236 3.83167 68.1284 4.45486 67.538 5.04525C66.6197 5.96364 65.1765 6.94762 63.2085 7.99721C56.6486 11.474 52.5815 16.2955 51.0071 22.4618C58.1574 22.921 61.7325 25.8401 61.7325 31.2193V31.9081L61.2405 40.2719C60.7813 45.7822 57.3702 48.5374 51.0071 48.5374C50.4167 48.4718 49.8919 48.439 49.4327 48.439C42.348 48.439 38.8057 45.5526 38.8057 39.7799Z"
-              fill="#18161D" />
-          </svg>
-        </div>
-
-        <div class="text-center space-y-2 xl:space-y-5 w-4/5 px-5 xl:px-10">
-          <p data-aos="zoom-in" data-aos-duration="1000"
-            class="top uppercase text-tiny md:text-xs xl:text-lg 2xl:text-xl tracking-widest dark:text-white">
-            online design community builder
-          </p>
-
-          <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"
-            class="bottom text-sm sm:text-base md:text-lg xl:text-lg3xl 2xl:text-4xl text-primary lg:leading-7 xl:leading-10 2xl:leading-snug lg:pt-3">
-            I have also contributed immensely to the online design
-            community with asset files, online videos and articles.
-          </p>
-        </div>
-
-        <div data-aos="fade-left" data-aos-delay="1000" data-aos-duration="800"
-          class="flex justify-center items-center mb-5 md:mb-7 lg:mb-10">
-          <svg class="w-8 md:w-9 lg:w-10 xl:w-16 2xl:w-20" viewBox="0 0 69 49" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M68.4714 39.7799V38.8943L67.9794 30.5305C67.9138 29.4153 67.389 27.5785 66.405 25.0202C63.1906 15.2459 57.0571 7.76761 48.0045 2.58529C46.1021 1.14211 44.3637 0.420521 42.7893 0.420521C41.543 0.48612 40.395 0.912513 39.3454 1.6997C39.083 2.15889 38.9518 2.61809 38.9518 3.07728C38.9518 3.79887 39.247 4.45486 39.8374 5.04525C40.6902 5.96364 42.1005 6.94762 44.0685 7.99721C50.6284 11.474 54.6956 16.2955 56.2699 22.4618C49.1196 22.921 45.5445 25.8729 45.5445 31.3177V31.9081L46.1349 40.2719C46.5941 45.4543 50.4972 48.1766 57.8443 48.439C64.929 47.9798 68.4714 45.0935 68.4714 39.7799ZM30.1943 39.7799V38.8943L29.7023 30.5305C29.6367 29.4153 29.2103 27.7753 28.4232 25.6105L26.4552 20.789C23.1752 13.3763 17.5993 7.30842 9.72743 2.58529C7.82506 1.14211 6.05388 0.420521 4.41391 0.420521C3.16753 0.48612 2.05234 0.912513 1.06836 1.6997C0.740364 2.22449 0.576366 2.71649 0.576366 3.17568C0.576366 3.83167 0.871562 4.45486 1.46195 5.04525C2.38034 5.96364 3.82352 6.94762 5.79149 7.99721C12.3514 11.474 16.4185 16.2955 17.9929 22.4618C10.8426 22.921 7.26747 25.8401 7.26747 31.2193V31.9081L7.75946 40.2719C8.21865 45.7822 11.6298 48.5374 17.9929 48.5374C18.5833 48.4718 19.1081 48.439 19.5673 48.439C26.652 48.439 30.1943 45.5526 30.1943 39.7799Z"
-              fill="#18161D" />
-          </svg>
-        </div>
-      </div>
-    </section>
-
     <!-- featured-projects for big screens -->
-    <section class="featured-projects-big hidden lg:block py-16 lg:py-20 xl:py-24 font-normal overflow-hidden"
-      id="featured-projects">
+    <section class="featured-projects py-16 lg:py-20 xl:py-24 font-normal overflow-hidden" id="featured-projects">
       <p data-aos="fade-right"
         class="font-sf text-xs lg:text-sm xl:text-base 2xl:text-lg lg:tracking-widest dark:text-white">FEATURED
         PROJECTS
@@ -857,8 +673,7 @@
       </p>
 
       <div class="scroll-and-projects flex justify-between mt-16 lg:pt-20 lg:pb-20">
-        <div
-          class="big-vert relative h-40 md:h-56 2xl:h-86 w-px bg-gray-300 dark:bg-gray-900 overflow-x-hidden">
+        <div class="vert relative h-40 md:h-56 2xl:h-86 w-px bg-gray-300 dark:bg-gray-900 overflow-x-hidden">
           <div class="inner-vert absolute top-0 h-20 md:h-28 2xl:h-40 w-px 2xl:w-1 bg-black dark:bg-white"></div>
         </div>
 
@@ -1339,7 +1154,7 @@
     </section>
   </div>
 
-  <footer class="bg-footerlight dark:bg-black lg:px-16 xl:px-24 py-14 lg:py-24 2xl:py-28 mt-24">
+  <footer class="bg-footerlight dark:bg-black lg:px-16 xl:px-24 py-14 lg:py-24 2xl:py-28 mt-24" id="footer">
     <div class="container mx-auto px-4 sm:px-8">
       <div
         class="first-container before:bg-primary dark:before:bg-white md:flex justify-between items-end space-y-10 lg:space-y-0 xl:space-x-10 py-8 xl:py-14">
@@ -1387,25 +1202,23 @@
       <img class="bg-dark dark:bg-white" src="../assets/images/Paysure Visual Design 4.png" alt="" id="paysure-image">
     </div>
 
-        <div class="view-case">
-          <img class="bg-dark dark:bg-white" src="../assets/images/Jumiar Test AR 1.png" alt="" id="jumiar-image">
-          <img class="bg-dark dark:bg-white" src="../assets/images/Gt Welcome.png" alt="" id="gt-image">
-          <img class="bg-dark dark:bg-white" src="../assets/images/Cryptly.png" alt="" id="cryptly-image">
-          <img class="bg-dark dark:bg-white" src="../assets/images/Paysure Visual Design 4.png" alt="" id="paysure-image">
-        </div>
+    <div class="view-case">
+      <img class="bg-dark dark:bg-white" src="../assets/images/Jumiar Test AR 1.png" alt="" id="jumiar-image">
+      <img class="bg-dark dark:bg-white" src="../assets/images/Gt Welcome.png" alt="" id="gt-image">
+      <img class="bg-dark dark:bg-white" src="../assets/images/Cryptly.png" alt="" id="cryptly-image">
+      <img class="bg-dark dark:bg-white" src="../assets/images/Paysure Visual Design 4.png" alt="" id="paysure-image">
+    </div>
   </div>
 
   <!-- <script type="module" src="js/script.js"></script> -->
   <script type="module" src="js/theme.js"></script>
   <script type="module" src="js/animations.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="module" src="js/index.js"></script>
   <script type="module" src="js/text.js"></script>
   <script>
     window.addEventListener('load', setTimeout(() => {
       AOS.init();
+      ScrollTrigger.refresh();
     }, 6000));
   </script>
 </body>
