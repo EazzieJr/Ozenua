@@ -62,7 +62,7 @@ module.exports = {
         'darkblock': '#141217',
         'lightblock ': '#F2F2F2',
         'footerlight': '#f1f1f1',
-        'verticaldark': '#4040404'
+        'verticaldark': '#404040'
       },
       minWidth: {
         '0': '0',
