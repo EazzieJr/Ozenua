@@ -58,13 +58,13 @@ export default class Cursor {
                 } else {
                     this.Cursor.classList.add("media-blend-dark");
                 }
-                this.ScaleCursor(this.Cursor.children[1], 1);
+                this.ScaleCursor(this.Cursor.children[0], 1);
             });
             //On mouse enter scale the media-cursor to 0
             link.addEventListener("mouseleave", () => {
                 this.Cursor.classList.remove("media-blend");
                 this.Cursor.classList.remove("media-blend-dark");
-                this.ScaleCursor(this.Cursor.children[1], 0);
+                this.ScaleCursor(this.Cursor.children[0], 0);
             });
             //Hover on a tag to expand to 1.2
             link.children[0].addEventListener("mouseenter", () => {
@@ -73,13 +73,13 @@ export default class Cursor {
                 } else {
                     this.Cursor.classList.add("media-blend-dark");
                 }
-                this.ScaleCursor(this.Cursor.children[1], 1);
+                this.ScaleCursor(this.Cursor.children[0], 1);
             });
             // Bring scale back down .8
             link.children[0].addEventListener("mouseleave", () => {
                 // this.Cursor.classList.remove("media-blend");
                 // this.Cursor.classList.remove("media-blend-dark");
-                this.ScaleCursor(this.Cursor.children[1], 1);
+                this.ScaleCursor(this.Cursor.children[0], 1);
             });
 
             // Blending
