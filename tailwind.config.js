@@ -61,7 +61,8 @@ module.exports = {
         'dark': '#0C0B0E',
         'darkblock': '#141217',
         'lightblock ': '#F2F2F2',
-        'footerlight': '#f1f1f1'
+        'footerlight': '#f1f1f1',
+        'verticaldark': '#4040404'
       },
       minWidth: {
         '0': '0',
@@ -80,6 +81,7 @@ module.exports = {
         'full': '100%',
       },
       spacing: {
+        '68': '17rem',
         '84': '21rem',
         '86': '22rem',
         '92': '23rem',
