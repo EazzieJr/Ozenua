@@ -83,6 +83,10 @@ footer {
   -webkit-animation: spin 6s linear infinite;
 }
 
+.spin:hover {
+  animation-play-state: paused;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
