@@ -35,14 +35,15 @@ gsap.to('.grid-div-container', {
     scrollTrigger: {
         trigger: '.grid-div-container',
         // endTrigger: ''
-        start: 'center 60%',
-        end: '+=4000 top',
+        start: 'center center',
+        // end: '+=4000 top',
         pin: true,
         markers: true,
         scrub: 2,
+        // horizontal: true
     },
 
-    x: -3000
+    xPercent: -300,
 });
 
 // Pin button
