@@ -62,9 +62,9 @@ gsap.fromTo('.to-right', {
 gsap.to('.floating-circle-tools', {
     scrollTrigger: {
         trigger: '.floating-circle-tools',
-        start: 'center 30%',
+        start: 'center 40%',
         endTrigger: '.trello',
-        end: 'top 30%',
+        end: 'top 40%',
         pin: true,
         // markers: true
     }
@@ -73,9 +73,9 @@ gsap.to('.floating-circle-tools', {
 // gsap.to('.right-container .vertical-line-and-circle', {
 //     scrollTrigger: {
 //         trigger: '.vertical-line-and-circle',
-//         start: '5% 30%',
+//         start: '5% 40%',
 //         endTrigger: '.trello',
-//         end: 'top 30%',
+//         end: 'top 40%',
 //         pin: true,
 //         markers: true,
 //         id: 'pin'
@@ -85,8 +85,8 @@ gsap.to('.floating-circle-tools', {
 gsap.to('.tools-list .figma, .figma-svg', {
     scrollTrigger: {
         trigger: '.tools-list .figma',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },
@@ -96,8 +96,8 @@ gsap.to('.tools-list .figma, .figma-svg', {
 gsap.to('.tools-list .adobe, .adobe-svg', {
     scrollTrigger: {
         trigger: '.tools-list .adobe',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },
@@ -107,8 +107,8 @@ gsap.to('.tools-list .adobe, .adobe-svg', {
 gsap.to('.tools-list .adobe-photoshop, .adobe-photoshop-svg', {
     scrollTrigger: {
         trigger: '.tools-list .adobe-photoshop',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },
@@ -118,8 +118,8 @@ gsap.to('.tools-list .adobe-photoshop, .adobe-photoshop-svg', {
 gsap.to('.tools-list .adobe-illustrator, .adobe-illustrator-svg', {
     scrollTrigger: {
         trigger: '.tools-list .adobe-illustrator',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },
@@ -129,8 +129,8 @@ gsap.to('.tools-list .adobe-illustrator, .adobe-illustrator-svg', {
 gsap.to('.tools-list .adobe-premier, .adobe-premier-svg', {
     scrollTrigger: {
         trigger: '.tools-list .adobe-premier',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },
@@ -140,8 +140,8 @@ gsap.to('.tools-list .adobe-premier, .adobe-premier-svg', {
 gsap.to('.tools-list .adobe-ae, .adobe-ae-svg', {
     scrollTrigger: {
         trigger: '.tools-list .adobe-ae',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },
@@ -151,8 +151,8 @@ gsap.to('.tools-list .adobe-ae, .adobe-ae-svg', {
 gsap.to('.tools-list .google, .google-svg', {
     scrollTrigger: {
         trigger: '.tools-list .google',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },
@@ -162,8 +162,8 @@ gsap.to('.tools-list .google, .google-svg', {
 gsap.to('.tools-list .notion, .notion-svg', {
     scrollTrigger: {
         trigger: '.tools-list .notion',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },
@@ -173,8 +173,8 @@ gsap.to('.tools-list .notion, .notion-svg', {
 gsap.to('.tools-list .miro, .miro-svg', {
     scrollTrigger: {
         trigger: '.tools-list .miro',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },
@@ -184,8 +184,8 @@ gsap.to('.tools-list .miro, .miro-svg', {
 gsap.to('.tools-list .trello, .trello-svg', {
     scrollTrigger: {
         trigger: '.tools-list .trello',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },
@@ -196,9 +196,9 @@ gsap.to('.tools-list .trello, .trello-svg', {
 gsap.to('.floating-circle-works', {
     scrollTrigger: {
         trigger: '.floating-circle-works',
-        start: 'center 30%',
+        start: 'center 40%',
         endTrigger: '.hervest',
-        end: 'top 30%',
+        end: 'top 40%',
         pin: true,
         markers: true
     }
@@ -207,8 +207,8 @@ gsap.to('.floating-circle-works', {
 gsap.to('.vaulthill-header, .vaulthill .role, .vaulthill-svg', {
     scrollTrigger: {
         trigger: '.vaulthill',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },
@@ -218,8 +218,8 @@ gsap.to('.vaulthill-header, .vaulthill .role, .vaulthill-svg', {
 gsap.to('.neggster-header, .neggster .role, .neggster-svg', {
     scrollTrigger: {
         trigger: '.neggster',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },
@@ -229,8 +229,8 @@ gsap.to('.neggster-header, .neggster .role, .neggster-svg', {
 gsap.to('.outpost-header, .outpost .role, .outpost-svg', {
     scrollTrigger: {
         trigger: '.outpost',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },
@@ -240,8 +240,8 @@ gsap.to('.outpost-header, .outpost .role, .outpost-svg', {
 gsap.to('.tamkeem-header, .tamkeem .role, .tamkeem-svg', {
     scrollTrigger: {
         trigger: '.tamkeem',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },
@@ -251,8 +251,8 @@ gsap.to('.tamkeem-header, .tamkeem .role, .tamkeem-svg', {
 gsap.to('.hervest-header, .hervest .role, .hervest-svg', {
     scrollTrigger: {
         trigger: '.hervest',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },
@@ -262,10 +262,10 @@ gsap.to('.hervest-header, .hervest .role, .hervest-svg', {
 
 gsap.to('.floating-circle-school', {
     scrollTrigger: {
-        trigger: '.floating-circle-works',
-        start: 'center 30%',
-        endTrigger: '.hervest',
-        end: 'top 30%',
+        trigger: '.floating-circle-school',
+        start: 'center 40%',
+        endTrigger: '.university-ilorin',
+        end: 'top 40%',
         pin: true,
         markers: true
     }
@@ -274,8 +274,8 @@ gsap.to('.floating-circle-school', {
 gsap.to('.product-school-header, .product-school .role, .product-school-svg', {
     scrollTrigger: {
         trigger: '.product-school',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },
@@ -285,8 +285,8 @@ gsap.to('.product-school-header, .product-school .role, .product-school-svg', {
 gsap.to('.university-ilorin-header, .university-ilorin .role, .university-ilorin-svg', {
     scrollTrigger: {
         trigger: '.university-ilorin',
-        start: 'center 30%',
-        end: 'top 30%',
+        start: 'center 40%',
+        end: 'top 40%',
         markers: true,
         scrub: 1
     },

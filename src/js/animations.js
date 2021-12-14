@@ -31,16 +31,18 @@ gsap.to('.featured-projects .scroll-and-projects .vert .inner-vert', {
 });
 
 // To make the contributions container translate left
-gsap.to('.large .grid-div-container', {
+gsap.to('.grid-div-container', {
     scrollTrigger: {
         trigger: '.grid-div-container',
+        // endTrigger: ''
         start: 'center 60%',
-        end: 'center 30%',
-        // markers: true,
-        scrub: 1,
+        end: '+=4000 top',
+        pin: true,
+        markers: true,
+        scrub: 2,
     },
 
-    x: -250
+    x: -3000
 });
 
 // Pin button
