@@ -1,20 +1,68 @@
 import { gsap } from "gsap";
-// import { map, lerp, clamp, getMousePos } from "../utils";
-// const images = Object.entries(require("../img/*.jpg"));
+import { lerp, getMousePos } from "./newUtils";
 
-// track the mouse position
-let mousepos = { x: 0, y: 0 };
-// cache the mouse position
-let mousePosCache = mousepos;
-let direction = {
-    x: mousePosCache.x - mousepos.x,
-    y: mousePosCache.y - mousepos.y
-};
-
-// update mouse position when moving the mouse, add check to see if the page has mounted
+// Track the mouse position
+let mouse = { x: 0, y: 0 };
 if (typeof window !== "undefined") {
-    window.addEventListener("mousemove", ev => (mousepos = getMousePos(ev)));
+    window.addEventListener("mousemove", ev => (mouse = getMousePos(ev)));
 }
+
+export default class Cursor {
+    constructor(el) {
+        this.Cursor = el
+        this.Cursor.style.opacity = 0;
+
+        this.bounds = this.Cursor.getBoundingClientRect();
+
+        this.renderedStyles = {
+            tx: { previous: 0, current: 0, amt: 0.15 },
+            ty: { previous: 0, current: 0, amt: 0.15 },
+            scale: { previous: 1, current: 1, amt: 0.15 },
+            opacity: { previous: 1, current: 1, amt: 0.1 }
+        };
+
+        this.onMouseMoveEv = () => {
+            this.renderedStyles.tx.previous = this.renderedStyles.tx.current =
+                mouse.x - this.bounds.width / 2;
+            this.renderedStyles.ty.previous = this.renderedStyles.ty.previous =
+                mouse.y - this.bounds.height / 2;
+            gsap.to(this.Cursor, {
+                duration: 0.9,
+                ease: "Power3.easeOut",
+                opacity: 1
+            });
+            requestAnimationFrame(() => this.render());
+            window.removeEventListener("mousemove", this.onMouseMoveEv);
+        };
+        window.addEventListener("mousemove", this.onMouseMoveEv);
+    }
+    enter() {
+        this.renderedStyles["scale"].current = 2.5;
+        this.renderedStyles["opacity"].current = 0.5;
+    }
+    leave() {
+        this.renderedStyles["scale"].current = 1;
+        this.renderedStyles["opacity"].current = 1;
+    }
+    render() {
+        this.renderedStyles["tx"].current = mouse.x - this.bounds.width / 2;
+        this.renderedStyles["ty"].current = mouse.y - this.bounds.height / 2;
+
+        for (const key in this.renderedStyles) {
+            this.renderedStyles[key].previous = lerp(
+                this.renderedStyles[key].previous,
+                this.renderedStyles[key].current,
+                this.renderedStyles[key].amt
+            );
+        }
+
+        this.Cursor.style.transform = `translateX(${this.renderedStyles["tx"].previous}px) translateY(${this.renderedStyles["ty"].previous}px) scale(${this.renderedStyles["scale"].previous})`;
+        this.Cursor.style.opacity = this.renderedStyles["opacity"].previous;
+
+        requestAnimationFrame(() => this.render());
+    }
+}
+
 
 export default class HoverVideo {
     constructor(el) {

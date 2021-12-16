@@ -31,20 +31,25 @@ gsap.to('.featured-projects .scroll-and-projects .vert .inner-vert', {
 });
 
 // To make the contributions container translate left
-gsap.to('.grid-div-container', {
-    scrollTrigger: {
-        trigger: '.grid-div-container',
-        // endTrigger: ''
-        start: 'center center',
-        // end: '+=4000 top',
-        pin: true,
-        markers: true,
-        scrub: 2,
-        // horizontal: true
-    },
+ScrollTrigger.matchMedia({
+    "(min-width: 1280px)": function() {
+        gsap.to('.grid-div-container', {
+            scrollTrigger: {
+                trigger: '.grid-div-container',
+                // endTrigger: ''
+                start: 'center center',
+                // end: '+=4000 top',
+                pin: true,
+                markers: true,
+                scrub: 2,
+                // horizontal: true
+            },
+        
+            xPercent: -300,
+        });
+    }
+})
 
-    xPercent: -300,
-});
 
 // Pin button
 gsap.to('.toggle-btn', {

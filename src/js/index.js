@@ -16,9 +16,27 @@
 //     console.log('gehj')
 // }
 
-import Cursor from "./cursor.js";
+// import Cursor from "./sCursor.js";
+import Cursor from "./sCursor.js";
+// import HoverVideo from "./hoverVideo.js"
+
+// export default {
+//     // props: {
+//     //     label: String,
+//     //     assetUrl: String,
+//     //     href: String,
+//     //     index: String
+//     // },
+//     mounted() {
+//         // const hoverRef = this.$refs.hoverLink;
+//         let src = el.getAttribute("data-image-src");
+//         new HoverVideo(src);
+//     }
+// };
 
 const cursor = new Cursor(document.querySelector(".cursor"));
+// const hoverVideo = new HoverVideo(document.querySelector(".hover-reveal"))
+// const HoverVideo = new HoverVideo(document.querySelector(".hover-reveal"))
 // window.onload(
 //     $('html, body').animate({ scrollTop: 0 }, 'normal')
 // )

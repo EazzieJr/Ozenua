@@ -660,7 +660,6 @@
       <!-- <canvas class="webgl w-full m-0 p-0 absolute top-0 left-0"></canvas> -->
     </section>
 
-    <!-- featured-projects for big screens -->
     <section class="featured-projects py-16 lg:py-20 xl:py-24 font-normal overflow-hidden" id="featured-projects">
       <p data-aos="fade-right"
         class="font-sf text-xs lg:text-sm xl:text-base 2xl:text-lg lg:tracking-widest dark:text-white">FEATURED
@@ -685,7 +684,7 @@
 
             <div
               class="header-text-container h-9 md:h-12 lg:h-20 xl:h-24 2xl:h-28 mt-2 md:mb-3 lg:pb-5 overflow-hidden inline-block lg:px-5 2xl:px-7 lg:-ml-5 2xl:-ml-7"
-              data-image-src="jumiar-image">
+              data-image-src="jumiar-image" data-video-src="jumiar-video">
               <div
                 class="div space-y-1 md:space-y-2 xl:space-y-3 2xl:space-y-2 transform transition duration-500 hover:-translate-y-9 sm:hover:-translate-y-14 md:hover:-translate-y-14 lg:hover:-translate-y-20 xl:hover:-translate-y-28">
                 <h1
@@ -1189,7 +1188,7 @@
           </h1>
 
           <p>
-            <a ref="hoverLink" class="lets-talk font-sf text-black before:border-t before:border-b before:border dark:text-white text-base sm:text-xl lg:text-xl xl:text-3xl 2xl:text-4xl"
+            <a data-video-src="jumiar-video" class="lets-talk font-sf text-black before:border-t before:border-b before:border dark:text-white text-base sm:text-xl lg:text-xl xl:text-3xl 2xl:text-4xl"
               href="#">
               Let's talk about it.
             </a>
@@ -1217,7 +1216,7 @@
   </footer>
 
 
-  <div id="cursor" class="cursor invisible lg:visible before:bg-black dark:before:bg-white">
+  <div id="cursor" ref="cursor" class="cursor invisible lg:visible before:bg-black dark:before:bg-white">
     <div class="cursor-media s">
       <img class="bg-dark dark:bg-white" src="../assets/images/Jumiar Test AR 1.png" alt="" id="jumiar-image">
       <img class="bg-dark dark:bg-white" src="../assets/images/Gt Welcome.png" alt="" id="gt-image">
@@ -1235,7 +1234,7 @@
 
       <div class="hover-reveal">
         <div class="hover-reveal__inner">
-          <video src="../assets/videos/out_2.mp4" class="hover-reveal__video" autoplay preload="auto" muted loop playsinline />
+          <video src="../assets/videos/out_2.mp4" class="hover-reveal__video" id="jumiar-video" autoplay preload="auto" muted loop playsinline />
         </div>
       </div>
 
@@ -1252,19 +1251,7 @@
   </script>
 
   <script type="module">
-    import HoverVideo from "../src/js/hoverVideo.js"
-    export default {
-      props: {
-        label: String,
-        assetUrl: String,
-        href: String,
-        index: String
-      },
-      mounted() {
-        const hoverRef = this.$refs.hoverLink;
-        new HoverVideo(hoverRef);
-      }
-    };
+
   </script>
 </body>
 
