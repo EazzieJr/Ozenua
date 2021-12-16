@@ -6,9 +6,11 @@
 // import LocomotiveScroll from 'locomotive-scroll';
 
 // const scroll = new LocomotiveScroll({
-//     el: document.querySelector('[data-scroll-container]'),
+//     el: document.querySelector('.container'),
 //     smooth: true
 // });
+
+
 
 // function toggle() {
 //     const html = document.querySelector('html')
@@ -17,7 +19,7 @@
 // }
 
 // import Cursor from "./sCursor.js";
-import Cursor from "./sCursor.js";
+import Cursor from "./cursor.js";
 // import HoverVideo from "./hoverVideo.js"
 
 // export default {
