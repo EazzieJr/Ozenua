@@ -3,23 +3,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// const logo = document.querySelector('.logo')
+gsap.to('.logo, .navlist', {
+    duration: 1,
+    opacity: 1,
+    delay: 2,
+})
 
-// logo.addEventListener('mouseover', () => {
-//     gsap.to('nav .nav-container .logo a p', {
-//         duration: 1,
-//         x: 5,
-//         stagger: 0.05,
-//         // display: 'none'
-//     })
-//     // console.log('Worked')
-// })
-// logo.addEventListener('mouseout', () => {
-//     gsap.to('nav .nav-container .logo a p', {
-//         // duration: 0,
-//         x: 0,
-//         // stagger: 0.05,
-//         // display: 'none'
-//     })
-//     // console.log('Worked')
-// })
+gsap.to('.case-studies', {
+    duration: 1,
+    scale: 1,
+    delay: 2,
+    opacity: 1,
+})
