@@ -2,9 +2,20 @@ import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 
-
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
-// Pin button
+
+gsap.to('.body', {
+    overflowY: 'scroll',
+    delay: 2
+})
+
+gsap.to('.about-me, .skills-experience, .horizontal-skills, .container, footer', {
+    opacity: 1,
+    duration: 1,
+    delay: 2.5
+})
+
+// Pin theme button
 gsap.to('.toggle-btn', {
     scrollTrigger: {
         trigger: '.toggle-btn',
@@ -70,18 +81,6 @@ gsap.to('.floating-circle-tools', {
         // markers: true
     }
 })
-
-// gsap.to('.right-container .vertical-line-and-circle', {
-//     scrollTrigger: {
-//         trigger: '.vertical-line-and-circle',
-//         start: '5% 40%',
-//         endTrigger: '.trello',
-//         end: 'top 40%',
-//         pin: true,
-//         markers: true,
-//         id: 'pin'
-//     }
-// })
 
 gsap.to('.tools-list .figma, .figma-svg', {
     scrollTrigger: {
