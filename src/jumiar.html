@@ -116,7 +116,8 @@
             </div>
         </section>
 
-        <div class="theme-toggle-container absolute right-8 sm:right-14 md:right-16 lg:right-24 xl:right-28 2xl:right-32 flex justify-end">
+        <div
+            class="theme-toggle-container absolute right-8 sm:right-14 md:right-16 lg:right-24 xl:right-28 2xl:right-32 flex justify-end">
             <button
                 class="toggle-btn relative rounded-full flex justify-center items-center w-10 lg:w-12 xl:w-14 2xl:w-16 h-10 lg:h-12 xl:h-14 2xl:h-16 z-50 bg-dark dark:bg-white">
                 <div class="cont absolute sun invisible">
@@ -596,7 +597,7 @@
     <footer class="bg-gray-200 opacity-0 dark:bg-black lg:px-16 xl:px-24 py-14 lg:py-24 2xl:py-28 mt-24">
         <div class="container mx-auto px-4 sm:px-8">
             <div
-                class="first-container before:bg-primary dark:before:bg-white md:flex justify-between items-end space-y-10 lg:space-y-0 xl:space-x-10 py-8 xl:py-14">
+                class="first-container before:bg-black after:bg-black  dark:before:bg-white dark:after:bg-white md:flex justify-between items-end space-y-10 lg:space-y-0 xl:space-x-10 py-8 xl:py-14">
                 <div
                     class="texts-container flex md:block items-baseline space-x-2 sm:space-x-7 md:space-x-0 md:space-y-5 xl:space-y-10">
                     <h1
@@ -605,7 +606,7 @@
                     </h1>
 
                     <p>
-                        <a class="lets-talk font-sf text-black before:border-t before:border-b before:border dark:text-white text-base sm:text-xl lg:text-xl xl:text-3xl 2xl:text-4xl"
+                        <a class="lets-talk font-sf text-black after:border-t after:border-b after:border dark:text-white text-base sm:text-xl lg:text-xl xl:text-3xl 2xl:text-4xl"
                             href="#">
                             Let's talk about it.
                         </a>
@@ -635,7 +636,9 @@
     </footer>
 
 
-    <div id="cursor" class="cursor invisible lg:visible before:bg-black dark:before:bg-white"></div>
+    <div id="cursor"
+        class="cursor invisible lg:visible before:bg-black after:bg-black  dark:before:bg-white dark:after:bg-white">
+    </div>
 
     <script type="module" src="js/theme.js"></script>
     <script src="https://kit.fontawesome.com/049b369bde.js" crossorigin="anonymous"></script>
