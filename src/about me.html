@@ -22,7 +22,7 @@
     </script>
 </head>
 
-<body class="bg-white dark:bg-dark overflow-x-hidden">
+<body class="bg-white dark:bg-dark overflow-hidden">
     <div class="container mx-auto px-7 sm:px-14 md:px-16 lg:px-24 xl:px-24 2xl:px-28">
         <nav>
             <div
@@ -841,7 +841,8 @@
                         </div>
 
                         <div class="circle-cont absolute h-full -ml-2.5 z-50">
-                            <svg class="vaulthill-svg text-black dark:text-white opacity-50 w-5 mt-5" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="vaulthill-svg text-black dark:text-white opacity-50 w-5 mt-5"
+                                viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle class="fill-current" cx="11" cy="11" r="6" fill="" />
                                 <circle class="stroke-current" cx="11" cy="11" r="10.5" stroke="" />
                             </svg>
@@ -852,8 +853,8 @@
                                 <circle class="stroke-current" cx="11" cy="11" r="10.5" stroke="" />
                             </svg>
 
-                            <svg class="outpost-svg text-black dark:text-white opacity-50 w-5 mt-52 pt-2 md:mt-48 lg:mt-40 lg:pt-0 xl:pt-3 2xl:pt-7" viewBox="0 0 22 22"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="outpost-svg text-black dark:text-white opacity-50 w-5 mt-52 pt-2 md:mt-48 lg:mt-40 lg:pt-0 xl:pt-3 2xl:pt-7"
+                                viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle class="fill-current" cx="11" cy="11" r="6" fill="" />
                                 <circle class="stroke-current" cx="11" cy="11" r="10.5" stroke="" />
                             </svg>
@@ -978,7 +979,8 @@
         </section>
 
         <section class="school mt-20 lg:mt-28 xl:mt-40">
-            <div class="school-container flex space-x-10 sm:space-x-20 md:space-x-28 lg:space-x-36 xl:space-x-48 2xl:space-x-52 py-10">
+            <div
+                class="school-container flex space-x-10 sm:space-x-20 md:space-x-28 lg:space-x-36 xl:space-x-48 2xl:space-x-52 py-10">
                 <div class="left-container">
                     <div class="floating-circle-school w-auto flex justify-center items-center">
                         <svg class="w-20 sm:w-24 md:w-28 lg:w-32 xl:w-36 spin" viewBox="0 0 199 192.5" fill="none"
@@ -1168,15 +1170,16 @@
                         </div>
 
                         <div class="circle-cont absolute h-full -ml-2.5 z-50">
-                            <svg class="product-school-svg text-black dark:text-white opacity-50 w-5 mt-5" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle class="fill-current" cx="11" cy="11" r="6" fill=""/>
-                                <circle class="stroke-current" cx="11" cy="11" r="10.5" stroke=""/>
+                            <svg class="product-school-svg text-black dark:text-white opacity-50 w-5 mt-5"
+                                viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="fill-current" cx="11" cy="11" r="6" fill="" />
+                                <circle class="stroke-current" cx="11" cy="11" r="10.5" stroke="" />
                             </svg>
 
-                            <svg class="university-ilorin-svg text-black dark:text-white opacity-50 w-5 mt-24 sm:mt-20 lg:mt-24 pt-2 lg:pt-0 2xl:pt-2" viewBox="0 0 22 22"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle class="fill-current" cx="11" cy="11" r="6" fill=""/>
-                                <circle class="stroke-current" cx="11" cy="11" r="10.5" stroke=""/>
+                            <svg class="university-ilorin-svg text-black dark:text-white opacity-50 w-5 mt-24 sm:mt-20 lg:mt-24 pt-2 lg:pt-0 2xl:pt-2"
+                                viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="fill-current" cx="11" cy="11" r="6" fill="" />
+                                <circle class="stroke-current" cx="11" cy="11" r="10.5" stroke="" />
                             </svg>
                         </div>
                     </div>
@@ -1221,7 +1224,8 @@
 
         <section class="thanks mt-32 xl:mt-60">
             <div class="thanks-container">
-                <h1 class="uppercase font-caudex dark:text-white text-lg4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-9xl text-center">
+                <h1
+                    class="uppercase font-caudex dark:text-white text-lg4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-9xl text-center">
                     thanks for reading
                 </h1>
             </div>
@@ -1284,7 +1288,7 @@
             AOS.init();
         }, 2000));
 
-        ScrollTrigger.refresh();
+        window.addEventListener('load', ScrollTrigger.refresh());
     </script>
 </body>
 

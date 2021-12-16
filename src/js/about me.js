@@ -17,7 +17,8 @@ gsap.to('.toggle-btn', {
 
 gsap.to('.header-text', {
     text: 'About me.',
-    duration: 2
+    duration: 2,
+    onComplete: ScrollTrigger.refresh()
 })
 
 gsap.to('.logo', {
