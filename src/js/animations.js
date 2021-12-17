@@ -26,7 +26,7 @@ gsap.to('.featured-projects .scroll-and-projects .vert', {
         start: 'center center',
         end: 'center center',
         pin: true,
-        markers: true,
+        markers: false,
         scrub: 1,
     },
 });
@@ -102,7 +102,7 @@ ScrollTrigger.matchMedia({
                 start: 'center center',
                 end: '+=3000 center',
                 pin: true,
-                markers: true,
+                markers: false,
                 scrub: 2,
             },
             // duration: 10,
@@ -118,7 +118,7 @@ ScrollTrigger.matchMedia({
                 start: 'center center',
                 end: '+=3000 center',
                 pin: true,
-                markers: true,
+                markers: false,
                 scrub: 2,
                 // horizontal: true
             },
@@ -135,7 +135,7 @@ ScrollTrigger.matchMedia({
                 start: 'center center',
                 end: '+=4000 center',
                 pin: true,
-                markers: true,
+                markers: false,
                 scrub: 2,
                 // horizontal: true
             },
@@ -152,7 +152,7 @@ ScrollTrigger.matchMedia({
                 start: 'center center',
                 end: '+=4500 center',
                 pin: true,
-                markers: true,
+                markers: false,
                 scrub: 2,
                 // horizontal: true
             },

@@ -1,10 +1,10 @@
 // import { gsap } from "gsap";
-import { lerp, getMousePos, getSiblings } from "./utils.js";
+import { lerp, getMousePos } from "./utils.js";
 
 // Grab the mouse position and set it to mouse state
 let mouse = { x: 0, y: 0 };
 window.addEventListener("mousemove", (ev) => (mouse = getMousePos(ev)));
-export default class viewCase {
+export default class Cursor {
     constructor(el) {
         // Varibles
         this.Cursor = el;
@@ -96,20 +96,6 @@ export default class viewCase {
                 inv.classList.remove("media-blend")
             })
         });
-    }
-
-    setImage(el) {
-        // Grab the data-image-src and make sure it matches the image that should be displayed
-        let src = el.getAttribute("data-image-src");
-        let image = document.querySelector(`#${src}`);
-        let siblings = getSiblings(image);
-
-        if (image.id == src) {
-            gsap.set(image, { zIndex: 4, opacity: 1 });
-            siblings.forEach((i) => {
-                gsap.set(i, { zIndex: 1, opacity: 0 });
-            });
-        }
     }
 
     ScaleCursor(el, amount) {

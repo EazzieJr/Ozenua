@@ -18,8 +18,10 @@
 //     console.log('gehj')
 // }
 
-// import Cursor from "./sCursor.js";
-import Cursor from "./cursor.js";
+// import Cursor from "./cursor.js";
+// import Cursor2 from "./sCursor.js";
+import viewCase from "./cursor";
+import viewCase from "./view case.js"
 // import HoverVideo from "./hoverVideo.js"
 
 // export default {
@@ -36,7 +38,9 @@ import Cursor from "./cursor.js";
 //     }
 // };
 
-const cursor = new Cursor(document.querySelector(".cursor"));
+// const cursor = new Cursor(document.querySelector(".cursor"));
+const viewCase = new viewCase(document.querySelector(".view-case"))
+// const cursor2 = new Cursor2(document.querySelector(".view-case"));
 // const hoverVideo = new HoverVideo(document.querySelector(".hover-reveal"))
 // const HoverVideo = new HoverVideo(document.querySelector(".hover-reveal"))
 // window.onload(
