@@ -19,14 +19,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
-  <!-- <script type="module">
+  <script type="module">
     import $ from "jquery";
     window.addEventListener('load', scrollToTop());
 
     function scrollToTop() {
       $('html, body').animate({ scrollTop: 0 }, 'fast')
     }
-  </script> -->
+  </script>
 </head>
 
 <body class="body bg-white dark:bg-dark overflow-y-hidden">
@@ -85,23 +85,13 @@
           </a>
         </div>
 
-        <div class="navlist py-1 overflow-y-hidden hidden lg:block opacity-0 lg:w-60 xl:w-72 2xl:w-84">
-          <ul class="flex justify-between items-center text-center lg:text-tiny xl:text-xs 2xl:text-sm">
-            <li><a class="before:black dark:before:bg-white" href="#footer">CONTACT ME</a></li>
-            <li><a class="before:black dark:before:bg-white" href="#featured-projects">CASES</a></li>
-            <li><a class="before:black dark:before:bg-white" href="about me.html">ABOUT ME</a></li>
+        <div class="navlist py-1 overflow-y-hidden opacity-0 w-auto sm:w-52 md:w-60 xl:w-72 2xl:w-84">
+          <ul class="sm:flex justify-between items-center text-center text-tiny xl:text-xs 2xl:text-sm">
+            <li><a class="hidden sm:block after:bg-black dark:after:bg-white" href="#footer">CONTACT ME</a></li>
+            <li><a class="hidden sm:block after:bg-black dark:after:bg-white"
+                href="https://behance.net/ozenua_uiux">CASES</a></li>
+            <li><a class="after:bg-black dark:after:bg-white" href="about me.html">ABOUT ME</a></li>
           </ul>
-        </div>
-
-        <!-- Hamburger for small screens -->
-        <div class="small-menu-burger flex items-center lg:hidden">
-          <a href="#">
-            <div id="menu-btn" class="menu-btn p-1 transform scale-0" onclick="openMenu()">
-              <div class="menu-btn-burger rounded-sm rounded-l rounded-r">
-
-              </div>
-            </div>
-          </a>
         </div>
       </div>
     </nav>
@@ -154,7 +144,7 @@
             </div>
 
             <div class="floating-circle transform scale-0 lg:mb-20">
-              <a class="flex" href="#cases">
+              <a class="flex" href="#featured-projects">
                 <svg class="w-28 sm:w-32 spin" viewBox="0 0 199 192.5" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M42.8722 169.863L43.4213 170.311L39.8269 174.713L37.1547 172.531L37.5583 172.036L39.6814 173.77L40.9168 172.257L38.9676 170.665L39.3662 170.177L41.3154 171.769L42.8722 169.863Z"
@@ -374,7 +364,7 @@
           </p>
 
           <div class="floating-circle transform scale-0 relative md:mb-10 lg:mb-20">
-            <a class="flex" href="#cases">
+            <a class="flex" href="#featured-projects">
               <svg class="md:w-32 xl:w-40 2xl:w-56 spin" viewBox="0 0 199 192.5" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -688,7 +678,9 @@
                 class="div space-y-1 md:space-y-2 xl:space-y-3 2xl:space-y-2 transform transition duration-500 hover:-translate-y-9 sm:hover:-translate-y-14 md:hover:-translate-y-14 lg:hover:-translate-y-20 xl:hover:-translate-y-28">
                 <h1
                   class="juimar-header-dummy inv font-caudex text-xl sm:text-2xl md:text-lg3xl lg:text-5xl xl:text-6xl 2xl:text-lg6xl tracking-tighter dark:text-white overflow-x-hidden">
-                  JUMIAR
+                  <a href="jumiar.html">
+                    JUMIAR
+                  </a>
                 </h1>
 
                 <h1
@@ -718,7 +710,9 @@
                 class="div space-y-1 md:space-y-2 xl:space-y-3 2xl:space-y-2 transform transition duration-500 hover:-translate-y-9 sm:hover:-translate-y-14 md:hover:-translate-y-14 lg:hover:-translate-y-20 xl:hover:-translate-y-28">
                 <h1
                   class="gtworld-header-dummy inv font-caudex text-xl sm:text-2xl md:text-lg3xl lg:text-5xl xl:text-6xl 2xl:text-lg6xl tracking-tighter dark:text-white overflow-x-hidden">
-                  GTWorld Banking App
+                  <a href="gtworld.html">
+                    GTWorld Banking App
+                  </a>
                 </h1>
 
                 <h1
@@ -736,7 +730,7 @@
 
           </div>
 
-          <div class="cryptly lg:mb-0">
+          <div class="cryptly .stop lg:mb-0">
             <p class="num inv font-caudex text-num text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
               03
             </p>
@@ -748,7 +742,9 @@
                 class="div space-y-1 md:space-y-2 xl:space-y-3 2xl:space-y-2 transform transition duration-500 hover:-translate-y-9 sm:hover:-translate-y-14 md:hover:-translate-y-14 lg:hover:-translate-y-20 xl:hover:-translate-y-28">
                 <h1
                   class="cryptly-header-dummy inv font-caudex text-xl sm:text-2xl md:text-lg3xl lg:text-5xl xl:text-6xl 2xl:text-lg6xl tracking-tighter dark:text-white overflow-x-hidden">
-                  Cryptly
+                  <a href="cryptly.html">
+                    Cryptly
+                  </a>
                 </h1>
 
                 <h1
@@ -766,7 +762,7 @@
 
           </div>
 
-          <div class="paysure stop lg:mb-0">
+          <!-- <div class="paysure stop lg:mb-0">
             <p class="num inv font-caudex text-num text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
               04
             </p>
@@ -778,7 +774,9 @@
                 class="div space-y-1 md:space-y-2 xl:space-y-3 2xl:space-y-2 transform transition duration-500 hover:-translate-y-9 sm:hover:-translate-y-14 md:hover:-translate-y-14 lg:hover:-translate-y-20 xl:hover:-translate-y-28">
                 <h1
                   class="paysure-header-dummy inv font-caudex text-xl sm:text-2xl md:text-lg3xl lg:text-5xl xl:text-6xl 2xl:text-lg6xl tracking-tighter dark:text-white overflow-x-hidden">
-                  Paysure
+                  <a href="paysure.html">
+                    Paysure
+                  </a>
                 </h1>
 
                 <h1
@@ -794,7 +792,7 @@
               A new experience to online banking.
             </p>
 
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -1200,8 +1198,8 @@
             <a data-aos="fade-up" class="instagram-footer-link" href="https://instagram.com/ozenua_uiux"
               target="blank">Instagram</a>
             <a data-aos="fade-up" data-aos-delay="100" class="youtube-footer-link" href="#">Youtube</a>
-            <a data-aos="fade-up" data-aos-delay="200" class="dribble-footer-link"
-              href="https://dribbble.com/ozenua_uiux" target="blank">Dribble</a>
+            <a data-aos="fade-up" data-aos-delay="200" class="dribbble-footer-link"
+              href="https://dribbble.com/ozenua_uiux" target="blank">dribbble</a>
             <a data-aos="fade-up" data-aos-delay="300" class="linkedin-footer-link"
               href="https://www.linkedin.com/in/ozenua-oluwatobi/" target="blank">LinkedIn</a>
             <a data-aos="fade-up" data-aos-delay="400" data-aos-offset="100" class="behance-footer-link"
@@ -1226,11 +1224,11 @@
     </div>
   </div>
 
-    <div id="view-case" ref="view-case" class="view-case invisible lg:visible flex justify-center items-center">
-      <p class="uppercase view-case-text text-xs font-sf text-black dark:text-white z-50">
-        view case
-      </p>
-    </div>
+  <div id="view-case" ref="view-case" class="view-case invisible lg:visible flex justify-center items-center">
+    <p class="uppercase view-case-text text-xs font-sf text-black dark:text-white z-50">
+      view case
+    </p>
+  </div>
 
   <!-- <div class="hover-reveal">
     <div class="hover-reveal__inner">

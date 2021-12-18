@@ -12,9 +12,9 @@ export default class Cursor {
         this.Item = document.querySelectorAll(".header-text-container");
         this.bounds = this.Cursor.getBoundingClientRect();
         this.cursorConfigs = {
-            x: { previous: 0, current: 0, amt: 0.2 },
-            y: { previous: 0, current: 0, amt: 0.2 },
-            rotation: { previous: 0, current: 0, amt: 0.08 }
+            x: { previous: 0, current: 0, amt: 0.1},
+            y: { previous: 0, current: 0, amt: 0.1},
+            // rotation: { previous: 0, current: 0, amt: 0.08 }
         };
         this.onMouseMoveEv = () => {
             this.cursorConfigs.x.previous = this.cursorConfigs.x.current = mouse.x;
@@ -43,17 +43,17 @@ export default class Cursor {
         this.Item.forEach((link) => {
             // If I am hovering on the item for on page load I want to scale the cursor media
             if (link.matches(":hover")) {
-                this.setImage(link);
+                // this.setImage(link);
                 if (localStorage.theme == 'light') {
                     this.Cursor.classList.add("media-blend");
                 } else {
                     this.Cursor.classList.add("media-blend-dark");
                 }
-                this.ScaleCursor(this.Cursor.children[0], 1);
+                this.ScaleCursor(this.Cursor.children[0], 0);
             }
             //On mouse enter scale the media-cursor to .8
             link.addEventListener("mouseenter", () => {
-                this.setImage(link);
+                // this.setImage(link);
                 if (localStorage.theme == 'light') {
                     this.Cursor.classList.add("media-blend");
                 } else {
@@ -80,7 +80,7 @@ export default class Cursor {
             link.children[0].addEventListener("mouseleave", () => {
                 // this.Cursor.classList.remove("media-blend");
                 // this.Cursor.classList.remove("media-blend-dark");
-                this.ScaleCursor(this.Cursor.children[0], 1);
+                this.ScaleCursor(this.Cursor.children[0], 0);
             });
 
             // Blending

@@ -1,10 +1,10 @@
 module.exports = {
   // mode: 'jit',
-  content: [
-    './src/**/*.html',
-    './src/**/*.js',
-    // './src/**/*.css',
-    './fonts/euclid/*.css'
+  purge: [
+    // './src/**/*.html',
+    // './src/**/*.js',
+    // // './src/**/*.css',
+    // './fonts/euclid/*.css'
   ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {

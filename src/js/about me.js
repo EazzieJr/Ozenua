@@ -1,8 +1,8 @@
-import { gsap } from "gsap/dist/gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { TextPlugin } from "gsap/TextPlugin";
+// import { gsap } from "gsap/dist/gsap";
+// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+// import { TextPlugin } from "gsap/TextPlugin";
 
-gsap.registerPlugin(ScrollTrigger, TextPlugin);
+// gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 gsap.to('.body', {
     overflowY: 'scroll',
