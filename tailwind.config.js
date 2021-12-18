@@ -1,10 +1,9 @@
 module.exports = {
-  // mode: 'jit',
+  mode: 'jit',
   purge: [
-    // './src/**/*.html',
-    // './src/**/*.js',
-    // // './src/**/*.css',
-    // './fonts/euclid/*.css'
+    './src/**/*.html',
+    './src/**/*.js',
+    './src/**/*.css',
   ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {

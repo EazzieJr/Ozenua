@@ -1,9 +1,13 @@
 // * {
 //   border: 1px solid red;
 // }
+* {
+    cursor: none;
+ }
 
 html {
     scroll-behavior: smooth;
+    // cursor: none;
 }
 
 .contributions {
@@ -180,3 +184,6 @@ footer {
 }
 
 
+// .toggle-btn {
+//   top: 27%;
+// }

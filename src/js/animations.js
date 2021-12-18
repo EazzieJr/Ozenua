@@ -1,3 +1,5 @@
+// import gsap from "gsap/all";
+
 const tl = gsap.timeline()
 
 /* Landing animation */
@@ -10,6 +12,7 @@ tl.to('.floating-circle', {
     duration: 1,
     scale: 1,
     ease: 'back',
+    onComplete: ScrollTrigger.refresh()
 })
 
 tl.to('.body', {
@@ -103,7 +106,7 @@ ScrollTrigger.matchMedia({
                 end: '+=3000 center',
                 pin: true,
                 markers: false,
-                scrub: 2,
+                scrub: 1,
             },
             // duration: 10,
             x: -2000
@@ -119,7 +122,7 @@ ScrollTrigger.matchMedia({
                 end: '+=3000 center',
                 pin: true,
                 markers: false,
-                scrub: 2,
+                scrub: 1,
                 // horizontal: true
             },
             // duration: 10,
@@ -136,7 +139,7 @@ ScrollTrigger.matchMedia({
                 end: '+=4000 center',
                 pin: true,
                 markers: false,
-                scrub: 2,
+                scrub: 1,
                 // horizontal: true
             },
             // duration: 10,
@@ -153,7 +156,7 @@ ScrollTrigger.matchMedia({
                 end: '+=4500 center',
                 pin: true,
                 markers: false,
-                scrub: 2,
+                scrub: 1,
                 // horizontal: true
             },
             // duration: 10,
@@ -162,6 +165,11 @@ ScrollTrigger.matchMedia({
     },
 })
 
+
+// gsap.set('.theme-toggle-button', {
+//     top: '90%'
+// })
+
 // Pin theme button
 gsap.to('.toggle-btn', {
     scrollTrigger: {
@@ -169,6 +177,7 @@ gsap.to('.toggle-btn', {
         endTrigger: 'footer',
         start: 'center 90%',
         pin: true,
-        scrub: true
+        scrub: true,
+        // markers: true
     }
 })

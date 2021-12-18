@@ -465,8 +465,8 @@ nav {
       left: 0;
       width: 100%;
       height: 1px;
-      border-top: 1px solid ;
-      border-bottom: 1px solid ;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
       transition: 500ms;
       -webkit-transition: 500ms;
       -moz-transition: 500ms;
@@ -493,3 +493,41 @@ nav {
   }
 }
 
+.credits {
+  .developer {
+        a {
+          position: relative;
+          // border: 1px solid white;
+  
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: 0;
+            height: 1px;
+            width: 0%;
+            background-color: white;
+            transition: 0.5s ease-in-out;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+          }
+  
+          &:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            background-color: white;
+            transition: 0.5s ease-in-out;
+            -webkit-transition: 0.5s ease-in-out;
+            -moz-transition: 0.5s ease-in-out;
+            -ms-transition: 0.5s ease-in-out;
+            -o-transition: 0.5s ease-in-out;
+}
+        }
+  }
+}
