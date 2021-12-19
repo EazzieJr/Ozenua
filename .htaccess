@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ozenua\.tech [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://ozenua.tech/$1 [R,L]

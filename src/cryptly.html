@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cryptly</title>
+    <meta name="description"
+        content="A product designer and a design enthusiast. loves creating seamless user experiences and digital user interfaces.">
+    <meta name="keywords"
+        content="Product, Design, Product Designer, UI, UX, UIUX, UI/UX, Tobi, Oluwatobi, Ozenua, Perfectionist, User, User experience, User interface">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
     <link rel="stylesheet" href="public/styles/style.css" />
     <link rel="stylesheet" href="sass/texts.scss">
     <link rel="stylesheet" href="sass/cursor.scss">
@@ -19,10 +27,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
     <script type="module">
-        import $ from "jquery";
-        window.addEventListener('load', () => {
-            $('html, body').animate({ scrollTop: 0 }, 'fast')
-        });
+            import $ from "jquery";
+                window.addEventListener('load', scrollToTop());
+
+                function scrollToTop() {
+                    $('html, body').animate({ scrollTop: 0 }, 'fast')
+                }
     </script>
 </head>
 
@@ -217,9 +227,9 @@
 
         <section class="cryptly opacity-0 mt-10">
             <div class="cryptly-image">
-                <a href="../assets/images/Cryptly.png">
+                
                     <img src="../assets/images/Cryptly.png" alt="">
-                </a>
+                
             </div>
 
             <div class="overview mt-24 md:mt-32 xl:mt-40 space-y-5 sm:space-y-6 2xl:space-y-7">
@@ -321,9 +331,7 @@
                 </h3>
 
                 <div class="design-process-image">
-                    <a href="../assets/images/Cryptly Design Process.png"><img class="rounded-2xl lg:rounded-3xl w-full"
-                            class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly Design Process.png" alt=""
-                            class="lg:mt-8"></a>
+                    <img class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly Design Process.png" alt="" class="lg:mt-8">
                 </div>
             </div>
 
@@ -341,9 +349,7 @@
                 </p>
 
                 <div class="swot-analysis-image">
-                    <a href="../assets/images/Cryptly Swot Analysis.png"><img class="rounded-2xl lg:rounded-3xl w-full"
-                            class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly Swot Analysis.png"
-                            alt=""></a>
+                    <img class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly Swot Analysis.png" alt="">
                 </div>
             </div>
 
@@ -353,8 +359,7 @@
                     User flow</h3>
 
                 <div class="userflow-images">
-                    <a href="../assets/images/Cryptly User Flow.png"><img class="rounded-2xl lg:rounded-3xl w-full"
-                            class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly User Flow.png" alt=""></a>
+                    <img class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly User Flow.png" alt="">
                 </div>
             </div>
 
@@ -372,10 +377,10 @@
                 </p>
 
                 <div class="users grid gap-y-3 lg:space-y-5">
-                    <a href="../assets/images/Cryptly User 1.png"><img class="rounded-2xl lg:rounded-3xl w-full"
-                            class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly User 1.png" alt=""></a>
-                    <a href="../assets/images/Cryptly User 2.png"><img class="rounded-2xl lg:rounded-3xl w-full"
-                            class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly User 2.png" alt=""></a>
+                    <img class="rounded-2xl lg:rounded-3xl"
+                            src="../assets/images/Cryptly User 1.png" alt="">
+                    <img class="rounded-2xl lg:rounded-3xl"
+                            src="../assets/images/Cryptly User 2.png" alt="">
                 </div>
             </div>
 
@@ -394,14 +399,10 @@
 
                 <div class="wireframes-image space-y-3 lg:space-y-5">
                     <div class="wireframe-image">
-                        <a href="../assets/images/Cryptly Wireframe 1.png"><img
-                                class="rounded-2xl lg:rounded-3xl w-full" class="rounded-2xl lg:rounded-3xl"
-                                src="../assets/images/Cryptly Wireframe 1.png" alt=""></a>
+                        <img class="rounded-2xl lg:rounded-3xl w-full" src="../assets/images/Cryptly Wireframe 1.png" alt="">
                     </div>
                     <div class="wireframe-image">
-                        <a href="../assets/images/Cryptly Wireframe 2.png"><img
-                                class="rounded-2xl lg:rounded-3xl w-full" class="rounded-2xl lg:rounded-3xl"
-                                src="../assets/images/Cryptly Wireframe 2.png" alt=""></a>
+                        <img class="rounded-2xl lg:rounded-3xl w-full" src="../assets/images/Cryptly Wireframe 2.png" alt="">
                     </div>
                 </div>
             </div>
@@ -418,9 +419,7 @@
                 </p>
 
                 <div class="splash-screen-image">
-                    <a href="../assets/images/Cryptly Splash Screen.png "><img class="rounded-2xl lg:rounded-3xl w-full"
-                            class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly Splash Screen.png  "
-                            alt=""></a>
+                    <img class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly Splash Screen.png  " alt="">
                 </div>
             </div>
 
@@ -440,8 +439,7 @@
                 </p>
 
                 <div class="onboarding-image">
-                    <a href="../assets/images/Cryptly Onboarding.png"><img class="rounded-2xl lg:rounded-3xl w-full"
-                            class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly Onboarding.png" alt=""></a>
+                    <img class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly Onboarding.png" alt="">
                 </div>
             </div>
 
@@ -466,9 +464,7 @@
                 </div>
 
                 <div class="image flex justify-center items-start">
-                    <a href="../assets/images/Cryptly Navigation-Homepage.png"><img
-                            class="rounded-2xl lg:rounded-3xl w-full" class="rounded-2xl lg:rounded-3xl"
-                            src="../assets/images/Cryptly Navigation-Homepage.png" alt=""></a>
+                    <img class="rounded-2xl lg:rounded-3xl w-full" src="../assets/images/Cryptly Navigation-Homepage.png" alt="">
                 </div>
             </div>
 
@@ -490,17 +486,14 @@
                 </div>
 
                 <div class="send-coins-image">
-                    <a href="../assets/images/Cryptly Send Coins.png"><img class="rounded-2xl lg:rounded-3xl w-full"
-                            class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly Send Coins.png" alt=""></a>
+                    <img class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly Send Coins.png" alt="">
                 </div>
             </div>
 
             <div
                 class="receiving-coins mt-24 md:mt-32 xl:mt-40 space-y-5 sm:space-y-6 2xl:space-y-7 md:grid place-items-center grid-cols-2 md:gap-x-10 lg:gap-x-0">
                 <div class="receiving-coins-image">
-                    <a href="../assets/images/Cryptly Recieving Coins.png"><img
-                            class="rounded-2xl lg:rounded-3xl w-full" class="rounded-2xl lg:rounded-3xl"
-                            src="../assets/images/Cryptly Recieving Coins.png" alt=""></a>
+                    <img class="rounded-2xl lg:rounded-3xl w-full" src="../assets/images/Cryptly Recieving Coins.png" alt="">
                 </div>
 
                 <div class="texts space-y-5 sm:space-y-6 2xl:space-y-7 lg:pl-10">
@@ -533,8 +526,7 @@
                 </p>
 
                 <div class="receive-image">
-                    <a href="../assets/images/Cryptly Portfolio.png"><img class="rounded-2xl lg:rounded-3xl w-full"
-                            class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly Portfolio.png" alt=""></a>
+                    <img class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly Portfolio.png" alt="">
                 </div>
             </div>
 
@@ -554,8 +546,7 @@
                 </p>
 
                 <div class="receive-image">
-                    <a href="../assets/images/Cryptly Recovery.png"><img class="rounded-2xl lg:rounded-3xl w-full"
-                            class="rounded-2xl lg:rounded-3xl" src="../assets/images/Cryptly Recovery.png" alt=""></a>
+                    <img class="rounded-2xl lg:rounded-3xl w-full" src="../assets/images/Cryptly Recovery.png" alt="">
                 </div>
             </div>
         </section>
@@ -586,10 +577,10 @@
         </div>
     </div>
 
-    <footer class="bg-black opacity-0 lg:px-16 xl:px-24 py-14 lg:py-24 2xl:py-28 mt-24">
+    <footer class="bg-black opacity-0 lg:px-16 xl:px-24 py-14 lg:py-24 2xl:py-28 mt-24" id="footer">
         <div class="container mx-auto px-4 sm:px-8">
             <div
-                class="first-container before:bg-black after:bg-black  dark:before:bg-white dark:after:bg-white md:flex justify-between items-end space-y-10 lg:space-y-0 xl:space-x-10 py-8 xl:py-14">
+                class="first-container before:bg-white after:bg-white md:flex justify-between items-end space-y-10 lg:space-y-0 xl:space-x-10 py-8 xl:py-14">
                 <div
                     class="texts-container flex md:block items-baseline space-x-2 sm:space-x-7 md:space-x-0 md:space-y-5 xl:space-y-10">
                     <h1
@@ -624,12 +615,12 @@
                 </div>
             </div>
 
-                <div class="credits text-center mt-14 lg:mt-20 2xl:mt-24">
-                    <p class="developer font-sf text-primary text-tiny lg:text-xs xl:text-sm 2xl:text-base">
-                        Developed by <span><a class="text-white uppercase" href="https://www.linkedin.com/in/ganiyu-idris/"
-                                target="blank">ganiyu idris</a></span>
-                    </p>
-                </div>
+            <div class="credits text-center mt-14 lg:mt-20 2xl:mt-24">
+                <p class="developer font-sf text-primary text-tiny lg:text-xs xl:text-sm 2xl:text-base">
+                    Developed by <span><a class="text-white uppercase" href="https://www.linkedin.com/in/ganiyu-idris/"
+                            target="blank">ganiyu idris</a></span>
+                </p>
+            </div>
         </div>
     </footer>
 
@@ -659,24 +650,13 @@
     <script type="module" src="js/index.js"></script>
     <script type="module" src="js/opacity.js"></script>
     <script type="module" src="js/nav.js"></script>
-    <script type="module" src="js/animations.js"></script>
+    <script type="module" src="js/button.js"></script>
     <script type="module">
         import { gsap } from "gsap/dist/gsap";
         // import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
         import { TextPlugin } from "gsap/TextPlugin";
 
-
         gsap.registerPlugin(TextPlugin);
-        // Pin button
-        gsap.to('.toggle-btn', {
-            scrollTrigger: {
-                trigger: '.toggle-btn',
-                endTrigger: 'footer',
-                start: 'center 90%',
-                pin: true,
-                scrub: true
-            }
-        })
 
         gsap.to('.header-text', {
             text: 'Cryptly: Creating true experience with Cryptocurrency.',

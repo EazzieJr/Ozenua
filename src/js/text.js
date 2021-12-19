@@ -3,6 +3,14 @@ import { gsap } from "gsap";
 import  {TextPlugin}  from "gsap/TextPlugin";
 
 gsap.registerPlugin(TextPlugin);
+
+function init() {
+    setTimeout(() => {
+        AOS.init();
+        ScrollTrigger.refresh();
+    }, 6000)
+}
+
 const tl = gsap.timeline()
 
 gsap.to('.hero-header-text', {
@@ -26,7 +34,8 @@ gsap.to('.small-hero-details-text, .small-navigate-down', {
 tl.to('.hero-details-text', {
     duration: 1,
     opacity: 1,
-    delay: 6
+    delay: 6,
+    onComplete: init()
 })
 
 
