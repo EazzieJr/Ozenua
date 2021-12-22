@@ -16,18 +16,18 @@ const tl = gsap.timeline()
 gsap.to('.hero-header-text', {
     duration: 3,
     text: "Hey, I'm Ozenua.",
-    delay: 1,
+    delay: 2,
     // onComplete: 
 })
 
 gsap.to('.logo, .navlist', {
     opacity: 1,
-    delay: 5,
+    delay: 6,
 })
 
 gsap.to('.small-hero-details-text, .small-navigate-down', {
     duration: 1,
-    delay: 5,
+    delay: 6,
     opacity: 1
 })
 

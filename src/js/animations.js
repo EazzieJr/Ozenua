@@ -17,7 +17,6 @@ tl.to('.floating-circle', {
 
 tl.to('.body', {
     overflowY: 'scroll',
-
 })
 
 
